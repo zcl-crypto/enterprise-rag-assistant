@@ -1,0 +1,13 @@
+.venv
+.git
+.env
+.data
+.models
+web/node_modules
+web/dist
+*.egg-info
+__pycache__
+.pytest_cache
+data
+docs
+tests

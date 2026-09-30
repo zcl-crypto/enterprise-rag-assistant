@@ -1,0 +1,112 @@
+services:
+  web:
+    build: ./web
+    ports:
+      - "127.0.0.1:8080:80"
+    depends_on:
+      api:
+        condition: service_started
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: rag
+      POSTGRES_USER: rag
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-local-rag-password}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U rag -d rag"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+
+  qdrant:
+    image: qdrant/qdrant:v1.19.1
+    ports:
+      - "127.0.0.1:6333:6333"
+    volumes:
+      - qdrant_data:/qdrant/storage
+
+  model-init:
+    build: .
+    command: ["python", "-m", "rag_app.download_models"]
+    environment:
+      EMBEDDING_MODEL_PATH: /models/bge-small-zh-v1.5
+      FASTEMBED_CACHE_PATH: /models/fastembed
+      RETRIEVAL_MODE: ${RETRIEVAL_MODE:-hybrid}
+      ENABLE_RERANKER: ${ENABLE_RERANKER:-0}
+      RERANKER_MODEL_PATH: /models/bge-reranker-base
+    volumes:
+      - model_data:/models
+
+  db-init:
+    build: .
+    command: ["python", "-m", "rag_app.init_db"]
+    environment:
+      DATABASE_URL: postgresql+psycopg://rag:${POSTGRES_PASSWORD:-local-rag-password}@postgres:5432/rag
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  api:
+    build: .
+    ports:
+      - "127.0.0.1:8765:8000"
+    environment:
+      DATABASE_URL: postgresql+psycopg://rag:${POSTGRES_PASSWORD:-local-rag-password}@postgres:5432/rag
+      QDRANT_URL: http://qdrant:6333
+      STORAGE_ROOT: /data/uploads
+      EMBEDDING_MODEL_PATH: /models/bge-small-zh-v1.5
+      FASTEMBED_CACHE_PATH: /models/fastembed
+      RETRIEVAL_MODE: ${RETRIEVAL_MODE:-hybrid}
+      ENABLE_RERANKER: ${ENABLE_RERANKER:-0}
+      RERANKER_MODEL_PATH: /models/bge-reranker-base
+      SEED_DEMO_USERS: "1"
+      DEMO_PASSWORD: ${DEMO_PASSWORD:-demo12345}
+      JWT_SECRET: ${JWT_SECRET:-local-demo-secret-change-me}
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      LLM_ENABLED: ${LLM_ENABLED:-1}
+      LLM_BASE_URL: ${LLM_BASE_URL:-https://open.bigmodel.cn/api/paas/v4/}
+      LLM_MODEL: ${LLM_MODEL:-glm-4.7-flash}
+      LLM_DAILY_TOKEN_LIMIT: ${LLM_DAILY_TOKEN_LIMIT:-200000}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      qdrant:
+        condition: service_started
+      model-init:
+        condition: service_completed_successfully
+      db-init:
+        condition: service_completed_successfully
+    volumes:
+      - upload_data:/data/uploads
+      - model_data:/models
+
+  worker:
+    build: .
+    command: ["python", "-m", "rag_app.worker"]
+    environment:
+      DATABASE_URL: postgresql+psycopg://rag:${POSTGRES_PASSWORD:-local-rag-password}@postgres:5432/rag
+      QDRANT_URL: http://qdrant:6333
+      EMBEDDING_MODEL_PATH: /models/bge-small-zh-v1.5
+      FASTEMBED_CACHE_PATH: /models/fastembed
+      RETRIEVAL_MODE: ${RETRIEVAL_MODE:-hybrid}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      qdrant:
+        condition: service_started
+      model-init:
+        condition: service_completed_successfully
+      db-init:
+        condition: service_completed_successfully
+    volumes:
+      - upload_data:/data/uploads
+      - model_data:/models
+
+volumes:
+  postgres_data:
+  qdrant_data:
+  model_data:
+  upload_data:

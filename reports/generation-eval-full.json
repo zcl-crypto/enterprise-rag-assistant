@@ -1,0 +1,4479 @@
+{
+  "summary": {
+    "generated_at": "2026-09-21T03:32:42.996679+00:00",
+    "base_url": "http://127.0.0.1:8765",
+    "run_base_urls": [
+      "http://127.0.0.1:8765",
+      "http://127.0.0.1:8766"
+    ],
+    "sampling_seed": 17,
+    "selected_case_count": 110,
+    "case_count": 110,
+    "completed_count": 110,
+    "category_counts": {
+      "single_document": 75,
+      "cross_document": 5,
+      "no_answer": 25,
+      "unauthorized": 5
+    },
+    "status_counts": {
+      "answered": 73,
+      "insufficient_evidence": 37
+    },
+    "positive_answered": 73,
+    "positive_total": 80,
+    "positive_evaluated": 80,
+    "positive_expected_docs_cited": 73,
+    "no_answer_refused": 25,
+    "no_answer_total": 25,
+    "no_answer_evaluated": 25,
+    "unauthorized_exposures": 0,
+    "unknown_citations": 0,
+    "reported_usage_cases": 110,
+    "input_tokens": 41260,
+    "output_tokens": 2814,
+    "latency_p50_ms": 3231.21,
+    "latency_p95_ms": 10540.22,
+    "manual_answer_correctness": null,
+    "manual_citation_support": null,
+    "pending_count": 0
+  },
+  "cases": [
+    {
+      "case_id": "608461b2d31f02ee",
+      "category": "single_document",
+      "username": "admin",
+      "question": "休五天年假最迟提前多久申请？",
+      "expected_answer": "提前两个工作日",
+      "expected_docs": [
+        "hr-leave"
+      ],
+      "blocked_doc": null,
+      "request_id": "adeed484-3841-4074-b5b1-5b0b9b8eed42",
+      "status": "answered",
+      "answer": "休五天年假最迟提前两个工作日申请。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "b9828617-25f6-45b0-b6b1-88d0bf02a280",
+          "slug": "hr-leave",
+          "text": "连续五个工作日以内的年休假至少提前两个工作日申请；超过五个工作日须提前七个工作日申请。直属主管在系统中审批。",
+          "headings": [
+            "年休假与请假办法",
+            "年休假申请"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "hr-leave"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 25.22,
+      "generation_ms": 6836.86,
+      "total_ms": 6888.68,
+      "input_tokens": 321,
+      "output_tokens": 17,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "382b3b98499fd371",
+      "category": "single_document",
+      "username": "admin",
+      "question": "休六天年假要提前几天申请？",
+      "expected_answer": "提前七个工作日",
+      "expected_docs": [
+        "hr-leave"
+      ],
+      "blocked_doc": null,
+      "request_id": "622de54e-457a-48c9-a2ed-16f4f69cf5a5",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": false,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 26.17,
+      "generation_ms": 8125.22,
+      "total_ms": 8196.72,
+      "input_tokens": 318,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "1ce313129e751b1f",
+      "category": "single_document",
+      "username": "admin",
+      "question": "连续病假超过两天什么时候补交证明？",
+      "expected_answer": "返岗后三个工作日内",
+      "expected_docs": [
+        "hr-leave"
+      ],
+      "blocked_doc": null,
+      "request_id": "b073d450-111a-4dc2-9d8f-cf93cf3b4eeb",
+      "status": "answered",
+      "answer": "根据编号资料[1]，病假连续超过两天时，员工应在返岗后三个工作日内补交医院证明。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "b9828617-25f6-45b0-b6b1-88d0bf02a280",
+          "slug": "hr-leave",
+          "text": "病假连续超过两天时，员工应在返岗后三个工作日内补交医院证明；人事部核对后归档。",
+          "headings": [
+            "年休假与请假办法",
+            "病假证明"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "hr-leave"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 34.67,
+      "generation_ms": 8947.93,
+      "total_ms": 9011.39,
+      "input_tokens": 349,
+      "output_tokens": 28,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "0665f4e391978760",
+      "category": "single_document",
+      "username": "admin",
+      "question": "新员工报到当天要交哪些材料？",
+      "expected_answer": "身份证明、工资卡信息和紧急联系人",
+      "expected_docs": [
+        "hr-onboarding"
+      ],
+      "blocked_doc": null,
+      "request_id": "3016461e-496a-49d3-9acd-078a3b03e29a",
+      "status": "answered",
+      "answer": "新员工报到当天要交的材料包括身份证明、工资卡信息与紧急联系人 [1]。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "ab841bdc-a9c9-42ee-a11a-9939701c8985",
+          "slug": "hr-onboarding",
+          "text": "新员工报到当天提交身份证明、工资卡信息与紧急联系人；人事部只在受控系统保存扫描件。",
+          "headings": [
+            "新员工入职办理规范",
+            "报到材料"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "hr-onboarding"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 24.03,
+      "generation_ms": 2117.68,
+      "total_ms": 2171.05,
+      "input_tokens": 343,
+      "output_tokens": 22,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "ae84227f4c36378d",
+      "category": "single_document",
+      "username": "admin",
+      "question": "入职培训应在多久内完成？",
+      "expected_answer": "入职后三十天内",
+      "expected_docs": [
+        "hr-onboarding"
+      ],
+      "blocked_doc": null,
+      "request_id": "0be37704-652e-49fb-82a5-14a149b291eb",
+      "status": "answered",
+      "answer": "根据编号资料[1]，入职后三十天内完成信息安全培训和岗位导师面谈。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "ab841bdc-a9c9-42ee-a11a-9939701c8985",
+          "slug": "hr-onboarding",
+          "text": "入职后三十天内完成信息安全培训和岗位导师面谈。培训未完成时不开放生产系统权限。",
+          "headings": [
+            "新员工入职办理规范",
+            "试用期培训"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "hr-onboarding"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 27.17,
+      "generation_ms": 10847.75,
+      "total_ms": 10900.68,
+      "input_tokens": 320,
+      "output_tokens": 20,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "3932b306f274be80",
+      "category": "single_document",
+      "username": "admin",
+      "question": "安全培训没完成可以开生产权限吗？",
+      "expected_answer": "不可以",
+      "expected_docs": [
+        "hr-onboarding"
+      ],
+      "blocked_doc": null,
+      "request_id": "06f95d71-4fa2-4558-b7d9-e7194f7b2a82",
+      "status": "answered",
+      "answer": "根据资料[1]，培训未完成时不开放生产系统权限。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "ab841bdc-a9c9-42ee-a11a-9939701c8985",
+          "slug": "hr-onboarding",
+          "text": "入职后三十天内完成信息安全培训和岗位导师面谈。培训未完成时不开放生产系统权限。",
+          "headings": [
+            "新员工入职办理规范",
+            "试用期培训"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "hr-onboarding"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 25.47,
+      "generation_ms": 25836.45,
+      "total_ms": 25887.75,
+      "input_tokens": 694,
+      "output_tokens": 62,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "57aff903ae7b344a",
+      "category": "single_document",
+      "username": "admin",
+      "question": "远程办公可选择周几？",
+      "expected_answer": "周二或周四",
+      "expected_docs": [
+        "hr-remote"
+      ],
+      "blocked_doc": null,
+      "request_id": "d677307e-e451-48e2-8e05-7a946882af10",
+      "status": "answered",
+      "answer": "根据编号资料[1]，符合岗位要求的员工每周可申请周二或周四远程办公一天，至少提前一个工作日由直属主管审批。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "ee271962-808c-4047-8320-6d6d567d11d7",
+          "slug": "hr-remote",
+          "text": "符合岗位要求的员工每周可申请周二或周四远程办公一天，至少提前一个工作日由直属主管审批。",
+          "headings": [
+            "远程办公管理办法",
+            "申请范围"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "hr-remote"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 30.02,
+      "generation_ms": 3045.0,
+      "total_ms": 3100.8,
+      "input_tokens": 308,
+      "output_tokens": 32,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "850665ae8b4b3cbc",
+      "category": "single_document",
+      "username": "admin",
+      "question": "远程办公申请要提前多久？",
+      "expected_answer": "至少一个工作日",
+      "expected_docs": [
+        "hr-remote"
+      ],
+      "blocked_doc": null,
+      "request_id": "2ffe51b5-a5b2-4d63-ba37-44b9da6b6c80",
+      "status": "answered",
+      "answer": "远程办公申请要提前至少一个工作日由直属主管审批 [1]。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "ee271962-808c-4047-8320-6d6d567d11d7",
+          "slug": "hr-remote",
+          "text": "符合岗位要求的员工每周可申请周二或周四远程办公一天，至少提前一个工作日由直属主管审批。",
+          "headings": [
+            "远程办公管理办法",
+            "申请范围"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "hr-remote"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 25.03,
+      "generation_ms": 3173.57,
+      "total_ms": 3228.42,
+      "input_tokens": 309,
+      "output_tokens": 18,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "124fc8bbea29c4f0",
+      "category": "single_document",
+      "username": "admin",
+      "question": "远程办公能用公共电脑下载内部资料吗？",
+      "expected_answer": "不能",
+      "expected_docs": [
+        "hr-remote"
+      ],
+      "blocked_doc": null,
+      "request_id": "4db7249d-f382-482c-8c92-6f83ae7049c5",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": false,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 32.04,
+      "generation_ms": 8537.18,
+      "total_ms": 8599.64,
+      "input_tokens": 307,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "506aa63abe2e245a",
+      "category": "single_document",
+      "username": "admin",
+      "question": "国内出差要提前多久申请？",
+      "expected_answer": "出发前三个工作日",
+      "expected_docs": [
+        "hr-travel"
+      ],
+      "blocked_doc": null,
+      "request_id": "0a570b4b-d42c-4e74-85d1-242b087131cb",
+      "status": "answered",
+      "answer": "根据编号资料[1]，国内出差申请应在出发前三个工作日提交。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "aad5b476-7c57-4c6a-8d9e-fc6f8dd273d8",
+          "slug": "hr-travel",
+          "text": "国内出差申请应在出发前三个工作日提交，说明目的、预算和目的地；直属主管和部门负责人依次审批。",
+          "headings": [
+            "国内出差申请制度",
+            "行程审批"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "hr-travel"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 22.57,
+      "generation_ms": 3123.12,
+      "total_ms": 3176.17,
+      "input_tokens": 320,
+      "output_tokens": 19,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "f867b8f77c3327ef",
+      "category": "single_document",
+      "username": "admin",
+      "question": "出差申请需要写明哪些信息？",
+      "expected_answer": "目的、预算和目的地",
+      "expected_docs": [
+        "hr-travel"
+      ],
+      "blocked_doc": null,
+      "request_id": "d22c4fad-297a-42fa-8fec-e40b8ca75bcc",
+      "status": "answered",
+      "answer": "国内出差申请需写明出差目的、预算和目的地。[1] 已批准的出差如需增加城市或预算，须重新提交变更审批。[2] 紧急行程需部门负责人书面确认。[2]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "aad5b476-7c57-4c6a-8d9e-fc6f8dd273d8",
+          "slug": "hr-travel",
+          "text": "国内出差申请应在出发前三个工作日提交，说明目的、预算和目的地；直属主管和部门负责人依次审批。",
+          "headings": [
+            "国内出差申请制度",
+            "行程审批"
+          ]
+        },
+        {
+          "document_id": "aad5b476-7c57-4c6a-8d9e-fc6f8dd273d8",
+          "slug": "hr-travel",
+          "text": "已批准的出差如增加城市或预算，须在订票前重新提交变更审批。紧急行程由部门负责人书面确认。",
+          "headings": [
+            "国内出差申请制度",
+            "行程变更"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "hr-travel"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 23.75,
+      "generation_ms": 9990.88,
+      "total_ms": 10041.81,
+      "input_tokens": 706,
+      "output_tokens": 135,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "3662637fb6a1e347",
+      "category": "single_document",
+      "username": "admin",
+      "question": "增加出差城市何时重新审批？",
+      "expected_answer": "订票前",
+      "expected_docs": [
+        "hr-travel"
+      ],
+      "blocked_doc": null,
+      "request_id": "f9954559-23c3-4805-9709-1f03171bfc0c",
+      "status": "answered",
+      "answer": "已批准的出差如增加城市，须在订票前重新提交变更审批。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "aad5b476-7c57-4c6a-8d9e-fc6f8dd273d8",
+          "slug": "hr-travel",
+          "text": "已批准的出差如增加城市或预算，须在订票前重新提交变更审批。紧急行程由部门负责人书面确认。",
+          "headings": [
+            "国内出差申请制度",
+            "行程变更"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "hr-travel"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 37.47,
+      "generation_ms": 6403.0,
+      "total_ms": 6469.06,
+      "input_tokens": 684,
+      "output_tokens": 65,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "476cbef67ab8aeb6",
+      "category": "single_document",
+      "username": "admin",
+      "question": "外部培训每年最多报销多少？",
+      "expected_answer": "每人每自然年三千元",
+      "expected_docs": [
+        "hr-training"
+      ],
+      "blocked_doc": null,
+      "request_id": "2f7e4711-fd3a-4581-9902-db7edd17bc7d",
+      "status": "answered",
+      "answer": "根据编号资料[1]，与岗位直接相关的外部课程，每名员工每自然年可报销不超过三千元。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "f51cdc88-0c2c-42a3-9561-e418044d3665",
+          "slug": "hr-training",
+          "text": "与岗位直接相关的外部课程，每名员工每自然年可报销不超过三千元；报名之前应取得主管批准。",
+          "headings": [
+            "员工培训费用支持办法",
+            "费用上限"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "hr-training"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 27.97,
+      "generation_ms": 1284.34,
+      "total_ms": 1342.32,
+      "input_tokens": 344,
+      "output_tokens": 28,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "ff2b7c5c9581d04f",
+      "category": "single_document",
+      "username": "admin",
+      "question": "培训报名之前要谁批准？",
+      "expected_answer": "直属主管",
+      "expected_docs": [
+        "hr-training"
+      ],
+      "blocked_doc": null,
+      "request_id": "129add9d-b492-4387-8ddc-ba6329391aa5",
+      "status": "answered",
+      "answer": "根据编号资料[1]，与岗位直接相关的外部课程，在报名之前应取得主管批准。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "f51cdc88-0c2c-42a3-9561-e418044d3665",
+          "slug": "hr-training",
+          "text": "与岗位直接相关的外部课程，每名员工每自然年可报销不超过三千元；报名之前应取得主管批准。",
+          "headings": [
+            "员工培训费用支持办法",
+            "费用上限"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "hr-training"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 26.79,
+      "generation_ms": 3917.56,
+      "total_ms": 3973.54,
+      "input_tokens": 343,
+      "output_tokens": 24,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "6887afe40a013509",
+      "category": "single_document",
+      "username": "admin",
+      "question": "培训结束后多久提交报销材料？",
+      "expected_answer": "十个工作日内",
+      "expected_docs": [
+        "hr-training"
+      ],
+      "blocked_doc": null,
+      "request_id": "be766216-cf0f-4b03-b488-1287021207aa",
+      "status": "answered",
+      "answer": "根据编号资料[1]，培训结束后十个工作日内提交发票、课程证明和学习总结。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "f51cdc88-0c2c-42a3-9561-e418044d3665",
+          "slug": "hr-training",
+          "text": "课程结束后十个工作日内提交发票、课程证明和学习总结，财务按年度余额核销。",
+          "headings": [
+            "员工培训费用支持办法",
+            "报销材料"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "hr-training"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 512.82,
+      "generation_ms": 8629.52,
+      "total_ms": 9197.45,
+      "input_tokens": 342,
+      "output_tokens": 21,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "de30ee343ff9a812",
+      "category": "single_document",
+      "username": "admin",
+      "question": "费用报销应在发生后多久提交？",
+      "expected_answer": "三十个自然日内",
+      "expected_docs": [
+        "fin-expense"
+      ],
+      "blocked_doc": null,
+      "request_id": "fb87a304-d0fb-4fa7-aeba-a4bc6b35e2cc",
+      "status": "answered",
+      "answer": "费用发生后三十个自然日内提交报销单和合规票据。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "4a9cecf1-af4a-426f-ba68-412d7dab391f",
+          "slug": "fin-expense",
+          "text": "员工费用报销细则\r\n提交时限\r\n费用发生后三十个自然日内提交报销单和合规票据。逾期须说明原因并由部门负责人批准。\r\n审批分级\r\n单笔超过三千元须经财务复核；单笔超过一万元还须财务负责人批准。拆分报销以规避审批\r\n禁止。",
+          "headings": []
+        }
+      ],
+      "cited_docs": [
+        "fin-expense"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 24.52,
+      "generation_ms": 6200.64,
+      "total_ms": 6254.49,
+      "input_tokens": 756,
+      "output_tokens": 49,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "0c3fb7fa9db05cb9",
+      "category": "single_document",
+      "username": "admin",
+      "question": "单笔四千元报销由谁复核？",
+      "expected_answer": "财务复核",
+      "expected_docs": [
+        "fin-expense"
+      ],
+      "blocked_doc": null,
+      "request_id": "948b2a37-90ec-4634-b72f-f5366b65c129",
+      "status": "answered",
+      "answer": "单笔四千元报销须经财务复核。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "4a9cecf1-af4a-426f-ba68-412d7dab391f",
+          "slug": "fin-expense",
+          "text": "员工费用报销细则\r\n提交时限\r\n费用发生后三十个自然日内提交报销单和合规票据。逾期须说明原因并由部门负责人批准。\r\n审批分级\r\n单笔超过三千元须经财务复核；单笔超过一万元还须财务负责人批准。拆分报销以规避审批\r\n禁止。",
+          "headings": []
+        }
+      ],
+      "cited_docs": [
+        "fin-expense"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 28.18,
+      "generation_ms": 10042.05,
+      "total_ms": 10099.65,
+      "input_tokens": 732,
+      "output_tokens": 54,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "aa106af1666d698a",
+      "category": "single_document",
+      "username": "admin",
+      "question": "单笔超过一万元还要谁批准？",
+      "expected_answer": "财务负责人",
+      "expected_docs": [
+        "fin-expense"
+      ],
+      "blocked_doc": null,
+      "request_id": "7de9cc5e-c452-4722-84f8-e47d2bb5f79c",
+      "status": "answered",
+      "answer": "单笔超过一万元还须财务负责人批准。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "4a9cecf1-af4a-426f-ba68-412d7dab391f",
+          "slug": "fin-expense",
+          "text": "员工费用报销细则\r\n提交时限\r\n费用发生后三十个自然日内提交报销单和合规票据。逾期须说明原因并由部门负责人批准。\r\n审批分级\r\n单笔超过三千元须经财务复核；单笔超过一万元还须财务负责人批准。拆分报销以规避审批\r\n禁止。",
+          "headings": []
+        }
+      ],
+      "cited_docs": [
+        "fin-expense"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 28.5,
+      "generation_ms": 8184.61,
+      "total_ms": 8241.92,
+      "input_tokens": 346,
+      "output_tokens": 15,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "9524fbadf3a1ad56",
+      "category": "single_document",
+      "username": "admin",
+      "question": "电子发票必须包含哪些字段？",
+      "expected_answer": "公司名称、统一社会信用代码、开票日期和明细",
+      "expected_docs": [
+        "fin-invoice"
+      ],
+      "blocked_doc": null,
+      "request_id": "57072b93-1a9e-4500-bcbe-1483b61323cc",
+      "status": "answered",
+      "answer": "根据编号资料[1]，电子发票必须包含公司名称、统一社会信用代码、开票日期和明细。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "8f4b4dcb-e7cf-41de-80dd-1be72d631473",
+          "slug": "fin-invoice",
+          "text": "报销的电子发票必须包含公司名称、统一社会信用代码、开票日期和明细；截图不能代替原始电子文件。",
+          "headings": [
+            "电子发票验真规范",
+            "发票字段"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "fin-invoice"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 31.42,
+      "generation_ms": 1169.56,
+      "total_ms": 1230.46,
+      "input_tokens": 306,
+      "output_tokens": 26,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "18305d2edcdc352a",
+      "category": "single_document",
+      "username": "admin",
+      "question": "发票截图可以代替原始电子文件吗？",
+      "expected_answer": "不可以",
+      "expected_docs": [
+        "fin-invoice"
+      ],
+      "blocked_doc": null,
+      "request_id": "b34c0f58-16d4-443e-a52f-14b481125da0",
+      "status": "answered",
+      "answer": "根据编号资料[1]，发票截图不能代替原始电子文件。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "8f4b4dcb-e7cf-41de-80dd-1be72d631473",
+          "slug": "fin-invoice",
+          "text": "报销的电子发票必须包含公司名称、统一社会信用代码、开票日期和明细；截图不能代替原始电子文件。",
+          "headings": [
+            "电子发票验真规范",
+            "发票字段"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "fin-invoice"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 27.88,
+      "generation_ms": 13872.77,
+      "total_ms": 13929.14,
+      "input_tokens": 342,
+      "output_tokens": 16,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "be84f19338174ddb",
+      "category": "single_document",
+      "username": "admin",
+      "question": "发票被退回后多久补正？",
+      "expected_answer": "七个工作日内",
+      "expected_docs": [
+        "fin-invoice"
+      ],
+      "blocked_doc": null,
+      "request_id": "46389929-9cb3-4463-be11-1fe3e4456179",
+      "status": "answered",
+      "answer": "根据编号资料[1]，发票字段错误或重复报销时，申请人应在退回后七个工作日内补正，逾期重新发起申请。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "8f4b4dcb-e7cf-41de-80dd-1be72d631473",
+          "slug": "fin-invoice",
+          "text": "发票字段错误或重复报销时，申请人应在退回后七个工作日内补正，逾期重新发起申请。",
+          "headings": [
+            "电子发票验真规范",
+            "退回处理"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "fin-invoice"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 26.47,
+      "generation_ms": 2308.4,
+      "total_ms": 2362.55,
+      "input_tokens": 316,
+      "output_tokens": 32,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "c4203f0ef198debf",
+      "category": "single_document",
+      "username": "admin",
+      "question": "供应商付款申请需要哪些附件？",
+      "expected_answer": "合同、验收记录及发票",
+      "expected_docs": [
+        "fin-payment"
+      ],
+      "blocked_doc": null,
+      "request_id": "29776123-d889-4434-8762-a3bca10e48e1",
+      "status": "answered",
+      "answer": "根据编号资料[1]，供应商付款申请需要附合同、验收记录及发票。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "14038bc8-d6b9-4dbd-990d-cffc4ca122c2",
+          "slug": "fin-payment",
+          "text": "付款申请应附合同、验收记录及发票，财务核对收款账户与合同账户一致后才能排款。",
+          "headings": [
+            "供应商付款审批规则",
+            "付款依据"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "fin-payment"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 29.29,
+      "generation_ms": 1070.77,
+      "total_ms": 1130.68,
+      "input_tokens": 306,
+      "output_tokens": 20,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "9ef7edd2438fa805",
+      "category": "single_document",
+      "username": "admin",
+      "question": "超过五万元付款由谁批准？",
+      "expected_answer": "业务负责人和财务负责人",
+      "expected_docs": [
+        "fin-payment"
+      ],
+      "blocked_doc": null,
+      "request_id": "a2148fae-4c89-4923-b589-5fcf64e0b36a",
+      "status": "answered",
+      "answer": "根据编号资料[1]，单笔超过五万元的付款需业务负责人和财务负责人双重批准。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "14038bc8-d6b9-4dbd-990d-cffc4ca122c2",
+          "slug": "fin-payment",
+          "text": "单笔超过五万元的付款需业务负责人和财务负责人双重批准，出纳不得自行修改收款账户。",
+          "headings": [
+            "供应商付款审批规则",
+            "大额付款"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "fin-payment"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 54.9,
+      "generation_ms": 1252.06,
+      "total_ms": 1333.97,
+      "input_tokens": 338,
+      "output_tokens": 23,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "20a0362c6e5fd25f",
+      "category": "single_document",
+      "username": "admin",
+      "question": "出纳能自行修改供应商收款账户吗？",
+      "expected_answer": "不能",
+      "expected_docs": [
+        "fin-payment"
+      ],
+      "blocked_doc": null,
+      "request_id": "649383bb-c519-4a72-a707-2b90e640de3b",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": false,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 24.55,
+      "generation_ms": 5861.72,
+      "total_ms": 5915.6,
+      "input_tokens": 309,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "58c95504f4d28a5d",
+      "category": "single_document",
+      "username": "admin",
+      "question": "下季度预算何时提交？",
+      "expected_answer": "本季度结束前十个工作日",
+      "expected_docs": [
+        "fin-budget"
+      ],
+      "blocked_doc": null,
+      "request_id": "3db89a00-3042-4181-b437-45898f810d03",
+      "status": "answered",
+      "answer": "下季度预算应在每季度结束前十个工作日提交 [1]。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "8c738608-4321-4297-8605-6663eaf1fa9c",
+          "slug": "fin-budget",
+          "text": "各部门在每季度结束前十个工作日提交下季度预算，列明项目、金额和责任人。",
+          "headings": [
+            "季度预算调整流程",
+            "预算申报"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "fin-budget"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 27.58,
+      "generation_ms": 998.5,
+      "total_ms": 1057.7,
+      "input_tokens": 340,
+      "output_tokens": 17,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "def19f8817cf616d",
+      "category": "single_document",
+      "username": "admin",
+      "question": "预算申报要列明什么？",
+      "expected_answer": "项目、金额和责任人",
+      "expected_docs": [
+        "fin-budget"
+      ],
+      "blocked_doc": null,
+      "request_id": "2392f942-4a32-4083-9c12-35d68a5fe0bf",
+      "status": "answered",
+      "answer": "根据编号资料[1]，预算申报要列明项目、金额和责任人。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "8c738608-4321-4297-8605-6663eaf1fa9c",
+          "slug": "fin-budget",
+          "text": "各部门在每季度结束前十个工作日提交下季度预算，列明项目、金额和责任人。",
+          "headings": [
+            "季度预算调整流程",
+            "预算申报"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "fin-budget"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 26.95,
+      "generation_ms": 1247.01,
+      "total_ms": 1302.71,
+      "input_tokens": 314,
+      "output_tokens": 19,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "6f0fb92e67dbbd70",
+      "category": "single_document",
+      "username": "admin",
+      "question": "预计超支超过多少需要重新审批？",
+      "expected_answer": "百分之十",
+      "expected_docs": [
+        "fin-budget"
+      ],
+      "blocked_doc": null,
+      "request_id": "db0bfced-74de-4354-a338-1a3df3e1acf7",
+      "status": "answered",
+      "answer": "预计超支超过百分之十需要重新审批。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "8c738608-4321-4297-8605-6663eaf1fa9c",
+          "slug": "fin-budget",
+          "text": "同一预算项目预计超支超过百分之十时，应在支出发生前取得财务负责人批准并更新预算记录。",
+          "headings": [
+            "季度预算调整流程",
+            "超预算处理"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "fin-budget"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 29.23,
+      "generation_ms": 999.05,
+      "total_ms": 1055.4,
+      "input_tokens": 343,
+      "output_tokens": 14,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "51ce351e6224d7ad",
+      "category": "single_document",
+      "username": "admin",
+      "question": "临时公务备用金最高可借多少？",
+      "expected_answer": "一千元",
+      "expected_docs": [
+        "fin-petty"
+      ],
+      "blocked_doc": null,
+      "request_id": "c478096b-2053-4638-87b7-ca7d023a5c88",
+      "status": "answered",
+      "answer": "根据编号资料[1]，临时公务备用金最高可借用不超过一千元。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "ab396d2d-8041-4660-b104-2ffe8aef0c1a",
+          "slug": "fin-petty",
+          "text": "员工因临时公务可借用不超过一千元备用金，主管审批后由财务登记。",
+          "headings": [
+            "备用金借用与归还办法",
+            "借用限额"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "fin-petty"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 27.16,
+      "generation_ms": 3535.69,
+      "total_ms": 3590.63,
+      "input_tokens": 343,
+      "output_tokens": 19,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "ec098a5e6cc38735",
+      "category": "single_document",
+      "username": "admin",
+      "question": "备用金由谁审批？",
+      "expected_answer": "主管",
+      "expected_docs": [
+        "fin-petty"
+      ],
+      "blocked_doc": null,
+      "request_id": "7d1b7c26-a4ec-405b-b1dd-bef28d78523f",
+      "status": "answered",
+      "answer": "备用金由主管审批 [1]。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "ab396d2d-8041-4660-b104-2ffe8aef0c1a",
+          "slug": "fin-petty",
+          "text": "员工因临时公务可借用不超过一千元备用金，主管审批后由财务登记。",
+          "headings": [
+            "备用金借用与归还办法",
+            "借用限额"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "fin-petty"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 28.69,
+      "generation_ms": 1480.86,
+      "total_ms": 1538.57,
+      "input_tokens": 337,
+      "output_tokens": 10,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "1c47d2dd3c52b6cb",
+      "category": "single_document",
+      "username": "admin",
+      "question": "公务结束后多久归还备用金余额？",
+      "expected_answer": "五个工作日内",
+      "expected_docs": [
+        "fin-petty"
+      ],
+      "blocked_doc": null,
+      "request_id": "45ef2ef6-9260-4bb6-9a28-80774f72a90d",
+      "status": "answered",
+      "answer": "公务结束后五个工作日内归还备用金余额。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "ab396d2d-8041-4660-b104-2ffe8aef0c1a",
+          "slug": "fin-petty",
+          "text": "公务结束后五个工作日内凭票据核销并归还余额；逾期借款将暂停新的备用金申请。",
+          "headings": [
+            "备用金借用与归还办法",
+            "归还时限"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "fin-petty"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 29.03,
+      "generation_ms": 1067.96,
+      "total_ms": 1123.63,
+      "input_tokens": 307,
+      "output_tokens": 14,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "b2742f0a77bee0ce",
+      "category": "single_document",
+      "username": "admin",
+      "question": "新供应商需要几个客户参考案例？",
+      "expected_answer": "至少三个",
+      "expected_docs": [
+        "proc-supplier"
+      ],
+      "blocked_doc": null,
+      "request_id": "973b251c-5419-4bc9-90a9-573e58f87ef3",
+      "status": "answered",
+      "answer": "新供应商需要提交至少三个客户参考案例 [1]。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "40e2e0e0-2e42-4e15-a35e-adf462527f45",
+          "slug": "proc-supplier",
+          "text": "新供应商需提交营业执照、收款账户证明及至少三个客户参考案例。采购部核对主体与账户一致性。",
+          "headings": [
+            "供应商准入管理规范",
+            "准入材料"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "proc-supplier"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 27.8,
+      "generation_ms": 1293.15,
+      "total_ms": 1350.1,
+      "input_tokens": 307,
+      "output_tokens": 14,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "ecd5fe9138777c0e",
+      "category": "single_document",
+      "username": "admin",
+      "question": "供应商启用前由谁做风险复核？",
+      "expected_answer": "合规岗",
+      "expected_docs": [
+        "proc-supplier"
+      ],
+      "blocked_doc": null,
+      "request_id": "961d800c-7691-4886-b923-0dda3947efac",
+      "status": "answered",
+      "answer": "根据编号资料[1]，供应商启用前由合规岗完成制裁名单与利益冲突核查。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "40e2e0e0-2e42-4e15-a35e-adf462527f45",
+          "slug": "proc-supplier",
+          "text": "合规岗完成制裁名单与利益冲突核查后方可启用供应商编码；复核有效期为一年。",
+          "headings": [
+            "供应商准入管理规范",
+            "风险复核"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "proc-supplier"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 23.2,
+      "generation_ms": 1423.55,
+      "total_ms": 1477.68,
+      "input_tokens": 302,
+      "output_tokens": 22,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "c6407da1cc843f50",
+      "category": "single_document",
+      "username": "admin",
+      "question": "供应商风险复核有效期多久？",
+      "expected_answer": "一年",
+      "expected_docs": [
+        "proc-supplier"
+      ],
+      "blocked_doc": null,
+      "request_id": "c87297ca-dc16-425f-a0bd-ab23911c519c",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": false,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 27.01,
+      "generation_ms": 822.88,
+      "total_ms": 880.58,
+      "input_tokens": 329,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "ed42eba7dde2677a",
+      "category": "single_document",
+      "username": "admin",
+      "question": "两万元采购要几家供应商报价？",
+      "expected_answer": "三家独立供应商",
+      "expected_docs": [
+        "proc-quote"
+      ],
+      "blocked_doc": null,
+      "request_id": "9e150a69-6076-47bb-b8bf-924839f9ab74",
+      "status": "answered",
+      "answer": "两万元采购应取得三家独立供应商的有效报价并保留比较表。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "25c09798-4989-4183-bd56-6a11d6602f8c",
+          "slug": "proc-quote",
+          "text": "单笔采购金额超过一万元且不超过十万元时，应取得三家独立供应商的有效报价并保留比较表。",
+          "headings": [
+            "采购比价与招标规则",
+            "比价门槛"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "proc-quote"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 21.13,
+      "generation_ms": 3526.17,
+      "total_ms": 3583.7,
+      "input_tokens": 690,
+      "output_tokens": 65,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "4f709238fbb98d08",
+      "category": "single_document",
+      "username": "admin",
+      "question": "超过十万元采购原则上采用什么方式？",
+      "expected_answer": "公开招标",
+      "expected_docs": [
+        "proc-quote"
+      ],
+      "blocked_doc": null,
+      "request_id": "7399065a-9d8e-4d8a-823b-c15fb4acc76a",
+      "status": "answered",
+      "answer": "超过十万元采购原则上采用公开招标方式 [1]。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "25c09798-4989-4183-bd56-6a11d6602f8c",
+          "slug": "proc-quote",
+          "text": "单笔采购金额超过十万元时原则上公开招标；例外情形须由采购负责人和法务共同批准。",
+          "headings": [
+            "采购比价与招标规则",
+            "招标门槛"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "proc-quote"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 26.85,
+      "generation_ms": 1989.95,
+      "total_ms": 2043.11,
+      "input_tokens": 311,
+      "output_tokens": 14,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "53a0832a34e23f03",
+      "category": "single_document",
+      "username": "admin",
+      "question": "招标例外由谁共同批准？",
+      "expected_answer": "采购负责人和法务",
+      "expected_docs": [
+        "proc-quote"
+      ],
+      "blocked_doc": null,
+      "request_id": "4692edce-6363-465d-b5f2-e3f9184dd9d9",
+      "status": "answered",
+      "answer": "招标例外须由采购负责人和法务共同批准。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "25c09798-4989-4183-bd56-6a11d6602f8c",
+          "slug": "proc-quote",
+          "text": "单笔采购金额超过十万元时原则上公开招标；例外情形须由采购负责人和法务共同批准。",
+          "headings": [
+            "采购比价与招标规则",
+            "招标门槛"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "proc-quote"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 33.99,
+      "generation_ms": 957.03,
+      "total_ms": 1015.92,
+      "input_tokens": 349,
+      "output_tokens": 16,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "1d2511be0bbc11fb",
+      "category": "single_document",
+      "username": "admin",
+      "question": "采购到货由哪些人共同验收？",
+      "expected_answer": "需求部门和采购部各一人",
+      "expected_docs": [
+        "proc-acceptance"
+      ],
+      "blocked_doc": null,
+      "request_id": "d6e37b6f-62d2-4701-b201-8980ca6065bf",
+      "status": "answered",
+      "answer": "根据编号资料[1]，采购到货由需求部门与采购部各派一人共同验收。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "fd378fda-c0ee-424f-b631-c4ef29d332ba",
+          "slug": "proc-acceptance",
+          "text": "设备和物料到货时由需求部门与采购部各派一人共同验收，记录数量、型号和外观。",
+          "headings": [
+            "采购到货验收标准",
+            "双人验收"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "proc-acceptance"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 31.46,
+      "generation_ms": 2511.22,
+      "total_ms": 2570.93,
+      "input_tokens": 318,
+      "output_tokens": 23,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "23913d57f8cce09c",
+      "category": "single_document",
+      "username": "admin",
+      "question": "到货型号不符多久通知供应商？",
+      "expected_answer": "两个工作日内",
+      "expected_docs": [
+        "proc-acceptance"
+      ],
+      "blocked_doc": null,
+      "request_id": "512efb55-1c95-4dad-88b3-ba93ea8e7b0a",
+      "status": "answered",
+      "answer": "到货型号不符时，应在两个工作日内书面通知供应商。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "fd378fda-c0ee-424f-b631-c4ef29d332ba",
+          "slug": "proc-acceptance",
+          "text": "发现数量或型号差异时，应在两个工作日内书面通知供应商，未确认差异前不得办理付款。",
+          "headings": [
+            "采购到货验收标准",
+            "差异处理"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "proc-acceptance"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 43.3,
+      "generation_ms": 1457.1,
+      "total_ms": 1528.88,
+      "input_tokens": 299,
+      "output_tokens": 18,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "675f1ac72df3f4f3",
+      "category": "single_document",
+      "username": "admin",
+      "question": "差异未确认前可以付款吗？",
+      "expected_answer": "不可以",
+      "expected_docs": [
+        "proc-acceptance"
+      ],
+      "blocked_doc": null,
+      "request_id": "df072d1e-aacd-49df-8ed4-b2c5953e6fe4",
+      "status": "answered",
+      "answer": "发现数量或型号差异时，应在两个工作日内书面通知供应商，未确认差异前不得办理付款。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "fd378fda-c0ee-424f-b631-c4ef29d332ba",
+          "slug": "proc-acceptance",
+          "text": "发现数量或型号差异时，应在两个工作日内书面通知供应商，未确认差异前不得办理付款。",
+          "headings": [
+            "采购到货验收标准",
+            "差异处理"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "proc-acceptance"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 36.25,
+      "generation_ms": 5472.31,
+      "total_ms": 5533.74,
+      "input_tokens": 686,
+      "output_tokens": 68,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "01e67988d9783fd3",
+      "category": "single_document",
+      "username": "admin",
+      "question": "超过多少金额的采购合同需要法务评审？",
+      "expected_answer": "五万元",
+      "expected_docs": [
+        "proc-contract"
+      ],
+      "blocked_doc": null,
+      "request_id": "edcb9442-c1a6-4365-ae03-cd77fedab4e8",
+      "status": "answered",
+      "answer": "根据编号资料[1]，超过五万元的采购合同需要法务评审。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "86e3c40b-6eb6-4fcd-9019-7be3895f1ca1",
+          "slug": "proc-contract",
+          "text": "采购合同总金额超过五万元或包含数据处理条款时，签署前必须经法务评审。",
+          "headings": [
+            "采购合同评审流程",
+            "法务评审"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "proc-contract"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 24.74,
+      "generation_ms": 3372.25,
+      "total_ms": 3426.52,
+      "input_tokens": 314,
+      "output_tokens": 18,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "93b6ebcda028654c",
+      "category": "single_document",
+      "username": "admin",
+      "question": "包含数据处理条款的合同需要法务评审吗？",
+      "expected_answer": "需要",
+      "expected_docs": [
+        "proc-contract"
+      ],
+      "blocked_doc": null,
+      "request_id": "c91d41eb-8662-4616-8ee7-89ebf813162d",
+      "status": "answered",
+      "answer": "包含数据处理条款的合同需要法务评审 [1]。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "86e3c40b-6eb6-4fcd-9019-7be3895f1ca1",
+          "slug": "proc-contract",
+          "text": "采购合同总金额超过五万元或包含数据处理条款时，签署前必须经法务评审。",
+          "headings": [
+            "采购合同评审流程",
+            "法务评审"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "proc-contract"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 28.63,
+      "generation_ms": 3583.27,
+      "total_ms": 3636.53,
+      "input_tokens": 315,
+      "output_tokens": 14,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "7a9a3ad04d4836a2",
+      "category": "single_document",
+      "username": "admin",
+      "question": "可以先签采购合同再补审批吗？",
+      "expected_answer": "不可以",
+      "expected_docs": [
+        "proc-contract"
+      ],
+      "blocked_doc": null,
+      "request_id": "160ae146-cf28-4f98-9c20-5bb5a1287feb",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": false,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 28.14,
+      "generation_ms": 4045.07,
+      "total_ms": 4102.58,
+      "input_tokens": 313,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "5e946243bc4f6d29",
+      "category": "single_document",
+      "username": "admin",
+      "question": "哪些情形可以启动紧急采购？",
+      "expected_answer": "生产中断或重大安全故障",
+      "expected_docs": [
+        "proc-emergency"
+      ],
+      "blocked_doc": null,
+      "request_id": "18f1e4ca-6b65-4463-b068-ac86bc64fa17",
+      "status": "answered",
+      "answer": "根据编号资料[1]，生产中断或重大安全故障可以启动紧急采购。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "848e8627-83ab-48af-9b5c-e4b33c09a1f0",
+          "slug": "proc-emergency",
+          "text": "生产中断或重大安全故障可启动紧急采购，申请人须记录事件编号、预计金额和无法常规采购的原因。",
+          "headings": [
+            "紧急采购例外办法",
+            "适用场景"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "proc-emergency"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 30.53,
+      "generation_ms": 5173.58,
+      "total_ms": 5233.08,
+      "input_tokens": 311,
+      "output_tokens": 19,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "bc03cd8fd9dcc125",
+      "category": "single_document",
+      "username": "admin",
+      "question": "紧急采购申请要记录哪些信息？",
+      "expected_answer": "事件编号、预计金额和原因",
+      "expected_docs": [
+        "proc-emergency"
+      ],
+      "blocked_doc": null,
+      "request_id": "e2346155-08cf-4bb6-864c-d65ece510cad",
+      "status": "answered",
+      "answer": "紧急采购申请需记录事件编号、预计金额和无法常规采购的原因。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "848e8627-83ab-48af-9b5c-e4b33c09a1f0",
+          "slug": "proc-emergency",
+          "text": "生产中断或重大安全故障可启动紧急采购，申请人须记录事件编号、预计金额和无法常规采购的原因。",
+          "headings": [
+            "紧急采购例外办法",
+            "适用场景"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "proc-emergency"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 21.49,
+      "generation_ms": 6095.55,
+      "total_ms": 6147.81,
+      "input_tokens": 666,
+      "output_tokens": 54,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "aea9461a47c4f29b",
+      "category": "single_document",
+      "username": "admin",
+      "question": "五千元以内紧急采购多久补审批？",
+      "expected_answer": "二十四小时内",
+      "expected_docs": [
+        "proc-emergency"
+      ],
+      "blocked_doc": null,
+      "request_id": "e3edd411-a5cf-4660-85fa-f752b1b05ac7",
+      "status": "answered",
+      "answer": "根据编号资料[1]，单笔五千元以内的紧急采购可先由值班负责人确认，然后在二十四小时内补交采购负责人审批。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "848e8627-83ab-48af-9b5c-e4b33c09a1f0",
+          "slug": "proc-emergency",
+          "text": "单笔五千元以内的紧急采购可先由值班负责人确认，二十四小时内补交采购负责人审批。",
+          "headings": [
+            "紧急采购例外办法",
+            "事后复核"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "proc-emergency"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 23.85,
+      "generation_ms": 7729.72,
+      "total_ms": 7781.84,
+      "input_tokens": 304,
+      "output_tokens": 32,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "3b6b9aa102f3465c",
+      "category": "single_document",
+      "username": "admin",
+      "question": "生产系统权限由谁批准？",
+      "expected_answer": "直属主管和系统负责人",
+      "expected_docs": [
+        "it-access"
+      ],
+      "blocked_doc": null,
+      "request_id": "dad13c85-b556-446a-a4cf-6e936ff0428a",
+      "status": "answered",
+      "answer": "生产系统权限由直属主管和系统负责人批准 [1]。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "42ba4559-8133-4fcd-8bb7-9b0a337c31e3",
+          "slug": "it-access",
+          "text": "生产系统权限由直属主管和系统负责人批准，默认有效期九十天；到期须重新申请。",
+          "headings": [
+            "系统账号与权限管理",
+            "开通与期限"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "it-access"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 21.45,
+      "generation_ms": 7050.02,
+      "total_ms": 7105.11,
+      "input_tokens": 312,
+      "output_tokens": 15,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "33e105a4b0dd2313",
+      "category": "single_document",
+      "username": "admin",
+      "question": "生产系统权限默认有效期多久？",
+      "expected_answer": "九十天",
+      "expected_docs": [
+        "it-access"
+      ],
+      "blocked_doc": null,
+      "request_id": "a6cf3d4e-abd9-4ab8-b8f7-ebd5c161d897",
+      "status": "answered",
+      "answer": "生产系统权限默认有效期九十天 [1]。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "42ba4559-8133-4fcd-8bb7-9b0a337c31e3",
+          "slug": "it-access",
+          "text": "生产系统权限由直属主管和系统负责人批准，默认有效期九十天；到期须重新申请。",
+          "headings": [
+            "系统账号与权限管理",
+            "开通与期限"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "it-access"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 38.32,
+      "generation_ms": 1471.98,
+      "total_ms": 1540.25,
+      "input_tokens": 307,
+      "output_tokens": 12,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "c3706830cb3ee95f",
+      "category": "single_document",
+      "username": "admin",
+      "question": "离职通知后多久撤销生产账号？",
+      "expected_answer": "四小时内",
+      "expected_docs": [
+        "it-access"
+      ],
+      "blocked_doc": null,
+      "request_id": "3b06d977-6092-4177-b19b-68d39ec11fe3",
+      "status": "answered",
+      "answer": "根据编号资料[1]，人事部发出离职通知后，IT值班人员须在四小时内撤销生产系统账号和VPN权限。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "42ba4559-8133-4fcd-8bb7-9b0a337c31e3",
+          "slug": "it-access",
+          "text": "人事部发出离职通知后，IT 值班人员须在四小时内撤销生产系统账号和 VPN 权限。",
+          "headings": [
+            "系统账号与权限管理",
+            "离职撤销"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "it-access"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 28.13,
+      "generation_ms": 34420.54,
+      "total_ms": 34479.78,
+      "input_tokens": 307,
+      "output_tokens": 30,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "d16a272ee70fbdef",
+      "category": "single_document",
+      "username": "admin",
+      "question": "公司笔记本必须开启什么保护？",
+      "expected_answer": "全盘加密和自动锁屏",
+      "expected_docs": [
+        "it-device"
+      ],
+      "blocked_doc": null,
+      "request_id": "b011b38a-beaa-4bfb-a280-fbd295173808",
+      "status": "answered",
+      "answer": "公司笔记本必须开启全盘加密和自动锁屏 [1]。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "cfaf8afe-bd12-4d7e-b02e-f0505744f9d1",
+          "slug": "it-device",
+          "text": "办公设备与介质使用规定\n\n设备保护\n公司笔记本必须开启全盘加密和自动锁屏；禁止使用未经批准的移动存储设备复制工作资料。\n\n遗失上报\n设备丢失应在发现后一小时内报告 IT 服务台和信息安全岗，说明设备编号及最后使用地点。",
+          "headings": []
+        }
+      ],
+      "cited_docs": [
+        "it-device"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 26.71,
+      "generation_ms": 4551.09,
+      "total_ms": 4606.41,
+      "input_tokens": 337,
+      "output_tokens": 16,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "0848393b276657f5",
+      "category": "single_document",
+      "username": "admin",
+      "question": "可用未批准的 U 盘复制资料吗？",
+      "expected_answer": "不可以",
+      "expected_docs": [
+        "it-device"
+      ],
+      "blocked_doc": null,
+      "request_id": "977d0a81-811d-45fa-a2f3-475bed2f5799",
+      "status": "answered",
+      "answer": "禁止使用未经批准的移动存储设备复制工作资料。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "cfaf8afe-bd12-4d7e-b02e-f0505744f9d1",
+          "slug": "it-device",
+          "text": "办公设备与介质使用规定\n\n设备保护\n公司笔记本必须开启全盘加密和自动锁屏；禁止使用未经批准的移动存储设备复制工作资料。\n\n遗失上报\n设备丢失应在发现后一小时内报告 IT 服务台和信息安全岗，说明设备编号及最后使用地点。",
+          "headings": []
+        }
+      ],
+      "cited_docs": [
+        "it-device"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 22.31,
+      "generation_ms": 18386.59,
+      "total_ms": 18438.95,
+      "input_tokens": 804,
+      "output_tokens": 65,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "de27ce4c58a381c0",
+      "category": "single_document",
+      "username": "admin",
+      "question": "设备丢失后多久上报？",
+      "expected_answer": "一小时内",
+      "expected_docs": [
+        "it-device"
+      ],
+      "blocked_doc": null,
+      "request_id": "6eef35de-09db-403a-bdc7-657cc0d9669f",
+      "status": "answered",
+      "answer": "设备丢失应在发现后一小时内报告 IT 服务台和信息安全岗，说明设备编号及最后使用地点。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "cfaf8afe-bd12-4d7e-b02e-f0505744f9d1",
+          "slug": "it-device",
+          "text": "办公设备与介质使用规定\n\n设备保护\n公司笔记本必须开启全盘加密和自动锁屏；禁止使用未经批准的移动存储设备复制工作资料。\n\n遗失上报\n设备丢失应在发现后一小时内报告 IT 服务台和信息安全岗，说明设备编号及最后使用地点。",
+          "headings": []
+        }
+      ],
+      "cited_docs": [
+        "it-device"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 19.88,
+      "generation_ms": 2619.18,
+      "total_ms": 2664.25,
+      "input_tokens": 327,
+      "output_tokens": 27,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "a2fb68686caf6574",
+      "category": "single_document",
+      "username": "admin",
+      "question": "VPN 登录必须启用什么验证？",
+      "expected_answer": "多因素认证",
+      "expected_docs": [
+        "it-vpn"
+      ],
+      "blocked_doc": null,
+      "request_id": "0f33137d-6568-4c2a-9138-fcfb043a2316",
+      "status": "answered",
+      "answer": "VPN 登录必须启用多因素认证。[1][2][3]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "c43c7c9c-7df2-44e0-81e6-03046f5f123d",
+          "slug": "it-vpn",
+          "text": "远程接入公司网络必须启用多因素认证，不得共享 VPN 账号或将令牌交给他人。",
+          "headings": [
+            "远程接入与 VPN 规范",
+            "登录控制"
+          ]
+        },
+        {
+          "document_id": "8f7e8d46-9a73-4569-9738-0fafac35e70b",
+          "slug": "sec-password",
+          "text": "管理员账号必须启用多因素认证；异常地点登录会触发二次核验和安全告警。",
+          "headings": [
+            "账号口令与多因素认证要求",
+            "高风险登录"
+          ]
+        },
+        {
+          "document_id": "ee271962-808c-4047-8320-6d6d567d11d7",
+          "slug": "hr-remote",
+          "text": "远程办公必须使用公司 VPN 和多因素认证，不得在公共设备下载内部资料。",
+          "headings": [
+            "远程办公管理办法",
+            "信息保护"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "it-vpn",
+        "sec-password",
+        "hr-remote"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 26.62,
+      "generation_ms": 53823.79,
+      "total_ms": 53879.67,
+      "input_tokens": 690,
+      "output_tokens": 38,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "9d08d1760ea48337",
+      "category": "single_document",
+      "username": "admin",
+      "question": "VPN 账号可以共享吗？",
+      "expected_answer": "不可以",
+      "expected_docs": [
+        "it-vpn"
+      ],
+      "blocked_doc": null,
+      "request_id": "d0bf427e-95c5-4104-856e-d4912e2b8767",
+      "status": "answered",
+      "answer": "根据编号资料 [1]，远程接入公司网络必须启用多因素认证，不得共享 VPN 账号或将令牌交给他人。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "c43c7c9c-7df2-44e0-81e6-03046f5f123d",
+          "slug": "it-vpn",
+          "text": "远程接入公司网络必须启用多因素认证，不得共享 VPN 账号或将令牌交给他人。",
+          "headings": [
+            "远程接入与 VPN 规范",
+            "登录控制"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "it-vpn"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 23.9,
+      "generation_ms": 3180.52,
+      "total_ms": 3234.0,
+      "input_tokens": 314,
+      "output_tokens": 31,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "5eb3bc5815e5862c",
+      "category": "single_document",
+      "username": "admin",
+      "question": "境外接入要提前多久报备？",
+      "expected_answer": "五个工作日",
+      "expected_docs": [
+        "it-vpn"
+      ],
+      "blocked_doc": null,
+      "request_id": "a982a123-7c65-4e79-88f9-3dee347dd473",
+      "status": "answered",
+      "answer": "员工因公境外接入应至少提前五个工作日向信息安全岗报备访问国家与时段。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "c43c7c9c-7df2-44e0-81e6-03046f5f123d",
+          "slug": "it-vpn",
+          "text": "员工因公境外接入应至少提前五个工作日向信息安全岗报备访问国家与时段。",
+          "headings": [
+            "远程接入与 VPN 规范",
+            "境外接入"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "it-vpn"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 35.89,
+      "generation_ms": 3199.95,
+      "total_ms": 3261.95,
+      "input_tokens": 708,
+      "output_tokens": 55,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "daeaa93dfe61a0fb",
+      "category": "single_document",
+      "username": "admin",
+      "question": "常规生产变更窗口是什么时间？",
+      "expected_answer": "每周三二十点至二十二点",
+      "expected_docs": [
+        "it-change"
+      ],
+      "blocked_doc": null,
+      "request_id": "07a03f97-e827-4db7-b6ea-22a327eeb8ef",
+      "status": "answered",
+      "answer": "常规生产变更窗口是每周三二十点至二十二点 [1]。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "c1da61d1-2cb6-4db4-ba22-4b3f91430d1f",
+          "slug": "it-change",
+          "text": "常规生产变更安排在每周三二十点至二十二点，申请单必须包含回滚方案与验证人。",
+          "headings": [
+            "生产系统变更管理",
+            "常规窗口"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "it-change"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 28.25,
+      "generation_ms": 2280.72,
+      "total_ms": 2340.42,
+      "input_tokens": 311,
+      "output_tokens": 17,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "504a51aa8cac77a0",
+      "category": "single_document",
+      "username": "admin",
+      "question": "变更申请单必须包含什么？",
+      "expected_answer": "回滚方案与验证人",
+      "expected_docs": [
+        "it-change"
+      ],
+      "blocked_doc": null,
+      "request_id": "cd7b96cd-77b8-4ffa-9a4d-f5e56a24ddf5",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": false,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 22.64,
+      "generation_ms": 5272.96,
+      "total_ms": 5325.95,
+      "input_tokens": 309,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "35ab3a53c9d52b09",
+      "category": "single_document",
+      "username": "admin",
+      "question": "紧急变更多久补交复盘记录？",
+      "expected_answer": "二十四小时内",
+      "expected_docs": [
+        "it-change"
+      ],
+      "blocked_doc": null,
+      "request_id": "573bf97a-5585-41ae-8d91-bab14840e8cc",
+      "status": "answered",
+      "answer": "紧急变更需在实施后二十四小时内补交变更委员会复盘记录。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "c1da61d1-2cb6-4db4-ba22-4b3f91430d1f",
+          "slug": "it-change",
+          "text": "紧急变更可由值班经理先授权实施，实施后二十四小时内补交变更委员会复盘记录。",
+          "headings": [
+            "生产系统变更管理",
+            "紧急变更"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "it-change"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 27.04,
+      "generation_ms": 1238.9,
+      "total_ms": 1295.11,
+      "input_tokens": 306,
+      "output_tokens": 19,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "9b49ebcb4ad69a72",
+      "category": "single_document",
+      "username": "admin",
+      "question": "核心业务不可用属于什么级别？",
+      "expected_answer": "P1",
+      "expected_docs": [
+        "it-incident"
+      ],
+      "blocked_doc": null,
+      "request_id": "f96649ab-ea76-4188-b1fc-c135b4a571bb",
+      "status": "answered",
+      "answer": "核心业务不可用属于 P1 级别 [1]。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "eb93b48f-4890-40e9-b1d6-1146f0c2e6d0",
+          "slug": "it-incident",
+          "text": "核心业务不可用属于 P1，值班人员应在发现后十五分钟内通知应急负责人。",
+          "headings": [
+            "信息系统故障响应分级",
+            "一级故障"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "it-incident"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 25.37,
+      "generation_ms": 5643.23,
+      "total_ms": 5696.8,
+      "input_tokens": 293,
+      "output_tokens": 16,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "854e6e486c9745dd",
+      "category": "single_document",
+      "username": "admin",
+      "question": "P1 故障多久通知应急负责人？",
+      "expected_answer": "十五分钟内",
+      "expected_docs": [
+        "it-incident"
+      ],
+      "blocked_doc": null,
+      "request_id": "f3b7b379-6201-4572-b454-9daf158a0a85",
+      "status": "answered",
+      "answer": "根据编号资料[1]，P1故障属于核心业务不可用，值班人员应在发现后十五分钟内通知应急负责人。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "eb93b48f-4890-40e9-b1d6-1146f0c2e6d0",
+          "slug": "it-incident",
+          "text": "核心业务不可用属于 P1，值班人员应在发现后十五分钟内通知应急负责人。",
+          "headings": [
+            "信息系统故障响应分级",
+            "一级故障"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "it-incident"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 21.9,
+      "generation_ms": 4796.28,
+      "total_ms": 4847.29,
+      "input_tokens": 306,
+      "output_tokens": 29,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "177521f963c74ff5",
+      "category": "single_document",
+      "username": "admin",
+      "question": "P1 故障多久更新一次进展？",
+      "expected_answer": "每三十分钟",
+      "expected_docs": [
+        "it-incident"
+      ],
+      "blocked_doc": null,
+      "request_id": "e469e127-4d1d-4071-9809-fedc4d731e75",
+      "status": "answered",
+      "answer": "P1 故障每三十分钟更新一次进展。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "eb93b48f-4890-40e9-b1d6-1146f0c2e6d0",
+          "slug": "it-incident",
+          "text": "P1 处置期间每三十分钟更新一次进展；恢复后两个工作日内完成事故复盘。",
+          "headings": [
+            "信息系统故障响应分级",
+            "进展通报"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "it-incident"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 21.34,
+      "generation_ms": 1292.65,
+      "total_ms": 1341.65,
+      "input_tokens": 302,
+      "output_tokens": 15,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "91bb5bf0456f0bd6",
+      "category": "single_document",
+      "username": "admin",
+      "question": "企业数据分为哪四级？",
+      "expected_answer": "公开、内部、机密、受限",
+      "expected_docs": [
+        "sec-classification"
+      ],
+      "blocked_doc": null,
+      "request_id": "4f2d58fe-6d6d-4ec6-a05c-71a8b3436697",
+      "status": "answered",
+      "answer": "企业数据分为公开、内部、机密、受限四级管理。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "c96b8520-41c6-4666-bd2a-d6e89988a53a",
+          "slug": "sec-classification",
+          "text": "数据按公开、内部、机密、受限四级管理，文档所有者在创建时标注级别。",
+          "headings": [
+            "企业数据分级办法",
+            "分级类别"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "sec-classification"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 21.9,
+      "generation_ms": 1928.49,
+      "total_ms": 1980.47,
+      "input_tokens": 298,
+      "output_tokens": 18,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "62c940dceff2e746",
+      "category": "single_document",
+      "username": "admin",
+      "question": "受限数据能上传公共云盘吗？",
+      "expected_answer": "不能",
+      "expected_docs": [
+        "sec-classification"
+      ],
+      "blocked_doc": null,
+      "request_id": "fcd3c4f4-cfc5-4802-989a-bad975d494c6",
+      "status": "answered",
+      "answer": "根据编号资料[1]，受限数据不得上传公共云盘或发送个人邮箱。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "c96b8520-41c6-4666-bd2a-d6e89988a53a",
+          "slug": "sec-classification",
+          "text": "受限数据不得上传公共云盘或发送个人邮箱；跨部门访问须由数据所有者和安全岗共同批准。",
+          "headings": [
+            "企业数据分级办法",
+            "受限数据"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "sec-classification"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 27.93,
+      "generation_ms": 3388.98,
+      "total_ms": 3446.23,
+      "input_tokens": 331,
+      "output_tokens": 20,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "82b0f4b09fb1c1ef",
+      "category": "single_document",
+      "username": "admin",
+      "question": "跨部门访问受限数据由谁批准？",
+      "expected_answer": "数据所有者和安全岗",
+      "expected_docs": [
+        "sec-classification"
+      ],
+      "blocked_doc": null,
+      "request_id": "75064404-e951-4114-97b3-ce593624a4e3",
+      "status": "answered",
+      "answer": "根据编号资料[1]，跨部门访问受限数据须由数据所有者和安全岗共同批准。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "c96b8520-41c6-4666-bd2a-d6e89988a53a",
+          "slug": "sec-classification",
+          "text": "受限数据不得上传公共云盘或发送个人邮箱；跨部门访问须由数据所有者和安全岗共同批准。",
+          "headings": [
+            "企业数据分级办法",
+            "受限数据"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "sec-classification"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 28.11,
+      "generation_ms": 3319.34,
+      "total_ms": 3376.12,
+      "input_tokens": 339,
+      "output_tokens": 23,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "24b8de8a51d0eeb3",
+      "category": "single_document",
+      "username": "admin",
+      "question": "工作账号口令至少多少字符？",
+      "expected_answer": "十四个字符",
+      "expected_docs": [
+        "sec-password"
+      ],
+      "blocked_doc": null,
+      "request_id": "35fca002-f00d-4db8-9f14-1447575be689",
+      "status": "answered",
+      "answer": "工作账号口令至少十四个字符 [1]。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "8f7e8d46-9a73-4569-9738-0fafac35e70b",
+          "slug": "sec-password",
+          "text": "工作账号口令至少十四个字符，不得与私人账号复用，也不得通过聊天工具明文传递。",
+          "headings": [
+            "账号口令与多因素认证要求",
+            "口令要求"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "sec-password"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 24.96,
+      "generation_ms": 4051.81,
+      "total_ms": 4108.04,
+      "input_tokens": 322,
+      "output_tokens": 13,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "782075d3865eb148",
+      "category": "single_document",
+      "username": "admin",
+      "question": "口令能通过聊天工具明文发送吗？",
+      "expected_answer": "不能",
+      "expected_docs": [
+        "sec-password"
+      ],
+      "blocked_doc": null,
+      "request_id": "f51a5ea9-40a5-4564-96b5-0837dfbf2ce1",
+      "status": "answered",
+      "answer": "口令能通过聊天工具明文发送吗？ [1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "8f7e8d46-9a73-4569-9738-0fafac35e70b",
+          "slug": "sec-password",
+          "text": "工作账号口令至少十四个字符，不得与私人账号复用，也不得通过聊天工具明文传递。",
+          "headings": [
+            "账号口令与多因素认证要求",
+            "口令要求"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "sec-password"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 27.9,
+      "generation_ms": 4714.72,
+      "total_ms": 4773.3,
+      "input_tokens": 321,
+      "output_tokens": 16,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "0c76342dbbf59dd1",
+      "category": "single_document",
+      "username": "admin",
+      "question": "管理员账号必须启用什么？",
+      "expected_answer": "多因素认证",
+      "expected_docs": [
+        "sec-password"
+      ],
+      "blocked_doc": null,
+      "request_id": "55c83cba-d4a2-47f0-802a-f03f0b3583aa",
+      "status": "answered",
+      "answer": "管理员账号必须启用多因素认证 [1]。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "8f7e8d46-9a73-4569-9738-0fafac35e70b",
+          "slug": "sec-password",
+          "text": "管理员账号必须启用多因素认证；异常地点登录会触发二次核验和安全告警。",
+          "headings": [
+            "账号口令与多因素认证要求",
+            "高风险登录"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "sec-password"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 25.62,
+      "generation_ms": 4486.94,
+      "total_ms": 4538.61,
+      "input_tokens": 312,
+      "output_tokens": 12,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "8c11439084904255",
+      "category": "single_document",
+      "username": "admin",
+      "question": "离职人员人事记录保留多久？",
+      "expected_answer": "三年",
+      "expected_docs": [
+        "sec-retention"
+      ],
+      "blocked_doc": null,
+      "request_id": "e7cfef08-d54b-46f4-82a1-e82e74ade5c8",
+      "status": "answered",
+      "answer": "离职人员的人事记录保留三年。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "a73403e0-f180-426d-93ef-95c87d4f461a",
+          "slug": "sec-retention",
+          "text": "离职人员的人事记录保留三年，已签署合同保留七年，系统访问日志至少保留一百八十天。",
+          "headings": [
+            "业务记录保存期限",
+            "保存期限"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "sec-retention"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 36.22,
+      "generation_ms": 1030.77,
+      "total_ms": 1092.57,
+      "input_tokens": 314,
+      "output_tokens": 12,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "3b0b2069e0c3ff71",
+      "category": "single_document",
+      "username": "admin",
+      "question": "已签署合同保留多久？",
+      "expected_answer": "七年",
+      "expected_docs": [
+        "sec-retention"
+      ],
+      "blocked_doc": null,
+      "request_id": "4437183d-3835-4eff-8c32-8fe7081e88c2",
+      "status": "answered",
+      "answer": "已签署合同保留七年。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "a73403e0-f180-426d-93ef-95c87d4f461a",
+          "slug": "sec-retention",
+          "text": "离职人员的人事记录保留三年，已签署合同保留七年，系统访问日志至少保留一百八十天。",
+          "headings": [
+            "业务记录保存期限",
+            "保存期限"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "sec-retention"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 24.0,
+      "generation_ms": 5587.96,
+      "total_ms": 5640.81,
+      "input_tokens": 302,
+      "output_tokens": 10,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "b8add418012a0355",
+      "category": "single_document",
+      "username": "admin",
+      "question": "系统访问日志至少保留多久？",
+      "expected_answer": "一百八十天",
+      "expected_docs": [
+        "sec-retention"
+      ],
+      "blocked_doc": null,
+      "request_id": "c4570f0d-84d3-4b6f-92a2-11718f72f4be",
+      "status": "answered",
+      "answer": "系统访问日志至少保留一百八十天。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "a73403e0-f180-426d-93ef-95c87d4f461a",
+          "slug": "sec-retention",
+          "text": "离职人员的人事记录保留三年，已签署合同保留七年，系统访问日志至少保留一百八十天。",
+          "headings": [
+            "业务记录保存期限",
+            "保存期限"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "sec-retention"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 28.09,
+      "generation_ms": 971.39,
+      "total_ms": 1028.48,
+      "input_tokens": 320,
+      "output_tokens": 13,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "f90da31823d768ad",
+      "category": "single_document",
+      "username": "admin",
+      "question": "访客进入办公区域需要做什么？",
+      "expected_answer": "出示证件、登记被访人并佩戴访客证",
+      "expected_docs": [
+        "sec-visitor"
+      ],
+      "blocked_doc": null,
+      "request_id": "7b1bf728-2288-447f-97fd-dd54661a5197",
+      "status": "answered",
+      "answer": "访客进入办公区域必须出示有效证件、登记被访人并佩戴访客证，被访人全程陪同。[1]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "84431012-f11f-4323-bee5-7f6413d61780",
+          "slug": "sec-visitor",
+          "text": "访客进入办公区域必须出示有效证件、登记被访人并佩戴访客证；被访人全程陪同。",
+          "headings": [
+            "访客登记与陪同规定",
+            "入园登记"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "sec-visitor"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 26.59,
+      "generation_ms": 6095.92,
+      "total_ms": 6151.91,
+      "input_tokens": 678,
+      "output_tokens": 64,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "b900d50f776c143e",
+      "category": "single_document",
+      "username": "admin",
+      "question": "访客由谁全程陪同？",
+      "expected_answer": "被访人",
+      "expected_docs": [
+        "sec-visitor"
+      ],
+      "blocked_doc": null,
+      "request_id": "6f0254da-2dad-474f-97f5-ea1152ba9fc0",
+      "status": "answered",
+      "answer": "根据编号资料[1]，访客进入办公区域必须出示有效证件、登记被访人并佩戴访客证；被访人全程陪同 [1]。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "84431012-f11f-4323-bee5-7f6413d61780",
+          "slug": "sec-visitor",
+          "text": "访客进入办公区域必须出示有效证件、登记被访人并佩戴访客证；被访人全程陪同。",
+          "headings": [
+            "访客登记与陪同规定",
+            "入园登记"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "sec-visitor"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 26.29,
+      "generation_ms": 2770.22,
+      "total_ms": 2824.54,
+      "input_tokens": 316,
+      "output_tokens": 36,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "57d117533e226d6d",
+      "category": "single_document",
+      "username": "admin",
+      "question": "十八点后接待访客要谁批准？",
+      "expected_answer": "行政负责人",
+      "expected_docs": [
+        "sec-visitor"
+      ],
+      "blocked_doc": null,
+      "request_id": "ffaae656-9d83-4664-8e47-3f1e7ad6ae63",
+      "status": "answered",
+      "answer": "根据编号资料[1]，工作日十八点后及非工作时间接待访客，须提前取得行政负责人批准并通知安保。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "32f37434-862f-4800-8b89-731e242418f9",
+          "slug": "sec-visitor",
+          "text": "工作日十八点后及非工作日接待访客，须提前取得行政负责人批准并通知安保。",
+          "headings": [
+            "访客登记与陪同规定",
+            "非工作时间"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "sec-visitor"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 147.77,
+      "generation_ms": 1984.95,
+      "total_ms": 2162.42,
+      "input_tokens": 347,
+      "output_tokens": 30,
+      "run_base_url": "http://127.0.0.1:8765",
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "68e566e8922fd366",
+      "category": "single_document",
+      "username": "admin",
+      "question": "受限数据对外传输由谁批准？",
+      "expected_answer": "数据所有者、法务和信息安全岗",
+      "expected_docs": [
+        "sec-export"
+      ],
+      "blocked_doc": null,
+      "request_id": "adf0856e-6a47-4109-be4d-78bea3b3e097",
+      "status": "answered",
+      "answer": "受限数据对外传输由数据所有者、法务和信息安全岗联合批准 [1]。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "06be0e6d-8d1e-4bbc-a2c0-6b3ae16283b6",
+          "slug": "sec-export",
+          "text": "受限数据对外传输须由数据所有者、法务和信息安全岗联合批准，申请中写明接收方与用途。",
+          "headings": [
+            "受限数据对外传输审批",
+            "审批链"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "sec-export"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 50.9,
+      "generation_ms": 1116.4,
+      "total_ms": 1192.73,
+      "input_tokens": 338,
+      "output_tokens": 21,
+      "run_base_url": "http://127.0.0.1:8765",
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "6145950be9ecd3f7",
+      "category": "single_document",
+      "username": "admin",
+      "question": "对外传输链接最长有效期多久？",
+      "expected_answer": "七天",
+      "expected_docs": [
+        "sec-export"
+      ],
+      "blocked_doc": null,
+      "request_id": "09ba3a50-1070-475b-ad8f-cde9d69fb9f4",
+      "status": "answered",
+      "answer": "对外传输链接最长有效期为七天 [1]。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "06be0e6d-8d1e-4bbc-a2c0-6b3ae16283b6",
+          "slug": "sec-export",
+          "text": "批准后使用加密链接并加水印，链接有效期最多七天；不得使用个人邮箱或公开分享链接。",
+          "headings": [
+            "受限数据对外传输审批",
+            "传输控制"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "sec-export"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 87.82,
+      "generation_ms": 1159.66,
+      "total_ms": 1271.62,
+      "input_tokens": 305,
+      "output_tokens": 12,
+      "run_base_url": "http://127.0.0.1:8765",
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "2569485aa190cff0",
+      "category": "single_document",
+      "username": "admin",
+      "question": "可以用个人邮箱发送受限数据吗？",
+      "expected_answer": "不可以",
+      "expected_docs": [
+        "sec-export"
+      ],
+      "blocked_doc": null,
+      "request_id": "e9d6e182-9963-442c-90ad-a9915e619759",
+      "status": "answered",
+      "answer": "不可以，受限数据不得上传公共云盘或发送个人邮箱。[1] 批准后使用加密链接并加水印，链接有效期最多七天，不得使用个人邮箱或公开分享链接。[2] 受限数据对外传输须由数据所有者、法务和信息安全岗联合批准。[3]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "5a9c8cfd-c777-4fbf-8cf7-30f0e90d2844",
+          "slug": "sec-classification",
+          "text": "受限数据不得上传公共云盘或发送个人邮箱；跨部门访问须由数据所有者和安全岗共同批准。",
+          "headings": [
+            "企业数据分级办法",
+            "受限数据"
+          ]
+        },
+        {
+          "document_id": "06be0e6d-8d1e-4bbc-a2c0-6b3ae16283b6",
+          "slug": "sec-export",
+          "text": "批准后使用加密链接并加水印，链接有效期最多七天；不得使用个人邮箱或公开分享链接。",
+          "headings": [
+            "受限数据对外传输审批",
+            "传输控制"
+          ]
+        },
+        {
+          "document_id": "06be0e6d-8d1e-4bbc-a2c0-6b3ae16283b6",
+          "slug": "sec-export",
+          "text": "受限数据对外传输须由数据所有者、法务和信息安全岗联合批准，申请中写明接收方与用途。",
+          "headings": [
+            "受限数据对外传输审批",
+            "审批链"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "sec-classification",
+        "sec-export"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 99.31,
+      "generation_ms": 3403.94,
+      "total_ms": 3528.95,
+      "input_tokens": 684,
+      "output_tokens": 109,
+      "run_base_url": "http://127.0.0.1:8765",
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "26518917a2403ead",
+      "category": "cross_document",
+      "username": "admin",
+      "question": "国内出差申请和出差费用报销分别有什么时限？",
+      "expected_answer": "出发前三个工作日申请；费用发生后三十个自然日内报销。",
+      "expected_docs": [
+        "hr-travel",
+        "fin-expense"
+      ],
+      "blocked_doc": null,
+      "request_id": "4bb948d8-4942-467e-8da1-ee2eea49dea3",
+      "status": "answered",
+      "answer": "国内出差申请应在出发前三个工作日提交 [1]。出差费用报销应在费用发生后三十个自然日内提交报销单和合规票据 [2]。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "aad5b476-7c57-4c6a-8d9e-fc6f8dd273d8",
+          "slug": "hr-travel",
+          "text": "国内出差申请应在出发前三个工作日提交，说明目的、预算和目的地；直属主管和部门负责人依次审批。",
+          "headings": [
+            "国内出差申请制度",
+            "行程审批"
+          ]
+        },
+        {
+          "document_id": "4a9cecf1-af4a-426f-ba68-412d7dab391f",
+          "slug": "fin-expense",
+          "text": "员工费用报销细则\r\n提交时限\r\n费用发生后三十个自然日内提交报销单和合规票据。逾期须说明原因并由部门负责人批准。\r\n审批分级\r\n单笔超过三千元须经财务复核；单笔超过一万元还须财务负责人批准。拆分报销以规避审批\r\n禁止。",
+          "headings": []
+        }
+      ],
+      "cited_docs": [
+        "hr-travel",
+        "fin-expense"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 46.07,
+      "generation_ms": 1529.4,
+      "total_ms": 1602.11,
+      "input_tokens": 351,
+      "output_tokens": 34,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "976a0dd6aab9839a",
+      "category": "cross_document",
+      "username": "admin",
+      "question": "采购到货后申请供应商付款，需要怎样验收并附哪些材料？",
+      "expected_answer": "需求部门和采购部双人验收；付款附合同、验收记录及发票。",
+      "expected_docs": [
+        "proc-acceptance",
+        "fin-payment"
+      ],
+      "blocked_doc": null,
+      "request_id": "23a2b5da-20ac-4d76-a8c8-e303d00bb7b3",
+      "status": "answered",
+      "answer": "由需求部门与采购部各派一人共同验收，记录数量、型号和外观。[3] 发现数量或型号差异时，应在两个工作日内书面通知供应商，未确认差异前不得办理付款。[1] 付款申请应附合同、验收记录及发票。[2]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "fd378fda-c0ee-424f-b631-c4ef29d332ba",
+          "slug": "proc-acceptance",
+          "text": "发现数量或型号差异时，应在两个工作日内书面通知供应商，未确认差异前不得办理付款。",
+          "headings": [
+            "采购到货验收标准",
+            "差异处理"
+          ]
+        },
+        {
+          "document_id": "14038bc8-d6b9-4dbd-990d-cffc4ca122c2",
+          "slug": "fin-payment",
+          "text": "付款申请应附合同、验收记录及发票，财务核对收款账户与合同账户一致后才能排款。",
+          "headings": [
+            "供应商付款审批规则",
+            "付款依据"
+          ]
+        },
+        {
+          "document_id": "fd378fda-c0ee-424f-b631-c4ef29d332ba",
+          "slug": "proc-acceptance",
+          "text": "设备和物料到货时由需求部门与采购部各派一人共同验收，记录数量、型号和外观。",
+          "headings": [
+            "采购到货验收标准",
+            "双人验收"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "proc-acceptance",
+        "fin-payment"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 48.98,
+      "generation_ms": 6893.43,
+      "total_ms": 6970.78,
+      "input_tokens": 706,
+      "output_tokens": 207,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "4203a72343123d75",
+      "category": "cross_document",
+      "username": "admin",
+      "question": "远程办公时如何安全接入公司网络？",
+      "expected_answer": "使用公司 VPN 和多因素认证，不在公共设备下载资料，也不共享 VPN 账号。",
+      "expected_docs": [
+        "hr-remote",
+        "it-vpn"
+      ],
+      "blocked_doc": null,
+      "request_id": "099fd560-add4-4f2d-a6a8-60d83e013715",
+      "status": "answered",
+      "answer": "启用多因素认证并使用公司 VPN 接入，不得共享账号或将令牌交给他人。[1][3] 境外接入需提前报备访问国家与时段。[2] 管理员账号和异常地点登录会触发二次核验。[5]",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "0d1296e8-a273-48ad-b278-0cf44a868481",
+          "slug": "it-vpn",
+          "text": "远程接入公司网络必须启用多因素认证，不得共享 VPN 账号或将令牌交给他人。",
+          "headings": [
+            "远程接入与 VPN 规范",
+            "登录控制"
+          ]
+        },
+        {
+          "document_id": "0d1296e8-a273-48ad-b278-0cf44a868481",
+          "slug": "it-vpn",
+          "text": "员工因公境外接入应至少提前五个工作日向信息安全岗报备访问国家与时段。",
+          "headings": [
+            "远程接入与 VPN 规范",
+            "境外接入"
+          ]
+        },
+        {
+          "document_id": "92d7be22-8d5a-412c-9992-02fa9f9e6108",
+          "slug": "hr-remote",
+          "text": "远程办公必须使用公司 VPN 和多因素认证，不得在公共设备下载内部资料。",
+          "headings": [
+            "远程办公管理办法",
+            "信息保护"
+          ]
+        },
+        {
+          "document_id": "d1412620-a394-4a5c-a7e9-24662aee7a6c",
+          "slug": "sec-password",
+          "text": "管理员账号必须启用多因素认证；异常地点登录会触发二次核验和安全告警。",
+          "headings": [
+            "账号口令与多因素认证要求",
+            "高风险登录"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "it-vpn",
+        "hr-remote",
+        "sec-password"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 52.17,
+      "generation_ms": 5683.84,
+      "total_ms": 5757.99,
+      "input_tokens": 672,
+      "output_tokens": 211,
+      "run_base_url": "http://127.0.0.1:8765",
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "be5fb94f4a12b9bd",
+      "category": "cross_document",
+      "username": "admin",
+      "question": "受限数据跨部门访问和对外传输分别由谁批准？",
+      "expected_answer": "跨部门访问由数据所有者和安全岗批准；对外传输由数据所有者、法务和信息安全岗联合批准。",
+      "expected_docs": [
+        "sec-classification",
+        "sec-export"
+      ],
+      "blocked_doc": null,
+      "request_id": "e15e36be-a282-4171-9d87-3e868eba360f",
+      "status": "answered",
+      "answer": "受限数据跨部门访问由数据所有者和安全岗共同批准 [2]；受限数据对外传输须由数据所有者、法务和信息安全岗联合批准 [1]。",
+      "model": "glm-4-flash-250414",
+      "citations": [
+        {
+          "document_id": "0ffb3431-99fd-459c-9270-8adadb138c94",
+          "slug": "sec-export",
+          "text": "受限数据对外传输须由数据所有者、法务和信息安全岗联合批准，申请中写明接收方与用途。",
+          "headings": [
+            "受限数据对外传输审批",
+            "审批链"
+          ]
+        },
+        {
+          "document_id": "c96b8520-41c6-4666-bd2a-d6e89988a53a",
+          "slug": "sec-classification",
+          "text": "受限数据不得上传公共云盘或发送个人邮箱；跨部门访问须由数据所有者和安全岗共同批准。",
+          "headings": [
+            "企业数据分级办法",
+            "受限数据"
+          ]
+        }
+      ],
+      "cited_docs": [
+        "sec-export",
+        "sec-classification"
+      ],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": true,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 39.5,
+      "generation_ms": 6595.84,
+      "total_ms": 6660.77,
+      "input_tokens": 313,
+      "output_tokens": 39,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "dcb32ebc19a99872",
+      "category": "cross_document",
+      "username": "admin",
+      "question": "紧急生产变更引发 P1 故障，变更与事故各要多久补记录？",
+      "expected_answer": "紧急变更实施后二十四小时内补复盘记录；P1 恢复后两个工作日内完成事故复盘。",
+      "expected_docs": [
+        "it-change",
+        "it-incident"
+      ],
+      "blocked_doc": null,
+      "request_id": "ad05a88a-66f1-4b45-928b-c08ac322de8b",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": false,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 98.05,
+      "generation_ms": 795.83,
+      "total_ms": 919.95,
+      "input_tokens": 313,
+      "output_tokens": 9,
+      "run_base_url": "http://127.0.0.1:8765",
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      }
+    },
+    {
+      "case_id": "89a74f45dfda9d99",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "公司食堂周末早餐几点开始营业？",
+      "expected_answer": "语料中没有食堂营业时间。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "a63fc973-320d-415d-8094-560157c880bd",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 39.75,
+      "generation_ms": 1890.24,
+      "total_ms": 1955.37,
+      "input_tokens": 328,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "3d45bc8a1ceb0be5",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "2027 年公司股票期权授予价格是多少？",
+      "expected_answer": "语料中没有股票期权授予价格。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "cbd80cab-1159-4346-8c07-e57f30f6809d",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 39.26,
+      "generation_ms": 1665.32,
+      "total_ms": 1736.06,
+      "input_tokens": 350,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "2dc5b215b18775f4",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "总部停车场每月收费多少元？",
+      "expected_answer": "语料中没有停车费标准。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "8e248f82-892a-4cc7-a58e-e154913c7f16",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 27.31,
+      "generation_ms": 880.47,
+      "total_ms": 933.41,
+      "input_tokens": 347,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "dd4fbcae2fd4358e",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "员工子女入学补贴是多少？",
+      "expected_answer": "语料中没有子女入学补贴。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "584c20ab-b510-4adf-ab97-0e9f123e789d",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 33.61,
+      "generation_ms": 1061.97,
+      "total_ms": 1125.3,
+      "input_tokens": 312,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "664dedea4c31a4da",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "去火星出差的机票由谁审批？",
+      "expected_answer": "语料中没有该类出差规定。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "988c7e96-3dcc-48c7-b660-2a5c190969d9",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 31.83,
+      "generation_ms": 7720.99,
+      "total_ms": 7783.65,
+      "input_tokens": 341,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "1eda9c500d45e258",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "年休假可以分几次申请？",
+      "expected_answer": "年休假制度没有规定分次申请次数。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "d48ae7df-4631-46bc-988b-9c18a205e69f",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 28.31,
+      "generation_ms": 8708.67,
+      "total_ms": 8762.41,
+      "input_tokens": 319,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "a61ea522e0124055",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "远程办公能否申请周三作为例外？",
+      "expected_answer": "远程办公制度没有规定周三例外申请。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "b44ee27b-d856-40d0-a3f5-3f84853e17a7",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 32.18,
+      "generation_ms": 3306.34,
+      "total_ms": 3365.35,
+      "input_tokens": 306,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "386999f0f6fede98",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "国内出差的每日住宿费上限是多少？",
+      "expected_answer": "国内出差制度没有规定住宿费上限。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "a2288776-7077-4513-9413-2e236ec8bd91",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 26.62,
+      "generation_ms": 3401.17,
+      "total_ms": 3456.25,
+      "input_tokens": 320,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "8fa460b1aaabca60",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "员工餐费报销每天最多多少元？",
+      "expected_answer": "费用报销制度没有规定每日餐费上限。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "9a64e4bb-fd5a-4548-ad33-4b2d4fc75a95",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 27.43,
+      "generation_ms": 2406.57,
+      "total_ms": 2464.63,
+      "input_tokens": 355,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "99b5a5edfaa1dff7",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "电子发票退回后第二次补正的期限是多久？",
+      "expected_answer": "电子发票制度没有规定第二次补正期限。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "29565a5e-ddee-47af-a6f3-a44c0bb9cbf5",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 35.0,
+      "generation_ms": 3839.75,
+      "total_ms": 3903.62,
+      "input_tokens": 312,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "5345787b1c971473",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "采购比价比较表应保存几年？",
+      "expected_answer": "采购比价制度没有规定比较表保存期限。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "b62f8bcf-af43-4279-b1bd-8dc3c2475524",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 33.19,
+      "generation_ms": 2322.99,
+      "total_ms": 2381.69,
+      "input_tokens": 310,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "b479fa0b45fc1e4a",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "采购合同是否允许使用电子签章？",
+      "expected_answer": "采购合同制度没有规定电子签章。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "fdb4c3cc-dfd2-45ff-a7a9-cc8578f925d2",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 30.39,
+      "generation_ms": 5543.55,
+      "total_ms": 5604.49,
+      "input_tokens": 317,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "a670cf19c893733b",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "紧急采购超过五千元由谁先行批准？",
+      "expected_answer": "紧急采购制度没有规定超过五千元的先行审批人。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "b951807c-ea64-4ce3-b90e-bc56bd4864b4",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 25.77,
+      "generation_ms": 1267.32,
+      "total_ms": 1321.59,
+      "input_tokens": 315,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "b833a58878bad3f1",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "供应商风险复核到期后能否自动续期？",
+      "expected_answer": "供应商准入制度没有规定自动续期。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "d0b77b8f-919d-4db7-8533-68a22fb5aceb",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 56.64,
+      "generation_ms": 840.04,
+      "total_ms": 922.33,
+      "input_tokens": 330,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "3bf66a4967fbb159",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "备用金遗失后员工需要赔偿多少？",
+      "expected_answer": "备用金制度没有规定遗失赔偿金额。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "27d68b0f-3f22-452e-b676-9dc3fd2db4e8",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 34.55,
+      "generation_ms": 1893.12,
+      "total_ms": 1957.2,
+      "input_tokens": 371,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "7acdb2e39bd2c09b",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "VPN 账号密码每隔多久必须更换？",
+      "expected_answer": "远程接入制度没有规定 VPN 密码轮换周期。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "8c86c1f8-5c32-4228-90c4-358d9426442d",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 29.06,
+      "generation_ms": 1277.88,
+      "total_ms": 1334.68,
+      "input_tokens": 313,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "99af4c319a2bb437",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "P2 故障应在多久内通知应急负责人？",
+      "expected_answer": "故障响应制度没有规定 P2 通知时限。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "ccf296aa-b8a3-4d5b-8be7-bff4a352b5db",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 35.52,
+      "generation_ms": 2088.32,
+      "total_ms": 2148.6,
+      "input_tokens": 338,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "20fddc10d67f1918",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "办公设备丢失后由谁承担赔偿？",
+      "expected_answer": "设备使用制度没有规定遗失赔偿责任。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "1fd8d27a-0937-4a5b-852b-84342ab8f4b3",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 23.65,
+      "generation_ms": 6066.95,
+      "total_ms": 6118.66,
+      "input_tokens": 367,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "f042885bd51b9148",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "访客证遗失的罚款标准是多少？",
+      "expected_answer": "访客登记制度没有规定遗失罚款标准。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "da268ca0-f3ee-4ce2-8235-9cc81a48ee17",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 29.15,
+      "generation_ms": 1517.07,
+      "total_ms": 1575.08,
+      "input_tokens": 340,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "76d3e4d6ffedad84",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "试用期的最长期限是几个月？",
+      "expected_answer": "新员工入职制度没有规定试用期期限。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "00e5f926-29a8-436b-80ce-7682ac72885f",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 28.81,
+      "generation_ms": 1044.59,
+      "total_ms": 1104.78,
+      "input_tokens": 308,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "71137979062a2165",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "培训报销未用额度可以结转到下一年吗？",
+      "expected_answer": "培训费用制度没有规定额度结转。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "c2e8c58a-bbd5-4faa-a6b9-1933fb4c1a96",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 24.99,
+      "generation_ms": 5506.16,
+      "total_ms": 5564.59,
+      "input_tokens": 341,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "6265fff276ca1613",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "超预算幅度不超过百分之十时由谁审批？",
+      "expected_answer": "季度预算制度没有规定该情形的审批人。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "0184785e-b18f-46bc-a8c2-93b5a221dd59",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 30.13,
+      "generation_ms": 774.18,
+      "total_ms": 832.75,
+      "input_tokens": 346,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "5bf2b5aae6142fbc",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "受限数据加密链接的密码至少多少位？",
+      "expected_answer": "对外传输制度没有规定加密链接密码长度。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "f01e5ac2-ca55-4ad4-b4e3-ed4a6dc5ec74",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 35.28,
+      "generation_ms": 3521.52,
+      "total_ms": 3581.83,
+      "input_tokens": 344,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "64431a5daeb4355d",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "访客非工作时间入园最迟要提前多久申请？",
+      "expected_answer": "访客制度要求提前批准，但没有规定具体提前时限。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "d2f79d61-0598-433c-bed9-18447e17afb2",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 29.89,
+      "generation_ms": 1037.27,
+      "total_ms": 1093.09,
+      "input_tokens": 325,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "4451f77ae1ee36a6",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "系统访问日志具体保存在哪台服务器？",
+      "expected_answer": "记录保存制度没有规定具体存储服务器。",
+      "expected_docs": [],
+      "blocked_doc": null,
+      "request_id": "5f0ce166-82bf-4863-a90c-38b10b15509a",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": true,
+      "blocked_doc_exposed": null,
+      "retrieval_ms": 30.36,
+      "generation_ms": 830.17,
+      "total_ms": 885.03,
+      "input_tokens": 315,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "0f3b5f49384bd395",
+      "category": "unauthorized",
+      "username": "employee",
+      "question": "两万元采购要找几家供应商报价？",
+      "expected_answer": null,
+      "expected_docs": [],
+      "blocked_doc": "proc-quote",
+      "request_id": "142b2671-916a-4c23-b3ff-e3c7e7c5421f",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": false,
+      "retrieval_ms": 25.01,
+      "generation_ms": 1217.15,
+      "total_ms": 1271.81,
+      "input_tokens": 342,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "0217d11671eeb159",
+      "category": "unauthorized",
+      "username": "employee",
+      "question": "新供应商至少提供几个客户案例？",
+      "expected_answer": null,
+      "expected_docs": [],
+      "blocked_doc": "proc-supplier",
+      "request_id": "0fbb3fbc-a805-456b-817b-f1f0ed84bdea",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": false,
+      "retrieval_ms": 27.13,
+      "generation_ms": 805.44,
+      "total_ms": 857.04,
+      "input_tokens": 311,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "9209f7b6e0e045a0",
+      "category": "unauthorized",
+      "username": "employee",
+      "question": "常规生产变更安排在周几几点？",
+      "expected_answer": null,
+      "expected_docs": [],
+      "blocked_doc": "it-change",
+      "request_id": "c3e2b51d-9288-481d-af15-bbafbc6ec45f",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": false,
+      "retrieval_ms": 30.81,
+      "generation_ms": 4368.57,
+      "total_ms": 4428.6,
+      "input_tokens": 314,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "c3f38d75fca15578",
+      "category": "unauthorized",
+      "username": "employee",
+      "question": "P1 故障应多久通知负责人？",
+      "expected_answer": null,
+      "expected_docs": [],
+      "blocked_doc": "it-incident",
+      "request_id": "1d1b452e-9a9a-43dd-b5cd-61d1f5d0d084",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": false,
+      "retrieval_ms": 27.16,
+      "generation_ms": 1274.31,
+      "total_ms": 1330.34,
+      "input_tokens": 348,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    },
+    {
+      "case_id": "7ad8ac0d804fe811",
+      "category": "unauthorized",
+      "username": "employee",
+      "question": "受限数据对外传输链接有效期最多多久？",
+      "expected_answer": null,
+      "expected_docs": [],
+      "blocked_doc": "sec-export",
+      "request_id": "75820079-968f-42f7-9c1f-207c97956d0f",
+      "status": "insufficient_evidence",
+      "answer": null,
+      "model": "glm-4-flash-250414",
+      "citations": [],
+      "cited_docs": [],
+      "unknown_citation_count": 0,
+      "expected_docs_cited": null,
+      "no_answer_refused": null,
+      "blocked_doc_exposed": false,
+      "retrieval_ms": 23.37,
+      "generation_ms": 2266.92,
+      "total_ms": 2319.11,
+      "input_tokens": 303,
+      "output_tokens": 9,
+      "manual_review": {
+        "answer_correct": null,
+        "citation_supported": null,
+        "notes": ""
+      },
+      "run_base_url": "http://127.0.0.1:8766"
+    }
+  ]
+}

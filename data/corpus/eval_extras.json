@@ -1,0 +1,43 @@
+{
+  "cross_document": [
+    {"question":"国内出差申请和出差费用报销分别有什么时限？","expected_docs":["hr-travel","fin-expense"],"answer":"出发前三个工作日申请；费用发生后三十个自然日内报销。"},
+    {"question":"采购到货后申请供应商付款，需要怎样验收并附哪些材料？","expected_docs":["proc-acceptance","fin-payment"],"answer":"需求部门和采购部双人验收；付款附合同、验收记录及发票。"},
+    {"question":"远程办公时如何安全接入公司网络？","expected_docs":["hr-remote","it-vpn"],"answer":"使用公司 VPN 和多因素认证，不在公共设备下载资料，也不共享 VPN 账号。"},
+    {"question":"受限数据跨部门访问和对外传输分别由谁批准？","expected_docs":["sec-classification","sec-export"],"answer":"跨部门访问由数据所有者和安全岗批准；对外传输由数据所有者、法务和信息安全岗联合批准。"},
+    {"question":"紧急生产变更引发 P1 故障，变更与事故各要多久补记录？","expected_docs":["it-change","it-incident"],"answer":"紧急变更实施后二十四小时内补复盘记录；P1 恢复后两个工作日内完成事故复盘。"}
+  ],
+  "no_answer": [
+    {"question":"公司食堂周末早餐几点开始营业？","answer":"语料中没有食堂营业时间。"},
+    {"question":"2027 年公司股票期权授予价格是多少？","answer":"语料中没有股票期权授予价格。"},
+    {"question":"总部停车场每月收费多少元？","answer":"语料中没有停车费标准。"},
+    {"question":"员工子女入学补贴是多少？","answer":"语料中没有子女入学补贴。"},
+    {"question":"去火星出差的机票由谁审批？","answer":"语料中没有该类出差规定。"},
+    {"question":"年休假可以分几次申请？","answer":"年休假制度没有规定分次申请次数。"},
+    {"question":"远程办公能否申请周三作为例外？","answer":"远程办公制度没有规定周三例外申请。"},
+    {"question":"国内出差的每日住宿费上限是多少？","answer":"国内出差制度没有规定住宿费上限。"},
+    {"question":"员工餐费报销每天最多多少元？","answer":"费用报销制度没有规定每日餐费上限。"},
+    {"question":"电子发票退回后第二次补正的期限是多久？","answer":"电子发票制度没有规定第二次补正期限。"},
+    {"question":"采购比价比较表应保存几年？","answer":"采购比价制度没有规定比较表保存期限。"},
+    {"question":"采购合同是否允许使用电子签章？","answer":"采购合同制度没有规定电子签章。"},
+    {"question":"紧急采购超过五千元由谁先行批准？","answer":"紧急采购制度没有规定超过五千元的先行审批人。"},
+    {"question":"供应商风险复核到期后能否自动续期？","answer":"供应商准入制度没有规定自动续期。"},
+    {"question":"备用金遗失后员工需要赔偿多少？","answer":"备用金制度没有规定遗失赔偿金额。"},
+    {"question":"VPN 账号密码每隔多久必须更换？","answer":"远程接入制度没有规定 VPN 密码轮换周期。"},
+    {"question":"P2 故障应在多久内通知应急负责人？","answer":"故障响应制度没有规定 P2 通知时限。"},
+    {"question":"办公设备丢失后由谁承担赔偿？","answer":"设备使用制度没有规定遗失赔偿责任。"},
+    {"question":"访客证遗失的罚款标准是多少？","answer":"访客登记制度没有规定遗失罚款标准。"},
+    {"question":"试用期的最长期限是几个月？","answer":"新员工入职制度没有规定试用期期限。"},
+    {"question":"培训报销未用额度可以结转到下一年吗？","answer":"培训费用制度没有规定额度结转。"},
+    {"question":"超预算幅度不超过百分之十时由谁审批？","answer":"季度预算制度没有规定该情形的审批人。"},
+    {"question":"受限数据加密链接的密码至少多少位？","answer":"对外传输制度没有规定加密链接密码长度。"},
+    {"question":"访客非工作时间入园最迟要提前多久申请？","answer":"访客制度要求提前批准，但没有规定具体提前时限。"},
+    {"question":"系统访问日志具体保存在哪台服务器？","answer":"记录保存制度没有规定具体存储服务器。"}
+  ],
+  "unauthorized": [
+    {"question":"两万元采购要找几家供应商报价？","blocked_doc":"proc-quote","username":"employee"},
+    {"question":"新供应商至少提供几个客户案例？","blocked_doc":"proc-supplier","username":"employee"},
+    {"question":"常规生产变更安排在周几几点？","blocked_doc":"it-change","username":"employee"},
+    {"question":"P1 故障应多久通知负责人？","blocked_doc":"it-incident","username":"employee"},
+    {"question":"受限数据对外传输链接有效期最多多久？","blocked_doc":"sec-export","username":"employee"}
+  ]
+}

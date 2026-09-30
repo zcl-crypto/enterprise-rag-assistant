@@ -1,0 +1,2072 @@
+{
+  "generated_at": "2026-09-21T03:39:09.072013+00:00",
+  "base_url": "http://127.0.0.1:8765",
+  "model": "glm-4-flash-250414",
+  "source_report": "reports\\generation-eval-full.json",
+  "summary": {
+    "case_count": 32,
+    "positive_count": 7,
+    "positive_answered": 4,
+    "positive_expected_docs_cited": 4,
+    "no_answer_count": 25,
+    "no_answer_refused": 25,
+    "invalid_answer_count": 0,
+    "input_tokens": 14673,
+    "output_tokens": 325
+  },
+  "cases": [
+    {
+      "case_id": "382b3b98499fd371",
+      "category": "single_document",
+      "username": "admin",
+      "question": "休六天年假要提前几天申请？",
+      "expected_answer": "提前七个工作日",
+      "expected_docs": [
+        "hr-leave"
+      ],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": false,
+      "sources": [
+        {
+          "slug": "hr-leave",
+          "text": "连续五个工作日以内的年休假至少提前两个工作日申请；超过五个工作日须提前七个工作日申请。直属主管在系统中审批。",
+          "headings": [
+            "年休假与请假办法",
+            "年休假申请"
+          ]
+        },
+        {
+          "slug": "hr-remote",
+          "text": "符合岗位要求的员工每周可申请周二或周四远程办公一天，至少提前一个工作日由直属主管审批。",
+          "headings": [
+            "远程办公管理办法",
+            "申请范围"
+          ]
+        },
+        {
+          "slug": "sec-visitor",
+          "text": "工作日十八点后及非工作日接待访客，须提前取得行政负责人批准并通知安保。",
+          "headings": [
+            "访客登记与陪同规定",
+            "非工作时间"
+          ]
+        },
+        {
+          "slug": "it-vpn",
+          "text": "员工因公境外接入应至少提前五个工作日向信息安全岗报备访问国家与时段。",
+          "headings": [
+            "远程接入与 VPN 规范",
+            "境外接入"
+          ]
+        },
+        {
+          "slug": "hr-travel",
+          "text": "国内出差申请应在出发前三个工作日提交，说明目的、预算和目的地；直属主管和部门负责人依次审批。",
+          "headings": [
+            "国内出差申请制度",
+            "行程审批"
+          ]
+        },
+        {
+          "slug": "it-access",
+          "text": "生产系统权限由直属主管和系统负责人批准，默认有效期九十天；到期须重新申请。",
+          "headings": [
+            "系统账号与权限管理",
+            "开通与期限"
+          ]
+        }
+      ],
+      "latency_ms": 2683.06,
+      "input_tokens": 448,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "124fc8bbea29c4f0",
+      "category": "single_document",
+      "username": "admin",
+      "question": "远程办公能用公共电脑下载内部资料吗？",
+      "expected_answer": "不能",
+      "expected_docs": [
+        "hr-remote"
+      ],
+      "status": "answered",
+      "answer": "不得在公共设备下载内部资料 [1]。",
+      "cited_docs": [
+        "hr-remote"
+      ],
+      "expected_docs_cited": true,
+      "sources": [
+        {
+          "slug": "hr-remote",
+          "text": "远程办公必须使用公司 VPN 和多因素认证，不得在公共设备下载内部资料。",
+          "headings": [
+            "远程办公管理办法",
+            "信息保护"
+          ]
+        },
+        {
+          "slug": "hr-remote",
+          "text": "符合岗位要求的员工每周可申请周二或周四远程办公一天，至少提前一个工作日由直属主管审批。",
+          "headings": [
+            "远程办公管理办法",
+            "申请范围"
+          ]
+        },
+        {
+          "slug": "it-vpn",
+          "text": "远程接入公司网络必须启用多因素认证，不得共享 VPN 账号或将令牌交给他人。",
+          "headings": [
+            "远程接入与 VPN 规范",
+            "登录控制"
+          ]
+        },
+        {
+          "slug": "sec-classification",
+          "text": "受限数据不得上传公共云盘或发送个人邮箱；跨部门访问须由数据所有者和安全岗共同批准。",
+          "headings": [
+            "企业数据分级办法",
+            "受限数据"
+          ]
+        },
+        {
+          "slug": "it-vpn",
+          "text": "员工因公境外接入应至少提前五个工作日向信息安全岗报备访问国家与时段。",
+          "headings": [
+            "远程接入与 VPN 规范",
+            "境外接入"
+          ]
+        },
+        {
+          "slug": "sec-visitor",
+          "text": "访客进入办公区域必须出示有效证件、登记被访人并佩戴访客证；被访人全程陪同。",
+          "headings": [
+            "访客登记与陪同规定",
+            "入园登记"
+          ]
+        }
+      ],
+      "latency_ms": 978.48,
+      "input_tokens": 437,
+      "output_tokens": 12
+    },
+    {
+      "case_id": "20a0362c6e5fd25f",
+      "category": "single_document",
+      "username": "admin",
+      "question": "出纳能自行修改供应商收款账户吗？",
+      "expected_answer": "不能",
+      "expected_docs": [
+        "fin-payment"
+      ],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": false,
+      "sources": [
+        {
+          "slug": "fin-payment",
+          "text": "单笔超过五万元的付款需业务负责人和财务负责人双重批准，出纳不得自行修改收款账户。",
+          "headings": [
+            "供应商付款审批规则",
+            "大额付款"
+          ]
+        },
+        {
+          "slug": "proc-supplier",
+          "text": "新供应商需提交营业执照、收款账户证明及至少三个客户参考案例。采购部核对主体与账户一致性。",
+          "headings": [
+            "供应商准入管理规范",
+            "准入材料"
+          ]
+        },
+        {
+          "slug": "fin-payment",
+          "text": "付款申请应附合同、验收记录及发票，财务核对收款账户与合同账户一致后才能排款。",
+          "headings": [
+            "供应商付款审批规则",
+            "付款依据"
+          ]
+        },
+        {
+          "slug": "proc-acceptance",
+          "text": "发现数量或型号差异时，应在两个工作日内书面通知供应商，未确认差异前不得办理付款。",
+          "headings": [
+            "采购到货验收标准",
+            "差异处理"
+          ]
+        },
+        {
+          "slug": "proc-supplier",
+          "text": "合规岗完成制裁名单与利益冲突核查后方可启用供应商编码；复核有效期为一年。",
+          "headings": [
+            "供应商准入管理规范",
+            "风险复核"
+          ]
+        },
+        {
+          "slug": "proc-quote",
+          "text": "单笔采购金额超过一万元且不超过十万元时，应取得三家独立供应商的有效报价并保留比较表。",
+          "headings": [
+            "采购比价与招标规则",
+            "比价门槛"
+          ]
+        }
+      ],
+      "latency_ms": 909.81,
+      "input_tokens": 439,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "c6407da1cc843f50",
+      "category": "single_document",
+      "username": "admin",
+      "question": "供应商风险复核有效期多久？",
+      "expected_answer": "一年",
+      "expected_docs": [
+        "proc-supplier"
+      ],
+      "status": "answered",
+      "answer": "供应商风险复核有效期为一年 [1]。",
+      "cited_docs": [
+        "proc-supplier"
+      ],
+      "expected_docs_cited": true,
+      "sources": [
+        {
+          "slug": "proc-supplier",
+          "text": "合规岗完成制裁名单与利益冲突核查后方可启用供应商编码；复核有效期为一年。",
+          "headings": [
+            "供应商准入管理规范",
+            "风险复核"
+          ]
+        },
+        {
+          "slug": "proc-emergency",
+          "text": "单笔五千元以内的紧急采购可先由值班负责人确认，二十四小时内补交采购负责人审批。",
+          "headings": [
+            "紧急采购例外办法",
+            "事后复核"
+          ]
+        },
+        {
+          "slug": "it-access",
+          "text": "生产系统权限由直属主管和系统负责人批准，默认有效期九十天；到期须重新申请。",
+          "headings": [
+            "系统账号与权限管理",
+            "开通与期限"
+          ]
+        },
+        {
+          "slug": "fin-expense",
+          "text": "员工费用报销细则\r\n提交时限\r\n费用发生后三十个自然日内提交报销单和合规票据。逾期须说明原因并由部门负责人批准。\r\n审批分级\r\n单笔超过三千元须经财务复核；单笔超过一万元还须财务负责人批准。拆分报销以规避审批\r\n禁止。",
+          "headings": []
+        },
+        {
+          "slug": "sec-retention",
+          "text": "记录到期后由责任部门提出销毁申请，信息安全岗复核后执行并留存销毁清单。",
+          "headings": [
+            "业务记录保存期限",
+            "到期销毁"
+          ]
+        },
+        {
+          "slug": "proc-supplier",
+          "text": "新供应商需提交营业执照、收款账户证明及至少三个客户参考案例。采购部核对主体与账户一致性。",
+          "headings": [
+            "供应商准入管理规范",
+            "准入材料"
+          ]
+        }
+      ],
+      "latency_ms": 760.3,
+      "input_tokens": 459,
+      "output_tokens": 11
+    },
+    {
+      "case_id": "7a9a3ad04d4836a2",
+      "category": "single_document",
+      "username": "admin",
+      "question": "可以先签采购合同再补审批吗？",
+      "expected_answer": "不可以",
+      "expected_docs": [
+        "proc-contract"
+      ],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": false,
+      "sources": [
+        {
+          "slug": "proc-contract",
+          "text": "合同审批通过后由授权签字人签署；任何人不得先签字后补流程，合同扫描件须归档。",
+          "headings": [
+            "采购合同评审流程",
+            "签署顺序"
+          ]
+        },
+        {
+          "slug": "proc-contract",
+          "text": "采购合同总金额超过五万元或包含数据处理条款时，签署前必须经法务评审。",
+          "headings": [
+            "采购合同评审流程",
+            "法务评审"
+          ]
+        },
+        {
+          "slug": "proc-emergency",
+          "text": "单笔五千元以内的紧急采购可先由值班负责人确认，二十四小时内补交采购负责人审批。",
+          "headings": [
+            "紧急采购例外办法",
+            "事后复核"
+          ]
+        },
+        {
+          "slug": "fin-payment",
+          "text": "付款申请应附合同、验收记录及发票，财务核对收款账户与合同账户一致后才能排款。",
+          "headings": [
+            "供应商付款审批规则",
+            "付款依据"
+          ]
+        },
+        {
+          "slug": "proc-quote",
+          "text": "单笔采购金额超过一万元且不超过十万元时，应取得三家独立供应商的有效报价并保留比较表。",
+          "headings": [
+            "采购比价与招标规则",
+            "比价门槛"
+          ]
+        },
+        {
+          "slug": "proc-quote",
+          "text": "单笔采购金额超过十万元时原则上公开招标；例外情形须由采购负责人和法务共同批准。",
+          "headings": [
+            "采购比价与招标规则",
+            "招标门槛"
+          ]
+        }
+      ],
+      "latency_ms": 837.26,
+      "input_tokens": 443,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "504a51aa8cac77a0",
+      "category": "single_document",
+      "username": "admin",
+      "question": "变更申请单必须包含什么？",
+      "expected_answer": "回滚方案与验证人",
+      "expected_docs": [
+        "it-change"
+      ],
+      "status": "answered",
+      "answer": "变更申请单必须包含回滚方案与验证人 [1]。",
+      "cited_docs": [
+        "it-change"
+      ],
+      "expected_docs_cited": true,
+      "sources": [
+        {
+          "slug": "it-change",
+          "text": "常规生产变更安排在每周三二十点至二十二点，申请单必须包含回滚方案与验证人。",
+          "headings": [
+            "生产系统变更管理",
+            "常规窗口"
+          ]
+        },
+        {
+          "slug": "hr-travel",
+          "text": "已批准的出差如增加城市或预算，须在订票前重新提交变更审批。紧急行程由部门负责人书面确认。",
+          "headings": [
+            "国内出差申请制度",
+            "行程变更"
+          ]
+        },
+        {
+          "slug": "it-change",
+          "text": "紧急变更可由值班经理先授权实施，实施后二十四小时内补交变更委员会复盘记录。",
+          "headings": [
+            "生产系统变更管理",
+            "紧急变更"
+          ]
+        },
+        {
+          "slug": "proc-contract",
+          "text": "采购合同总金额超过五万元或包含数据处理条款时，签署前必须经法务评审。",
+          "headings": [
+            "采购合同评审流程",
+            "法务评审"
+          ]
+        },
+        {
+          "slug": "fin-invoice",
+          "text": "报销的电子发票必须包含公司名称、统一社会信用代码、开票日期和明细；截图不能代替原始电子文件。",
+          "headings": [
+            "电子发票验真规范",
+            "发票字段"
+          ]
+        },
+        {
+          "slug": "sec-password",
+          "text": "管理员账号必须启用多因素认证；异常地点登录会触发二次核验和安全告警。",
+          "headings": [
+            "账号口令与多因素认证要求",
+            "高风险登录"
+          ]
+        }
+      ],
+      "latency_ms": 850.62,
+      "input_tokens": 439,
+      "output_tokens": 16
+    },
+    {
+      "case_id": "dcb32ebc19a99872",
+      "category": "cross_document",
+      "username": "admin",
+      "question": "紧急生产变更引发 P1 故障，变更与事故各要多久补记录？",
+      "expected_answer": "紧急变更实施后二十四小时内补复盘记录；P1 恢复后两个工作日内完成事故复盘。",
+      "expected_docs": [
+        "it-change",
+        "it-incident"
+      ],
+      "status": "answered",
+      "answer": "紧急变更实施后二十四小时内补交变更委员会复盘记录 [1]；P1 恢复后两个工作日内完成事故复盘 [2]。",
+      "cited_docs": [
+        "it-change",
+        "it-incident"
+      ],
+      "expected_docs_cited": true,
+      "sources": [
+        {
+          "slug": "it-change",
+          "text": "紧急变更可由值班经理先授权实施，实施后二十四小时内补交变更委员会复盘记录。",
+          "headings": [
+            "生产系统变更管理",
+            "紧急变更"
+          ]
+        },
+        {
+          "slug": "it-incident",
+          "text": "P1 处置期间每三十分钟更新一次进展；恢复后两个工作日内完成事故复盘。",
+          "headings": [
+            "信息系统故障响应分级",
+            "进展通报"
+          ]
+        },
+        {
+          "slug": "proc-emergency",
+          "text": "生产中断或重大安全故障可启动紧急采购，申请人须记录事件编号、预计金额和无法常规采购的原因。",
+          "headings": [
+            "紧急采购例外办法",
+            "适用场景"
+          ]
+        },
+        {
+          "slug": "it-change",
+          "text": "常规生产变更安排在每周三二十点至二十二点，申请单必须包含回滚方案与验证人。",
+          "headings": [
+            "生产系统变更管理",
+            "常规窗口"
+          ]
+        },
+        {
+          "slug": "it-incident",
+          "text": "核心业务不可用属于 P1，值班人员应在发现后十五分钟内通知应急负责人。",
+          "headings": [
+            "信息系统故障响应分级",
+            "一级故障"
+          ]
+        },
+        {
+          "slug": "hr-travel",
+          "text": "已批准的出差如增加城市或预算，须在订票前重新提交变更审批。紧急行程由部门负责人书面确认。",
+          "headings": [
+            "国内出差申请制度",
+            "行程变更"
+          ]
+        }
+      ],
+      "latency_ms": 1171.45,
+      "input_tokens": 443,
+      "output_tokens": 34
+    },
+    {
+      "case_id": "89a74f45dfda9d99",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "公司食堂周末早餐几点开始营业？",
+      "expected_answer": "语料中没有食堂营业时间。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "it-device",
+          "text": "办公设备与介质使用规定\n\n设备保护\n公司笔记本必须开启全盘加密和自动锁屏；禁止使用未经批准的移动存储设备复制工作资料。\n\n遗失上报\n设备丢失应在发现后一小时内报告 IT 服务台和信息安全岗，说明设备编号及最后使用地点。",
+          "headings": []
+        },
+        {
+          "slug": "hr-remote",
+          "text": "符合岗位要求的员工每周可申请周二或周四远程办公一天，至少提前一个工作日由直属主管审批。",
+          "headings": [
+            "远程办公管理办法",
+            "申请范围"
+          ]
+        },
+        {
+          "slug": "hr-remote",
+          "text": "远程办公必须使用公司 VPN 和多因素认证，不得在公共设备下载内部资料。",
+          "headings": [
+            "远程办公管理办法",
+            "信息保护"
+          ]
+        },
+        {
+          "slug": "it-change",
+          "text": "常规生产变更安排在每周三二十点至二十二点，申请单必须包含回滚方案与验证人。",
+          "headings": [
+            "生产系统变更管理",
+            "常规窗口"
+          ]
+        },
+        {
+          "slug": "it-vpn",
+          "text": "远程接入公司网络必须启用多因素认证，不得共享 VPN 账号或将令牌交给他人。",
+          "headings": [
+            "远程接入与 VPN 规范",
+            "登录控制"
+          ]
+        },
+        {
+          "slug": "fin-invoice",
+          "text": "报销的电子发票必须包含公司名称、统一社会信用代码、开票日期和明细；截图不能代替原始电子文件。",
+          "headings": [
+            "电子发票验真规范",
+            "发票字段"
+          ]
+        }
+      ],
+      "latency_ms": 2167.0,
+      "input_tokens": 464,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "3d45bc8a1ceb0be5",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "2027 年公司股票期权授予价格是多少？",
+      "expected_answer": "语料中没有股票期权授予价格。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "it-access",
+          "text": "生产系统权限由直属主管和系统负责人批准，默认有效期九十天；到期须重新申请。",
+          "headings": [
+            "系统账号与权限管理",
+            "开通与期限"
+          ]
+        },
+        {
+          "slug": "hr-training",
+          "text": "与岗位直接相关的外部课程，每名员工每自然年可报销不超过三千元；报名之前应取得主管批准。",
+          "headings": [
+            "员工培训费用支持办法",
+            "费用上限"
+          ]
+        },
+        {
+          "slug": "proc-quote",
+          "text": "单笔采购金额超过一万元且不超过十万元时，应取得三家独立供应商的有效报价并保留比较表。",
+          "headings": [
+            "采购比价与招标规则",
+            "比价门槛"
+          ]
+        },
+        {
+          "slug": "fin-expense",
+          "text": "员工费用报销细则\r\n提交时限\r\n费用发生后三十个自然日内提交报销单和合规票据。逾期须说明原因并由部门负责人批准。\r\n审批分级\r\n单笔超过三千元须经财务复核；单笔超过一万元还须财务负责人批准。拆分报销以规避审批\r\n禁止。",
+          "headings": []
+        },
+        {
+          "slug": "sec-export",
+          "text": "批准后使用加密链接并加水印，链接有效期最多七天；不得使用个人邮箱或公开分享链接。",
+          "headings": [
+            "受限数据对外传输审批",
+            "传输控制"
+          ]
+        },
+        {
+          "slug": "fin-invoice",
+          "text": "发票字段错误或重复报销时，申请人应在退回后七个工作日内补正，逾期重新发起申请。",
+          "headings": [
+            "电子发票验真规范",
+            "退回处理"
+          ]
+        }
+      ],
+      "latency_ms": 746.42,
+      "input_tokens": 480,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "2dc5b215b18775f4",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "总部停车场每月收费多少元？",
+      "expected_answer": "语料中没有停车费标准。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "fin-expense",
+          "text": "员工费用报销细则\r\n提交时限\r\n费用发生后三十个自然日内提交报销单和合规票据。逾期须说明原因并由部门负责人批准。\r\n审批分级\r\n单笔超过三千元须经财务复核；单笔超过一万元还须财务负责人批准。拆分报销以规避审批\r\n禁止。",
+          "headings": []
+        },
+        {
+          "slug": "hr-training",
+          "text": "与岗位直接相关的外部课程，每名员工每自然年可报销不超过三千元；报名之前应取得主管批准。",
+          "headings": [
+            "员工培训费用支持办法",
+            "费用上限"
+          ]
+        },
+        {
+          "slug": "proc-quote",
+          "text": "单笔采购金额超过一万元且不超过十万元时，应取得三家独立供应商的有效报价并保留比较表。",
+          "headings": [
+            "采购比价与招标规则",
+            "比价门槛"
+          ]
+        },
+        {
+          "slug": "hr-training",
+          "text": "课程结束后十个工作日内提交发票、课程证明和学习总结，财务按年度余额核销。",
+          "headings": [
+            "员工培训费用支持办法",
+            "报销材料"
+          ]
+        },
+        {
+          "slug": "proc-emergency",
+          "text": "单笔五千元以内的紧急采购可先由值班负责人确认，二十四小时内补交采购负责人审批。",
+          "headings": [
+            "紧急采购例外办法",
+            "事后复核"
+          ]
+        },
+        {
+          "slug": "proc-quote",
+          "text": "单笔采购金额超过十万元时原则上公开招标；例外情形须由采购负责人和法务共同批准。",
+          "headings": [
+            "采购比价与招标规则",
+            "招标门槛"
+          ]
+        }
+      ],
+      "latency_ms": 811.19,
+      "input_tokens": 477,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "dd4fbcae2fd4358e",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "员工子女入学补贴是多少？",
+      "expected_answer": "语料中没有子女入学补贴。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "hr-training",
+          "text": "与岗位直接相关的外部课程，每名员工每自然年可报销不超过三千元；报名之前应取得主管批准。",
+          "headings": [
+            "员工培训费用支持办法",
+            "费用上限"
+          ]
+        },
+        {
+          "slug": "hr-onboarding",
+          "text": "新员工报到当天提交身份证明、工资卡信息与紧急联系人；人事部只在受控系统保存扫描件。",
+          "headings": [
+            "新员工入职办理规范",
+            "报到材料"
+          ]
+        },
+        {
+          "slug": "hr-training",
+          "text": "课程结束后十个工作日内提交发票、课程证明和学习总结，财务按年度余额核销。",
+          "headings": [
+            "员工培训费用支持办法",
+            "报销材料"
+          ]
+        },
+        {
+          "slug": "fin-petty",
+          "text": "员工因临时公务可借用不超过一千元备用金，主管审批后由财务登记。",
+          "headings": [
+            "备用金借用与归还办法",
+            "借用限额"
+          ]
+        },
+        {
+          "slug": "hr-onboarding",
+          "text": "入职后三十天内完成信息安全培训和岗位导师面谈。培训未完成时不开放生产系统权限。",
+          "headings": [
+            "新员工入职办理规范",
+            "试用期培训"
+          ]
+        },
+        {
+          "slug": "hr-leave",
+          "text": "病假连续超过两天时，员工应在返岗后三个工作日内补交医院证明；人事部核对后归档。",
+          "headings": [
+            "年休假与请假办法",
+            "病假证明"
+          ]
+        }
+      ],
+      "latency_ms": 792.21,
+      "input_tokens": 442,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "664dedea4c31a4da",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "去火星出差的机票由谁审批？",
+      "expected_answer": "语料中没有该类出差规定。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "hr-travel",
+          "text": "已批准的出差如增加城市或预算，须在订票前重新提交变更审批。紧急行程由部门负责人书面确认。",
+          "headings": [
+            "国内出差申请制度",
+            "行程变更"
+          ]
+        },
+        {
+          "slug": "hr-travel",
+          "text": "国内出差申请应在出发前三个工作日提交，说明目的、预算和目的地；直属主管和部门负责人依次审批。",
+          "headings": [
+            "国内出差申请制度",
+            "行程审批"
+          ]
+        },
+        {
+          "slug": "proc-emergency",
+          "text": "单笔五千元以内的紧急采购可先由值班负责人确认，二十四小时内补交采购负责人审批。",
+          "headings": [
+            "紧急采购例外办法",
+            "事后复核"
+          ]
+        },
+        {
+          "slug": "fin-payment",
+          "text": "单笔超过五万元的付款需业务负责人和财务负责人双重批准，出纳不得自行修改收款账户。",
+          "headings": [
+            "供应商付款审批规则",
+            "大额付款"
+          ]
+        },
+        {
+          "slug": "proc-contract",
+          "text": "合同审批通过后由授权签字人签署；任何人不得先签字后补流程，合同扫描件须归档。",
+          "headings": [
+            "采购合同评审流程",
+            "签署顺序"
+          ]
+        },
+        {
+          "slug": "fin-expense",
+          "text": "员工费用报销细则\r\n提交时限\r\n费用发生后三十个自然日内提交报销单和合规票据。逾期须说明原因并由部门负责人批准。\r\n审批分级\r\n单笔超过三千元须经财务复核；单笔超过一万元还须财务负责人批准。拆分报销以规避审批\r\n禁止。",
+          "headings": []
+        }
+      ],
+      "latency_ms": 783.27,
+      "input_tokens": 474,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "1eda9c500d45e258",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "年休假可以分几次申请？",
+      "expected_answer": "年休假制度没有规定分次申请次数。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "hr-leave",
+          "text": "连续五个工作日以内的年休假至少提前两个工作日申请；超过五个工作日须提前七个工作日申请。直属主管在系统中审批。",
+          "headings": [
+            "年休假与请假办法",
+            "年休假申请"
+          ]
+        },
+        {
+          "slug": "hr-leave",
+          "text": "病假连续超过两天时，员工应在返岗后三个工作日内补交医院证明；人事部核对后归档。",
+          "headings": [
+            "年休假与请假办法",
+            "病假证明"
+          ]
+        },
+        {
+          "slug": "hr-remote",
+          "text": "符合岗位要求的员工每周可申请周二或周四远程办公一天，至少提前一个工作日由直属主管审批。",
+          "headings": [
+            "远程办公管理办法",
+            "申请范围"
+          ]
+        },
+        {
+          "slug": "hr-travel",
+          "text": "国内出差申请应在出发前三个工作日提交，说明目的、预算和目的地；直属主管和部门负责人依次审批。",
+          "headings": [
+            "国内出差申请制度",
+            "行程审批"
+          ]
+        },
+        {
+          "slug": "it-access",
+          "text": "生产系统权限由直属主管和系统负责人批准，默认有效期九十天；到期须重新申请。",
+          "headings": [
+            "系统账号与权限管理",
+            "开通与期限"
+          ]
+        },
+        {
+          "slug": "fin-invoice",
+          "text": "发票字段错误或重复报销时，申请人应在退回后七个工作日内补正，逾期重新发起申请。",
+          "headings": [
+            "电子发票验真规范",
+            "退回处理"
+          ]
+        }
+      ],
+      "latency_ms": 792.48,
+      "input_tokens": 449,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "a61ea522e0124055",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "远程办公能否申请周三作为例外？",
+      "expected_answer": "远程办公制度没有规定周三例外申请。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "hr-remote",
+          "text": "符合岗位要求的员工每周可申请周二或周四远程办公一天，至少提前一个工作日由直属主管审批。",
+          "headings": [
+            "远程办公管理办法",
+            "申请范围"
+          ]
+        },
+        {
+          "slug": "hr-remote",
+          "text": "远程办公必须使用公司 VPN 和多因素认证，不得在公共设备下载内部资料。",
+          "headings": [
+            "远程办公管理办法",
+            "信息保护"
+          ]
+        },
+        {
+          "slug": "hr-travel",
+          "text": "国内出差申请应在出发前三个工作日提交，说明目的、预算和目的地；直属主管和部门负责人依次审批。",
+          "headings": [
+            "国内出差申请制度",
+            "行程审批"
+          ]
+        },
+        {
+          "slug": "hr-leave",
+          "text": "连续五个工作日以内的年休假至少提前两个工作日申请；超过五个工作日须提前七个工作日申请。直属主管在系统中审批。",
+          "headings": [
+            "年休假与请假办法",
+            "年休假申请"
+          ]
+        },
+        {
+          "slug": "it-vpn",
+          "text": "远程接入公司网络必须启用多因素认证，不得共享 VPN 账号或将令牌交给他人。",
+          "headings": [
+            "远程接入与 VPN 规范",
+            "登录控制"
+          ]
+        },
+        {
+          "slug": "it-vpn",
+          "text": "员工因公境外接入应至少提前五个工作日向信息安全岗报备访问国家与时段。",
+          "headings": [
+            "远程接入与 VPN 规范",
+            "境外接入"
+          ]
+        }
+      ],
+      "latency_ms": 796.21,
+      "input_tokens": 441,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "386999f0f6fede98",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "国内出差的每日住宿费上限是多少？",
+      "expected_answer": "国内出差制度没有规定住宿费上限。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "hr-travel",
+          "text": "国内出差申请应在出发前三个工作日提交，说明目的、预算和目的地；直属主管和部门负责人依次审批。",
+          "headings": [
+            "国内出差申请制度",
+            "行程审批"
+          ]
+        },
+        {
+          "slug": "hr-travel",
+          "text": "已批准的出差如增加城市或预算，须在订票前重新提交变更审批。紧急行程由部门负责人书面确认。",
+          "headings": [
+            "国内出差申请制度",
+            "行程变更"
+          ]
+        },
+        {
+          "slug": "hr-training",
+          "text": "与岗位直接相关的外部课程，每名员工每自然年可报销不超过三千元；报名之前应取得主管批准。",
+          "headings": [
+            "员工培训费用支持办法",
+            "费用上限"
+          ]
+        },
+        {
+          "slug": "proc-quote",
+          "text": "单笔采购金额超过一万元且不超过十万元时，应取得三家独立供应商的有效报价并保留比较表。",
+          "headings": [
+            "采购比价与招标规则",
+            "比价门槛"
+          ]
+        },
+        {
+          "slug": "fin-payment",
+          "text": "单笔超过五万元的付款需业务负责人和财务负责人双重批准，出纳不得自行修改收款账户。",
+          "headings": [
+            "供应商付款审批规则",
+            "大额付款"
+          ]
+        },
+        {
+          "slug": "proc-emergency",
+          "text": "单笔五千元以内的紧急采购可先由值班负责人确认，二十四小时内补交采购负责人审批。",
+          "headings": [
+            "紧急采购例外办法",
+            "事后复核"
+          ]
+        }
+      ],
+      "latency_ms": 803.28,
+      "input_tokens": 450,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "8fa460b1aaabca60",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "员工餐费报销每天最多多少元？",
+      "expected_answer": "费用报销制度没有规定每日餐费上限。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "hr-training",
+          "text": "与岗位直接相关的外部课程，每名员工每自然年可报销不超过三千元；报名之前应取得主管批准。",
+          "headings": [
+            "员工培训费用支持办法",
+            "费用上限"
+          ]
+        },
+        {
+          "slug": "fin-expense",
+          "text": "员工费用报销细则\r\n提交时限\r\n费用发生后三十个自然日内提交报销单和合规票据。逾期须说明原因并由部门负责人批准。\r\n审批分级\r\n单笔超过三千元须经财务复核；单笔超过一万元还须财务负责人批准。拆分报销以规避审批\r\n禁止。",
+          "headings": []
+        },
+        {
+          "slug": "hr-training",
+          "text": "课程结束后十个工作日内提交发票、课程证明和学习总结，财务按年度余额核销。",
+          "headings": [
+            "员工培训费用支持办法",
+            "报销材料"
+          ]
+        },
+        {
+          "slug": "hr-onboarding",
+          "text": "新员工报到当天提交身份证明、工资卡信息与紧急联系人；人事部只在受控系统保存扫描件。",
+          "headings": [
+            "新员工入职办理规范",
+            "报到材料"
+          ]
+        },
+        {
+          "slug": "sec-password",
+          "text": "工作账号口令至少十四个字符，不得与私人账号复用，也不得通过聊天工具明文传递。",
+          "headings": [
+            "账号口令与多因素认证要求",
+            "口令要求"
+          ]
+        },
+        {
+          "slug": "hr-leave",
+          "text": "病假连续超过两天时，员工应在返岗后三个工作日内补交医院证明；人事部核对后归档。",
+          "headings": [
+            "年休假与请假办法",
+            "病假证明"
+          ]
+        }
+      ],
+      "latency_ms": 777.3,
+      "input_tokens": 485,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "99b5a5edfaa1dff7",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "电子发票退回后第二次补正的期限是多久？",
+      "expected_answer": "电子发票制度没有规定第二次补正期限。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "fin-invoice",
+          "text": "发票字段错误或重复报销时，申请人应在退回后七个工作日内补正，逾期重新发起申请。",
+          "headings": [
+            "电子发票验真规范",
+            "退回处理"
+          ]
+        },
+        {
+          "slug": "fin-invoice",
+          "text": "报销的电子发票必须包含公司名称、统一社会信用代码、开票日期和明细；截图不能代替原始电子文件。",
+          "headings": [
+            "电子发票验真规范",
+            "发票字段"
+          ]
+        },
+        {
+          "slug": "fin-petty",
+          "text": "公务结束后五个工作日内凭票据核销并归还余额；逾期借款将暂停新的备用金申请。",
+          "headings": [
+            "备用金借用与归还办法",
+            "归还时限"
+          ]
+        },
+        {
+          "slug": "it-access",
+          "text": "生产系统权限由直属主管和系统负责人批准，默认有效期九十天；到期须重新申请。",
+          "headings": [
+            "系统账号与权限管理",
+            "开通与期限"
+          ]
+        },
+        {
+          "slug": "it-change",
+          "text": "紧急变更可由值班经理先授权实施，实施后二十四小时内补交变更委员会复盘记录。",
+          "headings": [
+            "生产系统变更管理",
+            "紧急变更"
+          ]
+        },
+        {
+          "slug": "it-incident",
+          "text": "P1 处置期间每三十分钟更新一次进展；恢复后两个工作日内完成事故复盘。",
+          "headings": [
+            "信息系统故障响应分级",
+            "进展通报"
+          ]
+        }
+      ],
+      "latency_ms": 756.74,
+      "input_tokens": 442,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "5345787b1c971473",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "采购比价比较表应保存几年？",
+      "expected_answer": "采购比价制度没有规定比较表保存期限。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "proc-quote",
+          "text": "单笔采购金额超过一万元且不超过十万元时，应取得三家独立供应商的有效报价并保留比较表。",
+          "headings": [
+            "采购比价与招标规则",
+            "比价门槛"
+          ]
+        },
+        {
+          "slug": "proc-quote",
+          "text": "单笔采购金额超过十万元时原则上公开招标；例外情形须由采购负责人和法务共同批准。",
+          "headings": [
+            "采购比价与招标规则",
+            "招标门槛"
+          ]
+        },
+        {
+          "slug": "proc-acceptance",
+          "text": "发现数量或型号差异时，应在两个工作日内书面通知供应商，未确认差异前不得办理付款。",
+          "headings": [
+            "采购到货验收标准",
+            "差异处理"
+          ]
+        },
+        {
+          "slug": "sec-retention",
+          "text": "离职人员的人事记录保留三年，已签署合同保留七年，系统访问日志至少保留一百八十天。",
+          "headings": [
+            "业务记录保存期限",
+            "保存期限"
+          ]
+        },
+        {
+          "slug": "proc-emergency",
+          "text": "单笔五千元以内的紧急采购可先由值班负责人确认，二十四小时内补交采购负责人审批。",
+          "headings": [
+            "紧急采购例外办法",
+            "事后复核"
+          ]
+        },
+        {
+          "slug": "proc-contract",
+          "text": "采购合同总金额超过五万元或包含数据处理条款时，签署前必须经法务评审。",
+          "headings": [
+            "采购合同评审流程",
+            "法务评审"
+          ]
+        }
+      ],
+      "latency_ms": 745.46,
+      "input_tokens": 440,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "b479fa0b45fc1e4a",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "采购合同是否允许使用电子签章？",
+      "expected_answer": "采购合同制度没有规定电子签章。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "proc-contract",
+          "text": "合同审批通过后由授权签字人签署；任何人不得先签字后补流程，合同扫描件须归档。",
+          "headings": [
+            "采购合同评审流程",
+            "签署顺序"
+          ]
+        },
+        {
+          "slug": "proc-contract",
+          "text": "采购合同总金额超过五万元或包含数据处理条款时，签署前必须经法务评审。",
+          "headings": [
+            "采购合同评审流程",
+            "法务评审"
+          ]
+        },
+        {
+          "slug": "proc-quote",
+          "text": "单笔采购金额超过十万元时原则上公开招标；例外情形须由采购负责人和法务共同批准。",
+          "headings": [
+            "采购比价与招标规则",
+            "招标门槛"
+          ]
+        },
+        {
+          "slug": "fin-invoice",
+          "text": "报销的电子发票必须包含公司名称、统一社会信用代码、开票日期和明细；截图不能代替原始电子文件。",
+          "headings": [
+            "电子发票验真规范",
+            "发票字段"
+          ]
+        },
+        {
+          "slug": "proc-quote",
+          "text": "单笔采购金额超过一万元且不超过十万元时，应取得三家独立供应商的有效报价并保留比较表。",
+          "headings": [
+            "采购比价与招标规则",
+            "比价门槛"
+          ]
+        },
+        {
+          "slug": "proc-emergency",
+          "text": "单笔五千元以内的紧急采购可先由值班负责人确认，二十四小时内补交采购负责人审批。",
+          "headings": [
+            "紧急采购例外办法",
+            "事后复核"
+          ]
+        }
+      ],
+      "latency_ms": 760.8,
+      "input_tokens": 447,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "a670cf19c893733b",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "紧急采购超过五千元由谁先行批准？",
+      "expected_answer": "紧急采购制度没有规定超过五千元的先行审批人。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "proc-emergency",
+          "text": "单笔五千元以内的紧急采购可先由值班负责人确认，二十四小时内补交采购负责人审批。",
+          "headings": [
+            "紧急采购例外办法",
+            "事后复核"
+          ]
+        },
+        {
+          "slug": "proc-quote",
+          "text": "单笔采购金额超过十万元时原则上公开招标；例外情形须由采购负责人和法务共同批准。",
+          "headings": [
+            "采购比价与招标规则",
+            "招标门槛"
+          ]
+        },
+        {
+          "slug": "proc-emergency",
+          "text": "生产中断或重大安全故障可启动紧急采购，申请人须记录事件编号、预计金额和无法常规采购的原因。",
+          "headings": [
+            "紧急采购例外办法",
+            "适用场景"
+          ]
+        },
+        {
+          "slug": "proc-quote",
+          "text": "单笔采购金额超过一万元且不超过十万元时，应取得三家独立供应商的有效报价并保留比较表。",
+          "headings": [
+            "采购比价与招标规则",
+            "比价门槛"
+          ]
+        },
+        {
+          "slug": "proc-contract",
+          "text": "采购合同总金额超过五万元或包含数据处理条款时，签署前必须经法务评审。",
+          "headings": [
+            "采购合同评审流程",
+            "法务评审"
+          ]
+        },
+        {
+          "slug": "fin-expense",
+          "text": "员工费用报销细则\r\n提交时限\r\n费用发生后三十个自然日内提交报销单和合规票据。逾期须说明原因并由部门负责人批准。\r\n审批分级\r\n单笔超过三千元须经财务复核；单笔超过一万元还须财务负责人批准。拆分报销以规避审批\r\n禁止。",
+          "headings": []
+        }
+      ],
+      "latency_ms": 790.1,
+      "input_tokens": 473,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "b833a58878bad3f1",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "供应商风险复核到期后能否自动续期？",
+      "expected_answer": "供应商准入制度没有规定自动续期。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "proc-supplier",
+          "text": "合规岗完成制裁名单与利益冲突核查后方可启用供应商编码；复核有效期为一年。",
+          "headings": [
+            "供应商准入管理规范",
+            "风险复核"
+          ]
+        },
+        {
+          "slug": "sec-retention",
+          "text": "记录到期后由责任部门提出销毁申请，信息安全岗复核后执行并留存销毁清单。",
+          "headings": [
+            "业务记录保存期限",
+            "到期销毁"
+          ]
+        },
+        {
+          "slug": "fin-expense",
+          "text": "员工费用报销细则\r\n提交时限\r\n费用发生后三十个自然日内提交报销单和合规票据。逾期须说明原因并由部门负责人批准。\r\n审批分级\r\n单笔超过三千元须经财务复核；单笔超过一万元还须财务负责人批准。拆分报销以规避审批\r\n禁止。",
+          "headings": []
+        },
+        {
+          "slug": "proc-emergency",
+          "text": "单笔五千元以内的紧急采购可先由值班负责人确认，二十四小时内补交采购负责人审批。",
+          "headings": [
+            "紧急采购例外办法",
+            "事后复核"
+          ]
+        },
+        {
+          "slug": "it-access",
+          "text": "生产系统权限由直属主管和系统负责人批准，默认有效期九十天；到期须重新申请。",
+          "headings": [
+            "系统账号与权限管理",
+            "开通与期限"
+          ]
+        },
+        {
+          "slug": "it-incident",
+          "text": "P1 处置期间每三十分钟更新一次进展；恢复后两个工作日内完成事故复盘。",
+          "headings": [
+            "信息系统故障响应分级",
+            "进展通报"
+          ]
+        }
+      ],
+      "latency_ms": 804.74,
+      "input_tokens": 460,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "3bf66a4967fbb159",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "备用金遗失后员工需要赔偿多少？",
+      "expected_answer": "备用金制度没有规定遗失赔偿金额。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "fin-petty",
+          "text": "员工因临时公务可借用不超过一千元备用金，主管审批后由财务登记。",
+          "headings": [
+            "备用金借用与归还办法",
+            "借用限额"
+          ]
+        },
+        {
+          "slug": "fin-petty",
+          "text": "公务结束后五个工作日内凭票据核销并归还余额；逾期借款将暂停新的备用金申请。",
+          "headings": [
+            "备用金借用与归还办法",
+            "归还时限"
+          ]
+        },
+        {
+          "slug": "it-device",
+          "text": "办公设备与介质使用规定\n\n设备保护\n公司笔记本必须开启全盘加密和自动锁屏；禁止使用未经批准的移动存储设备复制工作资料。\n\n遗失上报\n设备丢失应在发现后一小时内报告 IT 服务台和信息安全岗，说明设备编号及最后使用地点。",
+          "headings": []
+        },
+        {
+          "slug": "fin-expense",
+          "text": "员工费用报销细则\r\n提交时限\r\n费用发生后三十个自然日内提交报销单和合规票据。逾期须说明原因并由部门负责人批准。\r\n审批分级\r\n单笔超过三千元须经财务复核；单笔超过一万元还须财务负责人批准。拆分报销以规避审批\r\n禁止。",
+          "headings": []
+        },
+        {
+          "slug": "hr-leave",
+          "text": "病假连续超过两天时，员工应在返岗后三个工作日内补交医院证明；人事部核对后归档。",
+          "headings": [
+            "年休假与请假办法",
+            "病假证明"
+          ]
+        },
+        {
+          "slug": "hr-training",
+          "text": "课程结束后十个工作日内提交发票、课程证明和学习总结，财务按年度余额核销。",
+          "headings": [
+            "员工培训费用支持办法",
+            "报销材料"
+          ]
+        }
+      ],
+      "latency_ms": 832.98,
+      "input_tokens": 501,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "7acdb2e39bd2c09b",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "VPN 账号密码每隔多久必须更换？",
+      "expected_answer": "远程接入制度没有规定 VPN 密码轮换周期。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "it-vpn",
+          "text": "远程接入公司网络必须启用多因素认证，不得共享 VPN 账号或将令牌交给他人。",
+          "headings": [
+            "远程接入与 VPN 规范",
+            "登录控制"
+          ]
+        },
+        {
+          "slug": "it-access",
+          "text": "人事部发出离职通知后，IT 值班人员须在四小时内撤销生产系统账号和 VPN 权限。",
+          "headings": [
+            "系统账号与权限管理",
+            "离职撤销"
+          ]
+        },
+        {
+          "slug": "it-vpn",
+          "text": "员工因公境外接入应至少提前五个工作日向信息安全岗报备访问国家与时段。",
+          "headings": [
+            "远程接入与 VPN 规范",
+            "境外接入"
+          ]
+        },
+        {
+          "slug": "hr-remote",
+          "text": "远程办公必须使用公司 VPN 和多因素认证，不得在公共设备下载内部资料。",
+          "headings": [
+            "远程办公管理办法",
+            "信息保护"
+          ]
+        },
+        {
+          "slug": "sec-password",
+          "text": "管理员账号必须启用多因素认证；异常地点登录会触发二次核验和安全告警。",
+          "headings": [
+            "账号口令与多因素认证要求",
+            "高风险登录"
+          ]
+        },
+        {
+          "slug": "it-change",
+          "text": "常规生产变更安排在每周三二十点至二十二点，申请单必须包含回滚方案与验证人。",
+          "headings": [
+            "生产系统变更管理",
+            "常规窗口"
+          ]
+        }
+      ],
+      "latency_ms": 919.87,
+      "input_tokens": 443,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "99af4c319a2bb437",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "P2 故障应在多久内通知应急负责人？",
+      "expected_answer": "故障响应制度没有规定 P2 通知时限。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "it-incident",
+          "text": "核心业务不可用属于 P1，值班人员应在发现后十五分钟内通知应急负责人。",
+          "headings": [
+            "信息系统故障响应分级",
+            "一级故障"
+          ]
+        },
+        {
+          "slug": "it-access",
+          "text": "人事部发出离职通知后，IT 值班人员须在四小时内撤销生产系统账号和 VPN 权限。",
+          "headings": [
+            "系统账号与权限管理",
+            "离职撤销"
+          ]
+        },
+        {
+          "slug": "proc-emergency",
+          "text": "单笔五千元以内的紧急采购可先由值班负责人确认，二十四小时内补交采购负责人审批。",
+          "headings": [
+            "紧急采购例外办法",
+            "事后复核"
+          ]
+        },
+        {
+          "slug": "it-incident",
+          "text": "P1 处置期间每三十分钟更新一次进展；恢复后两个工作日内完成事故复盘。",
+          "headings": [
+            "信息系统故障响应分级",
+            "进展通报"
+          ]
+        },
+        {
+          "slug": "sec-visitor",
+          "text": "工作日十八点后及非工作日接待访客，须提前取得行政负责人批准并通知安保。",
+          "headings": [
+            "访客登记与陪同规定",
+            "非工作时间"
+          ]
+        },
+        {
+          "slug": "it-device",
+          "text": "办公设备与介质使用规定\n\n设备保护\n公司笔记本必须开启全盘加密和自动锁屏；禁止使用未经批准的移动存储设备复制工作资料。\n\n遗失上报\n设备丢失应在发现后一小时内报告 IT 服务台和信息安全岗，说明设备编号及最后使用地点。",
+          "headings": []
+        }
+      ],
+      "latency_ms": 774.28,
+      "input_tokens": 468,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "20fddc10d67f1918",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "办公设备丢失后由谁承担赔偿？",
+      "expected_answer": "设备使用制度没有规定遗失赔偿责任。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "it-device",
+          "text": "办公设备与介质使用规定\n\n设备保护\n公司笔记本必须开启全盘加密和自动锁屏；禁止使用未经批准的移动存储设备复制工作资料。\n\n遗失上报\n设备丢失应在发现后一小时内报告 IT 服务台和信息安全岗，说明设备编号及最后使用地点。",
+          "headings": []
+        },
+        {
+          "slug": "fin-petty",
+          "text": "员工因临时公务可借用不超过一千元备用金，主管审批后由财务登记。",
+          "headings": [
+            "备用金借用与归还办法",
+            "借用限额"
+          ]
+        },
+        {
+          "slug": "sec-retention",
+          "text": "记录到期后由责任部门提出销毁申请，信息安全岗复核后执行并留存销毁清单。",
+          "headings": [
+            "业务记录保存期限",
+            "到期销毁"
+          ]
+        },
+        {
+          "slug": "proc-contract",
+          "text": "合同审批通过后由授权签字人签署；任何人不得先签字后补流程，合同扫描件须归档。",
+          "headings": [
+            "采购合同评审流程",
+            "签署顺序"
+          ]
+        },
+        {
+          "slug": "fin-expense",
+          "text": "员工费用报销细则\r\n提交时限\r\n费用发生后三十个自然日内提交报销单和合规票据。逾期须说明原因并由部门负责人批准。\r\n审批分级\r\n单笔超过三千元须经财务复核；单笔超过一万元还须财务负责人批准。拆分报销以规避审批\r\n禁止。",
+          "headings": []
+        },
+        {
+          "slug": "fin-invoice",
+          "text": "发票字段错误或重复报销时，申请人应在退回后七个工作日内补正，逾期重新发起申请。",
+          "headings": [
+            "电子发票验真规范",
+            "退回处理"
+          ]
+        }
+      ],
+      "latency_ms": 819.84,
+      "input_tokens": 500,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "f042885bd51b9148",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "访客证遗失的罚款标准是多少？",
+      "expected_answer": "访客登记制度没有规定遗失罚款标准。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "sec-visitor",
+          "text": "工作日十八点后及非工作日接待访客，须提前取得行政负责人批准并通知安保。",
+          "headings": [
+            "访客登记与陪同规定",
+            "非工作时间"
+          ]
+        },
+        {
+          "slug": "sec-visitor",
+          "text": "访客进入办公区域必须出示有效证件、登记被访人并佩戴访客证；被访人全程陪同。",
+          "headings": [
+            "访客登记与陪同规定",
+            "入园登记"
+          ]
+        },
+        {
+          "slug": "it-device",
+          "text": "办公设备与介质使用规定\n\n设备保护\n公司笔记本必须开启全盘加密和自动锁屏；禁止使用未经批准的移动存储设备复制工作资料。\n\n遗失上报\n设备丢失应在发现后一小时内报告 IT 服务台和信息安全岗，说明设备编号及最后使用地点。",
+          "headings": []
+        },
+        {
+          "slug": "sec-retention",
+          "text": "离职人员的人事记录保留三年，已签署合同保留七年，系统访问日志至少保留一百八十天。",
+          "headings": [
+            "业务记录保存期限",
+            "保存期限"
+          ]
+        },
+        {
+          "slug": "proc-acceptance",
+          "text": "发现数量或型号差异时，应在两个工作日内书面通知供应商，未确认差异前不得办理付款。",
+          "headings": [
+            "采购到货验收标准",
+            "差异处理"
+          ]
+        },
+        {
+          "slug": "proc-emergency",
+          "text": "单笔五千元以内的紧急采购可先由值班负责人确认，二十四小时内补交采购负责人审批。",
+          "headings": [
+            "紧急采购例外办法",
+            "事后复核"
+          ]
+        }
+      ],
+      "latency_ms": 892.76,
+      "input_tokens": 470,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "76d3e4d6ffedad84",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "试用期的最长期限是几个月？",
+      "expected_answer": "新员工入职制度没有规定试用期期限。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "hr-onboarding",
+          "text": "入职后三十天内完成信息安全培训和岗位导师面谈。培训未完成时不开放生产系统权限。",
+          "headings": [
+            "新员工入职办理规范",
+            "试用期培训"
+          ]
+        },
+        {
+          "slug": "sec-retention",
+          "text": "离职人员的人事记录保留三年，已签署合同保留七年，系统访问日志至少保留一百八十天。",
+          "headings": [
+            "业务记录保存期限",
+            "保存期限"
+          ]
+        },
+        {
+          "slug": "it-access",
+          "text": "生产系统权限由直属主管和系统负责人批准，默认有效期九十天；到期须重新申请。",
+          "headings": [
+            "系统账号与权限管理",
+            "开通与期限"
+          ]
+        },
+        {
+          "slug": "fin-petty",
+          "text": "公务结束后五个工作日内凭票据核销并归还余额；逾期借款将暂停新的备用金申请。",
+          "headings": [
+            "备用金借用与归还办法",
+            "归还时限"
+          ]
+        },
+        {
+          "slug": "hr-remote",
+          "text": "符合岗位要求的员工每周可申请周二或周四远程办公一天，至少提前一个工作日由直属主管审批。",
+          "headings": [
+            "远程办公管理办法",
+            "申请范围"
+          ]
+        },
+        {
+          "slug": "hr-leave",
+          "text": "连续五个工作日以内的年休假至少提前两个工作日申请；超过五个工作日须提前七个工作日申请。直属主管在系统中审批。",
+          "headings": [
+            "年休假与请假办法",
+            "年休假申请"
+          ]
+        }
+      ],
+      "latency_ms": 770.44,
+      "input_tokens": 438,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "71137979062a2165",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "培训报销未用额度可以结转到下一年吗？",
+      "expected_answer": "培训费用制度没有规定额度结转。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "hr-training",
+          "text": "课程结束后十个工作日内提交发票、课程证明和学习总结，财务按年度余额核销。",
+          "headings": [
+            "员工培训费用支持办法",
+            "报销材料"
+          ]
+        },
+        {
+          "slug": "hr-onboarding",
+          "text": "入职后三十天内完成信息安全培训和岗位导师面谈。培训未完成时不开放生产系统权限。",
+          "headings": [
+            "新员工入职办理规范",
+            "试用期培训"
+          ]
+        },
+        {
+          "slug": "hr-training",
+          "text": "与岗位直接相关的外部课程，每名员工每自然年可报销不超过三千元；报名之前应取得主管批准。",
+          "headings": [
+            "员工培训费用支持办法",
+            "费用上限"
+          ]
+        },
+        {
+          "slug": "fin-expense",
+          "text": "员工费用报销细则\r\n提交时限\r\n费用发生后三十个自然日内提交报销单和合规票据。逾期须说明原因并由部门负责人批准。\r\n审批分级\r\n单笔超过三千元须经财务复核；单笔超过一万元还须财务负责人批准。拆分报销以规避审批\r\n禁止。",
+          "headings": []
+        },
+        {
+          "slug": "proc-supplier",
+          "text": "合规岗完成制裁名单与利益冲突核查后方可启用供应商编码；复核有效期为一年。",
+          "headings": [
+            "供应商准入管理规范",
+            "风险复核"
+          ]
+        },
+        {
+          "slug": "fin-invoice",
+          "text": "发票字段错误或重复报销时，申请人应在退回后七个工作日内补正，逾期重新发起申请。",
+          "headings": [
+            "电子发票验真规范",
+            "退回处理"
+          ]
+        }
+      ],
+      "latency_ms": 783.16,
+      "input_tokens": 471,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "6265fff276ca1613",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "超预算幅度不超过百分之十时由谁审批？",
+      "expected_answer": "季度预算制度没有规定该情形的审批人。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "fin-budget",
+          "text": "同一预算项目预计超支超过百分之十时，应在支出发生前取得财务负责人批准并更新预算记录。",
+          "headings": [
+            "季度预算调整流程",
+            "超预算处理"
+          ]
+        },
+        {
+          "slug": "proc-quote",
+          "text": "单笔采购金额超过一万元且不超过十万元时，应取得三家独立供应商的有效报价并保留比较表。",
+          "headings": [
+            "采购比价与招标规则",
+            "比价门槛"
+          ]
+        },
+        {
+          "slug": "proc-quote",
+          "text": "单笔采购金额超过十万元时原则上公开招标；例外情形须由采购负责人和法务共同批准。",
+          "headings": [
+            "采购比价与招标规则",
+            "招标门槛"
+          ]
+        },
+        {
+          "slug": "fin-expense",
+          "text": "员工费用报销细则\r\n提交时限\r\n费用发生后三十个自然日内提交报销单和合规票据。逾期须说明原因并由部门负责人批准。\r\n审批分级\r\n单笔超过三千元须经财务复核；单笔超过一万元还须财务负责人批准。拆分报销以规避审批\r\n禁止。",
+          "headings": []
+        },
+        {
+          "slug": "fin-petty",
+          "text": "员工因临时公务可借用不超过一千元备用金，主管审批后由财务登记。",
+          "headings": [
+            "备用金借用与归还办法",
+            "借用限额"
+          ]
+        },
+        {
+          "slug": "proc-contract",
+          "text": "采购合同总金额超过五万元或包含数据处理条款时，签署前必须经法务评审。",
+          "headings": [
+            "采购合同评审流程",
+            "法务评审"
+          ]
+        }
+      ],
+      "latency_ms": 1529.8,
+      "input_tokens": 476,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "5bf2b5aae6142fbc",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "受限数据加密链接的密码至少多少位？",
+      "expected_answer": "对外传输制度没有规定加密链接密码长度。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "sec-export",
+          "text": "批准后使用加密链接并加水印，链接有效期最多七天；不得使用个人邮箱或公开分享链接。",
+          "headings": [
+            "受限数据对外传输审批",
+            "传输控制"
+          ]
+        },
+        {
+          "slug": "sec-classification",
+          "text": "受限数据不得上传公共云盘或发送个人邮箱；跨部门访问须由数据所有者和安全岗共同批准。",
+          "headings": [
+            "企业数据分级办法",
+            "受限数据"
+          ]
+        },
+        {
+          "slug": "sec-export",
+          "text": "受限数据对外传输须由数据所有者、法务和信息安全岗联合批准，申请中写明接收方与用途。",
+          "headings": [
+            "受限数据对外传输审批",
+            "审批链"
+          ]
+        },
+        {
+          "slug": "sec-classification",
+          "text": "数据按公开、内部、机密、受限四级管理，文档所有者在创建时标注级别。",
+          "headings": [
+            "企业数据分级办法",
+            "分级类别"
+          ]
+        },
+        {
+          "slug": "it-device",
+          "text": "办公设备与介质使用规定\n\n设备保护\n公司笔记本必须开启全盘加密和自动锁屏；禁止使用未经批准的移动存储设备复制工作资料。\n\n遗失上报\n设备丢失应在发现后一小时内报告 IT 服务台和信息安全岗，说明设备编号及最后使用地点。",
+          "headings": []
+        },
+        {
+          "slug": "sec-password",
+          "text": "工作账号口令至少十四个字符，不得与私人账号复用，也不得通过聊天工具明文传递。",
+          "headings": [
+            "账号口令与多因素认证要求",
+            "口令要求"
+          ]
+        }
+      ],
+      "latency_ms": 803.87,
+      "input_tokens": 474,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "64431a5daeb4355d",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "访客非工作时间入园最迟要提前多久申请？",
+      "expected_answer": "访客制度要求提前批准，但没有规定具体提前时限。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "sec-visitor",
+          "text": "工作日十八点后及非工作日接待访客，须提前取得行政负责人批准并通知安保。",
+          "headings": [
+            "访客登记与陪同规定",
+            "非工作时间"
+          ]
+        },
+        {
+          "slug": "sec-visitor",
+          "text": "访客进入办公区域必须出示有效证件、登记被访人并佩戴访客证；被访人全程陪同。",
+          "headings": [
+            "访客登记与陪同规定",
+            "入园登记"
+          ]
+        },
+        {
+          "slug": "it-vpn",
+          "text": "员工因公境外接入应至少提前五个工作日向信息安全岗报备访问国家与时段。",
+          "headings": [
+            "远程接入与 VPN 规范",
+            "境外接入"
+          ]
+        },
+        {
+          "slug": "hr-remote",
+          "text": "符合岗位要求的员工每周可申请周二或周四远程办公一天，至少提前一个工作日由直属主管审批。",
+          "headings": [
+            "远程办公管理办法",
+            "申请范围"
+          ]
+        },
+        {
+          "slug": "hr-leave",
+          "text": "连续五个工作日以内的年休假至少提前两个工作日申请；超过五个工作日须提前七个工作日申请。直属主管在系统中审批。",
+          "headings": [
+            "年休假与请假办法",
+            "年休假申请"
+          ]
+        },
+        {
+          "slug": "hr-travel",
+          "text": "国内出差申请应在出发前三个工作日提交，说明目的、预算和目的地；直属主管和部门负责人依次审批。",
+          "headings": [
+            "国内出差申请制度",
+            "行程审批"
+          ]
+        }
+      ],
+      "latency_ms": 735.34,
+      "input_tokens": 455,
+      "output_tokens": 9
+    },
+    {
+      "case_id": "4451f77ae1ee36a6",
+      "category": "no_answer",
+      "username": "admin",
+      "question": "系统访问日志具体保存在哪台服务器？",
+      "expected_answer": "记录保存制度没有规定具体存储服务器。",
+      "expected_docs": [],
+      "status": "insufficient_evidence",
+      "answer": "现有资料不足，无法确认。",
+      "cited_docs": [],
+      "expected_docs_cited": null,
+      "sources": [
+        {
+          "slug": "sec-retention",
+          "text": "离职人员的人事记录保留三年，已签署合同保留七年，系统访问日志至少保留一百八十天。",
+          "headings": [
+            "业务记录保存期限",
+            "保存期限"
+          ]
+        },
+        {
+          "slug": "sec-retention",
+          "text": "记录到期后由责任部门提出销毁申请，信息安全岗复核后执行并留存销毁清单。",
+          "headings": [
+            "业务记录保存期限",
+            "到期销毁"
+          ]
+        },
+        {
+          "slug": "it-change",
+          "text": "常规生产变更安排在每周三二十点至二十二点，申请单必须包含回滚方案与验证人。",
+          "headings": [
+            "生产系统变更管理",
+            "常规窗口"
+          ]
+        },
+        {
+          "slug": "it-access",
+          "text": "人事部发出离职通知后，IT 值班人员须在四小时内撤销生产系统账号和 VPN 权限。",
+          "headings": [
+            "系统账号与权限管理",
+            "离职撤销"
+          ]
+        },
+        {
+          "slug": "sec-classification",
+          "text": "受限数据不得上传公共云盘或发送个人邮箱；跨部门访问须由数据所有者和安全岗共同批准。",
+          "headings": [
+            "企业数据分级办法",
+            "受限数据"
+          ]
+        },
+        {
+          "slug": "it-vpn",
+          "text": "员工因公境外接入应至少提前五个工作日向信息安全岗报备访问国家与时段。",
+          "headings": [
+            "远程接入与 VPN 规范",
+            "境外接入"
+          ]
+        }
+      ],
+      "latency_ms": 837.98,
+      "input_tokens": 445,
+      "output_tokens": 9
+    }
+  ]
+}

@@ -1,0 +1,3053 @@
+{
+  "summary": {
+    "generated_at": "2026-09-17T03:42:58.484808+00:00",
+    "retrieval_mode": "dense",
+    "embedding_model": "BAAI/bge-small-zh-v1.5",
+    "document_count": 25,
+    "chunk_count": 48,
+    "question_count": 110,
+    "category_counts": {
+      "single_document": 75,
+      "cross_document": 5,
+      "no_answer": 25,
+      "unauthorized": 5
+    },
+    "recall_at_5": 1.0,
+    "full_support_at_5": 1,
+    "mrr": 0.9792,
+    "unauthorized_exposures": 0,
+    "no_answer_queries_with_hits": 25,
+    "positive_top1_min_score": 0.5011,
+    "no_answer_top1_max_score": 0.7559,
+    "latency_p50_ms": 15.01,
+    "latency_p95_ms": 17.63,
+    "ingestion_seconds": 2.94
+  },
+  "cases": [
+    {
+      "category": "single_document",
+      "question": "休五天年假最迟提前多久申请？",
+      "expected_docs": [
+        "hr-leave"
+      ],
+      "answer": "提前两个工作日",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-leave",
+        "hr-leave",
+        "hr-remote",
+        "sec-visitor",
+        "fin-petty"
+      ],
+      "retrieved_scores": [
+        0.7302,
+        0.6355,
+        0.58,
+        0.5568,
+        0.5485
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 18.18
+    },
+    {
+      "category": "single_document",
+      "question": "休六天年假要提前几天申请？",
+      "expected_docs": [
+        "hr-leave"
+      ],
+      "answer": "提前七个工作日",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-leave",
+        "hr-leave",
+        "sec-visitor",
+        "hr-remote",
+        "it-vpn"
+      ],
+      "retrieved_scores": [
+        0.7258,
+        0.6523,
+        0.5786,
+        0.5435,
+        0.5164
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.36
+    },
+    {
+      "category": "single_document",
+      "question": "连续病假超过两天什么时候补交证明？",
+      "expected_docs": [
+        "hr-leave"
+      ],
+      "answer": "返岗后三个工作日内",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-leave",
+        "hr-leave",
+        "fin-invoice",
+        "it-change",
+        "proc-emergency"
+      ],
+      "retrieved_scores": [
+        0.7692,
+        0.5718,
+        0.5575,
+        0.5356,
+        0.5267
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.53
+    },
+    {
+      "category": "single_document",
+      "question": "新员工报到当天要交哪些材料？",
+      "expected_docs": [
+        "hr-onboarding"
+      ],
+      "answer": "身份证明、工资卡信息和紧急联系人",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-onboarding",
+        "hr-training",
+        "hr-onboarding",
+        "fin-expense",
+        "hr-training"
+      ],
+      "retrieved_scores": [
+        0.6971,
+        0.6176,
+        0.5815,
+        0.5704,
+        0.5566
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.19
+    },
+    {
+      "category": "single_document",
+      "question": "入职培训应在多久内完成？",
+      "expected_docs": [
+        "hr-onboarding"
+      ],
+      "answer": "入职后三十天内",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-onboarding",
+        "hr-training",
+        "hr-training",
+        "proc-supplier",
+        "it-access"
+      ],
+      "retrieved_scores": [
+        0.7141,
+        0.5975,
+        0.5775,
+        0.554,
+        0.5303
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 16.36
+    },
+    {
+      "category": "single_document",
+      "question": "安全培训没完成可以开生产权限吗？",
+      "expected_docs": [
+        "hr-onboarding"
+      ],
+      "answer": "不可以",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-onboarding",
+        "it-access",
+        "hr-training",
+        "it-access",
+        "hr-training"
+      ],
+      "retrieved_scores": [
+        0.7072,
+        0.5522,
+        0.5304,
+        0.5137,
+        0.5006
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 16.83
+    },
+    {
+      "category": "single_document",
+      "question": "远程办公可选择周几？",
+      "expected_docs": [
+        "hr-remote"
+      ],
+      "answer": "周二或周四",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-remote",
+        "it-vpn",
+        "hr-remote",
+        "hr-travel",
+        "it-vpn"
+      ],
+      "retrieved_scores": [
+        0.7145,
+        0.5696,
+        0.5538,
+        0.4957,
+        0.4932
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.93
+    },
+    {
+      "category": "single_document",
+      "question": "远程办公申请要提前多久？",
+      "expected_docs": [
+        "hr-remote"
+      ],
+      "answer": "至少一个工作日",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-remote",
+        "it-vpn",
+        "hr-remote",
+        "hr-travel",
+        "sec-visitor"
+      ],
+      "retrieved_scores": [
+        0.7361,
+        0.6343,
+        0.5795,
+        0.571,
+        0.5542
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.18
+    },
+    {
+      "category": "single_document",
+      "question": "远程办公能用公共电脑下载内部资料吗？",
+      "expected_docs": [
+        "hr-remote"
+      ],
+      "answer": "不能",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-remote",
+        "it-vpn",
+        "hr-remote",
+        "it-device",
+        "it-vpn"
+      ],
+      "retrieved_scores": [
+        0.6786,
+        0.519,
+        0.5187,
+        0.5116,
+        0.5056
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 16.11
+    },
+    {
+      "category": "single_document",
+      "question": "国内出差要提前多久申请？",
+      "expected_docs": [
+        "hr-travel"
+      ],
+      "answer": "出发前三个工作日",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-travel",
+        "hr-travel",
+        "sec-visitor",
+        "it-vpn",
+        "hr-leave"
+      ],
+      "retrieved_scores": [
+        0.7482,
+        0.6831,
+        0.5938,
+        0.5854,
+        0.578
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.01
+    },
+    {
+      "category": "single_document",
+      "question": "出差申请需要写明哪些信息？",
+      "expected_docs": [
+        "hr-travel"
+      ],
+      "answer": "目的、预算和目的地",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-travel",
+        "hr-travel",
+        "sec-visitor",
+        "sec-visitor",
+        "proc-acceptance"
+      ],
+      "retrieved_scores": [
+        0.6803,
+        0.6141,
+        0.506,
+        0.4916,
+        0.4854
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.3
+    },
+    {
+      "category": "single_document",
+      "question": "增加出差城市何时重新审批？",
+      "expected_docs": [
+        "hr-travel"
+      ],
+      "answer": "订票前",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-travel",
+        "hr-travel",
+        "fin-invoice",
+        "it-change",
+        "it-change"
+      ],
+      "retrieved_scores": [
+        0.7502,
+        0.6539,
+        0.5344,
+        0.5222,
+        0.5132
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.26
+    },
+    {
+      "category": "single_document",
+      "question": "外部培训每年最多报销多少？",
+      "expected_docs": [
+        "hr-training"
+      ],
+      "answer": "每人每自然年三千元",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-training",
+        "hr-training",
+        "fin-expense",
+        "proc-quote",
+        "proc-emergency"
+      ],
+      "retrieved_scores": [
+        0.7337,
+        0.6215,
+        0.4861,
+        0.4415,
+        0.427
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.35
+    },
+    {
+      "category": "single_document",
+      "question": "培训报名之前要谁批准？",
+      "expected_docs": [
+        "hr-training"
+      ],
+      "answer": "直属主管",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-training",
+        "hr-onboarding",
+        "hr-training",
+        "sec-visitor",
+        "proc-emergency"
+      ],
+      "retrieved_scores": [
+        0.6086,
+        0.5593,
+        0.5464,
+        0.5327,
+        0.5208
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.54
+    },
+    {
+      "category": "single_document",
+      "question": "培训结束后多久提交报销材料？",
+      "expected_docs": [
+        "hr-training"
+      ],
+      "answer": "十个工作日内",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-training",
+        "hr-training",
+        "hr-onboarding",
+        "fin-expense",
+        "proc-emergency"
+      ],
+      "retrieved_scores": [
+        0.7295,
+        0.6061,
+        0.6052,
+        0.5946,
+        0.5812
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 13.88
+    },
+    {
+      "category": "single_document",
+      "question": "费用报销应在发生后多久提交？",
+      "expected_docs": [
+        "fin-expense"
+      ],
+      "answer": "三十个自然日内",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "fin-expense",
+        "hr-training",
+        "fin-invoice",
+        "proc-emergency",
+        "hr-training"
+      ],
+      "retrieved_scores": [
+        0.6793,
+        0.6622,
+        0.6111,
+        0.5622,
+        0.5544
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 13.8
+    },
+    {
+      "category": "single_document",
+      "question": "单笔四千元报销由谁复核？",
+      "expected_docs": [
+        "fin-expense"
+      ],
+      "answer": "财务复核",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "fin-expense",
+        "proc-emergency",
+        "fin-invoice",
+        "proc-quote",
+        "hr-training"
+      ],
+      "retrieved_scores": [
+        0.6204,
+        0.6192,
+        0.5471,
+        0.5356,
+        0.531
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 13.68
+    },
+    {
+      "category": "single_document",
+      "question": "单笔超过一万元还要谁批准？",
+      "expected_docs": [
+        "fin-expense"
+      ],
+      "answer": "财务负责人",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "fin-payment",
+        "proc-quote",
+        "fin-expense",
+        "proc-quote",
+        "proc-emergency"
+      ],
+      "retrieved_scores": [
+        0.594,
+        0.5822,
+        0.5781,
+        0.569,
+        0.5678
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.6
+    },
+    {
+      "category": "single_document",
+      "question": "电子发票必须包含哪些字段？",
+      "expected_docs": [
+        "fin-invoice"
+      ],
+      "answer": "公司名称、统一社会信用代码、开票日期和明细",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "fin-invoice",
+        "fin-invoice",
+        "hr-training",
+        "fin-payment",
+        "proc-contract"
+      ],
+      "retrieved_scores": [
+        0.7441,
+        0.6059,
+        0.4869,
+        0.4819,
+        0.4502
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.39
+    },
+    {
+      "category": "single_document",
+      "question": "发票截图可以代替原始电子文件吗？",
+      "expected_docs": [
+        "fin-invoice"
+      ],
+      "answer": "不可以",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "fin-invoice",
+        "fin-invoice",
+        "proc-contract",
+        "it-device",
+        "sec-export"
+      ],
+      "retrieved_scores": [
+        0.7093,
+        0.5285,
+        0.4469,
+        0.4366,
+        0.4325
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 13.84
+    },
+    {
+      "category": "single_document",
+      "question": "发票被退回后多久补正？",
+      "expected_docs": [
+        "fin-invoice"
+      ],
+      "answer": "七个工作日内",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "fin-invoice",
+        "fin-petty",
+        "it-change",
+        "fin-invoice",
+        "proc-emergency"
+      ],
+      "retrieved_scores": [
+        0.7772,
+        0.5616,
+        0.5531,
+        0.5496,
+        0.5352
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.25
+    },
+    {
+      "category": "single_document",
+      "question": "供应商付款申请需要哪些附件？",
+      "expected_docs": [
+        "fin-payment"
+      ],
+      "answer": "合同、验收记录及发票",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "fin-payment",
+        "proc-supplier",
+        "fin-payment",
+        "proc-acceptance",
+        "proc-contract"
+      ],
+      "retrieved_scores": [
+        0.6167,
+        0.5877,
+        0.5583,
+        0.5467,
+        0.521
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.19
+    },
+    {
+      "category": "single_document",
+      "question": "超过五万元付款由谁批准？",
+      "expected_docs": [
+        "fin-payment"
+      ],
+      "answer": "业务负责人和财务负责人",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "fin-payment",
+        "proc-contract",
+        "fin-payment",
+        "proc-emergency",
+        "fin-expense"
+      ],
+      "retrieved_scores": [
+        0.6731,
+        0.59,
+        0.5688,
+        0.5367,
+        0.5359
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.11
+    },
+    {
+      "category": "single_document",
+      "question": "出纳能自行修改供应商收款账户吗？",
+      "expected_docs": [
+        "fin-payment"
+      ],
+      "answer": "不能",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "fin-payment",
+        "fin-payment",
+        "proc-supplier",
+        "proc-acceptance",
+        "hr-training"
+      ],
+      "retrieved_scores": [
+        0.7634,
+        0.5922,
+        0.5733,
+        0.5476,
+        0.4741
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.02
+    },
+    {
+      "category": "single_document",
+      "question": "下季度预算何时提交？",
+      "expected_docs": [
+        "fin-budget"
+      ],
+      "answer": "本季度结束前十个工作日",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "fin-budget",
+        "fin-budget",
+        "proc-emergency",
+        "hr-training",
+        "sec-visitor"
+      ],
+      "retrieved_scores": [
+        0.6983,
+        0.6399,
+        0.4337,
+        0.433,
+        0.4222
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.54
+    },
+    {
+      "category": "single_document",
+      "question": "预算申报要列明什么？",
+      "expected_docs": [
+        "fin-budget"
+      ],
+      "answer": "项目、金额和责任人",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "fin-budget",
+        "fin-budget",
+        "hr-training",
+        "proc-quote",
+        "fin-expense"
+      ],
+      "retrieved_scores": [
+        0.5808,
+        0.5618,
+        0.4914,
+        0.4833,
+        0.4707
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.96
+    },
+    {
+      "category": "single_document",
+      "question": "预计超支超过多少需要重新审批？",
+      "expected_docs": [
+        "fin-budget"
+      ],
+      "answer": "百分之十",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "fin-budget",
+        "fin-expense",
+        "fin-payment",
+        "proc-contract",
+        "proc-emergency"
+      ],
+      "retrieved_scores": [
+        0.6699,
+        0.6109,
+        0.6007,
+        0.5531,
+        0.5501
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 17.74
+    },
+    {
+      "category": "single_document",
+      "question": "临时公务备用金最高可借多少？",
+      "expected_docs": [
+        "fin-petty"
+      ],
+      "answer": "一千元",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "fin-petty",
+        "fin-petty",
+        "proc-emergency",
+        "fin-expense",
+        "proc-quote"
+      ],
+      "retrieved_scores": [
+        0.7316,
+        0.5851,
+        0.4696,
+        0.4639,
+        0.4351
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 17.71
+    },
+    {
+      "category": "single_document",
+      "question": "备用金由谁审批？",
+      "expected_docs": [
+        "fin-petty"
+      ],
+      "answer": "主管",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "fin-petty",
+        "fin-petty",
+        "fin-payment",
+        "fin-payment",
+        "proc-emergency"
+      ],
+      "retrieved_scores": [
+        0.6441,
+        0.6137,
+        0.5309,
+        0.5039,
+        0.4989
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 16.53
+    },
+    {
+      "category": "single_document",
+      "question": "公务结束后多久归还备用金余额？",
+      "expected_docs": [
+        "fin-petty"
+      ],
+      "answer": "五个工作日内",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "fin-petty",
+        "fin-petty",
+        "hr-training",
+        "sec-retention",
+        "fin-invoice"
+      ],
+      "retrieved_scores": [
+        0.7251,
+        0.6551,
+        0.5373,
+        0.4956,
+        0.4947
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 16.73
+    },
+    {
+      "category": "single_document",
+      "question": "新供应商需要几个客户参考案例？",
+      "expected_docs": [
+        "proc-supplier"
+      ],
+      "answer": "至少三个",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "proc-supplier",
+        "proc-quote",
+        "proc-acceptance",
+        "proc-contract",
+        "fin-payment"
+      ],
+      "retrieved_scores": [
+        0.6461,
+        0.5554,
+        0.5382,
+        0.4945,
+        0.4878
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.83
+    },
+    {
+      "category": "single_document",
+      "question": "供应商启用前由谁做风险复核？",
+      "expected_docs": [
+        "proc-supplier"
+      ],
+      "answer": "合规岗",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "proc-supplier",
+        "proc-emergency",
+        "proc-emergency",
+        "sec-password",
+        "fin-payment"
+      ],
+      "retrieved_scores": [
+        0.6416,
+        0.538,
+        0.5286,
+        0.5025,
+        0.5025
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 16.08
+    },
+    {
+      "category": "single_document",
+      "question": "供应商风险复核有效期多久？",
+      "expected_docs": [
+        "proc-supplier"
+      ],
+      "answer": "一年",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "proc-supplier",
+        "proc-emergency",
+        "it-incident",
+        "proc-acceptance",
+        "fin-expense"
+      ],
+      "retrieved_scores": [
+        0.7444,
+        0.5985,
+        0.5723,
+        0.5494,
+        0.5378
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.72
+    },
+    {
+      "category": "single_document",
+      "question": "两万元采购要几家供应商报价？",
+      "expected_docs": [
+        "proc-quote"
+      ],
+      "answer": "三家独立供应商",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "proc-quote",
+        "proc-acceptance",
+        "proc-emergency",
+        "proc-supplier",
+        "proc-quote"
+      ],
+      "retrieved_scores": [
+        0.7137,
+        0.5975,
+        0.588,
+        0.5786,
+        0.572
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.48
+    },
+    {
+      "category": "single_document",
+      "question": "超过十万元采购原则上采用什么方式？",
+      "expected_docs": [
+        "proc-quote"
+      ],
+      "answer": "公开招标",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "proc-quote",
+        "proc-quote",
+        "proc-contract",
+        "proc-emergency",
+        "proc-supplier"
+      ],
+      "retrieved_scores": [
+        0.7013,
+        0.6902,
+        0.5829,
+        0.5648,
+        0.5636
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 17.51
+    },
+    {
+      "category": "single_document",
+      "question": "招标例外由谁共同批准？",
+      "expected_docs": [
+        "proc-quote"
+      ],
+      "answer": "采购负责人和法务",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "proc-quote",
+        "proc-quote",
+        "proc-contract",
+        "proc-supplier",
+        "proc-acceptance"
+      ],
+      "retrieved_scores": [
+        0.6674,
+        0.5594,
+        0.5136,
+        0.5061,
+        0.4764
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 17.34
+    },
+    {
+      "category": "single_document",
+      "question": "采购到货由哪些人共同验收？",
+      "expected_docs": [
+        "proc-acceptance"
+      ],
+      "answer": "需求部门和采购部各一人",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "proc-acceptance",
+        "proc-acceptance",
+        "proc-supplier",
+        "proc-emergency",
+        "proc-quote"
+      ],
+      "retrieved_scores": [
+        0.7096,
+        0.6248,
+        0.5625,
+        0.5524,
+        0.5509
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 18.28
+    },
+    {
+      "category": "single_document",
+      "question": "到货型号不符多久通知供应商？",
+      "expected_docs": [
+        "proc-acceptance"
+      ],
+      "answer": "两个工作日内",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "proc-acceptance",
+        "it-access",
+        "proc-emergency",
+        "fin-payment",
+        "proc-supplier"
+      ],
+      "retrieved_scores": [
+        0.7425,
+        0.5759,
+        0.5755,
+        0.5504,
+        0.5501
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 17.81
+    },
+    {
+      "category": "single_document",
+      "question": "差异未确认前可以付款吗？",
+      "expected_docs": [
+        "proc-acceptance"
+      ],
+      "answer": "不可以",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "proc-acceptance",
+        "fin-payment",
+        "fin-payment",
+        "hr-travel",
+        "fin-budget"
+      ],
+      "retrieved_scores": [
+        0.659,
+        0.5682,
+        0.5355,
+        0.5011,
+        0.4957
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 16.5
+    },
+    {
+      "category": "single_document",
+      "question": "超过多少金额的采购合同需要法务评审？",
+      "expected_docs": [
+        "proc-contract"
+      ],
+      "answer": "五万元",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "proc-contract",
+        "proc-quote",
+        "proc-quote",
+        "fin-payment",
+        "proc-emergency"
+      ],
+      "retrieved_scores": [
+        0.8015,
+        0.6481,
+        0.6401,
+        0.5885,
+        0.5749
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.86
+    },
+    {
+      "category": "single_document",
+      "question": "包含数据处理条款的合同需要法务评审吗？",
+      "expected_docs": [
+        "proc-contract"
+      ],
+      "answer": "需要",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "proc-contract",
+        "sec-export",
+        "proc-contract",
+        "fin-payment",
+        "fin-payment"
+      ],
+      "retrieved_scores": [
+        0.7186,
+        0.5545,
+        0.5386,
+        0.5307,
+        0.5244
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.08
+    },
+    {
+      "category": "single_document",
+      "question": "可以先签采购合同再补审批吗？",
+      "expected_docs": [
+        "proc-contract"
+      ],
+      "answer": "不可以",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "proc-contract",
+        "proc-emergency",
+        "proc-contract",
+        "fin-payment",
+        "proc-supplier"
+      ],
+      "retrieved_scores": [
+        0.7312,
+        0.6705,
+        0.6195,
+        0.5718,
+        0.5707
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.19
+    },
+    {
+      "category": "single_document",
+      "question": "哪些情形可以启动紧急采购？",
+      "expected_docs": [
+        "proc-emergency"
+      ],
+      "answer": "生产中断或重大安全故障",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "proc-emergency",
+        "proc-emergency",
+        "proc-quote",
+        "proc-acceptance",
+        "proc-quote"
+      ],
+      "retrieved_scores": [
+        0.7414,
+        0.6573,
+        0.5431,
+        0.5418,
+        0.5355
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 17.54
+    },
+    {
+      "category": "single_document",
+      "question": "紧急采购申请要记录哪些信息？",
+      "expected_docs": [
+        "proc-emergency"
+      ],
+      "answer": "事件编号、预计金额和原因",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "proc-emergency",
+        "proc-emergency",
+        "proc-supplier",
+        "proc-acceptance",
+        "proc-contract"
+      ],
+      "retrieved_scores": [
+        0.7049,
+        0.6038,
+        0.5473,
+        0.5449,
+        0.5392
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 16.52
+    },
+    {
+      "category": "single_document",
+      "question": "五千元以内紧急采购多久补审批？",
+      "expected_docs": [
+        "proc-emergency"
+      ],
+      "answer": "二十四小时内",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "proc-emergency",
+        "proc-contract",
+        "proc-acceptance",
+        "proc-emergency",
+        "fin-invoice"
+      ],
+      "retrieved_scores": [
+        0.7989,
+        0.5925,
+        0.5924,
+        0.5841,
+        0.5778
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 16.36
+    },
+    {
+      "category": "single_document",
+      "question": "生产系统权限由谁批准？",
+      "expected_docs": [
+        "it-access"
+      ],
+      "answer": "直属主管和系统负责人",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "it-access",
+        "it-change",
+        "hr-onboarding",
+        "sec-export",
+        "it-access"
+      ],
+      "retrieved_scores": [
+        0.6714,
+        0.551,
+        0.5387,
+        0.5286,
+        0.5102
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.89
+    },
+    {
+      "category": "single_document",
+      "question": "生产系统权限默认有效期多久？",
+      "expected_docs": [
+        "it-access"
+      ],
+      "answer": "九十天",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "it-access",
+        "hr-onboarding",
+        "it-change",
+        "it-access",
+        "sec-export"
+      ],
+      "retrieved_scores": [
+        0.7276,
+        0.6318,
+        0.5636,
+        0.5587,
+        0.5556
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 16.61
+    },
+    {
+      "category": "single_document",
+      "question": "离职通知后多久撤销生产账号？",
+      "expected_docs": [
+        "it-access"
+      ],
+      "answer": "四小时内",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "it-access",
+        "it-access",
+        "sec-retention",
+        "hr-onboarding",
+        "it-change"
+      ],
+      "retrieved_scores": [
+        0.7135,
+        0.6005,
+        0.5735,
+        0.5733,
+        0.5577
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.8
+    },
+    {
+      "category": "single_document",
+      "question": "公司笔记本必须开启什么保护？",
+      "expected_docs": [
+        "it-device"
+      ],
+      "answer": "全盘加密和自动锁屏",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "it-device",
+        "hr-remote",
+        "it-vpn",
+        "sec-classification",
+        "sec-password"
+      ],
+      "retrieved_scores": [
+        0.6235,
+        0.5187,
+        0.4576,
+        0.4355,
+        0.4294
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.75
+    },
+    {
+      "category": "single_document",
+      "question": "可用未批准的 U 盘复制资料吗？",
+      "expected_docs": [
+        "it-device"
+      ],
+      "answer": "不可以",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "it-device",
+        "sec-export",
+        "sec-classification",
+        "sec-password",
+        "it-change"
+      ],
+      "retrieved_scores": [
+        0.5011,
+        0.5004,
+        0.4663,
+        0.4618,
+        0.4474
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.99
+    },
+    {
+      "category": "single_document",
+      "question": "设备丢失后多久上报？",
+      "expected_docs": [
+        "it-device"
+      ],
+      "answer": "一小时内",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "it-device",
+        "it-incident",
+        "sec-retention",
+        "fin-invoice",
+        "sec-retention"
+      ],
+      "retrieved_scores": [
+        0.6957,
+        0.597,
+        0.5488,
+        0.5449,
+        0.5302
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.71
+    },
+    {
+      "category": "single_document",
+      "question": "VPN 登录必须启用什么验证？",
+      "expected_docs": [
+        "it-vpn"
+      ],
+      "answer": "多因素认证",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "it-vpn",
+        "sec-password",
+        "hr-remote",
+        "it-vpn",
+        "it-access"
+      ],
+      "retrieved_scores": [
+        0.7236,
+        0.6349,
+        0.6328,
+        0.6076,
+        0.5622
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.8
+    },
+    {
+      "category": "single_document",
+      "question": "VPN 账号可以共享吗？",
+      "expected_docs": [
+        "it-vpn"
+      ],
+      "answer": "不可以",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "it-vpn",
+        "it-vpn",
+        "hr-remote",
+        "it-access",
+        "sec-export"
+      ],
+      "retrieved_scores": [
+        0.6803,
+        0.5525,
+        0.5512,
+        0.513,
+        0.5076
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.65
+    },
+    {
+      "category": "single_document",
+      "question": "境外接入要提前多久报备？",
+      "expected_docs": [
+        "it-vpn"
+      ],
+      "answer": "五个工作日",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "it-vpn",
+        "sec-visitor",
+        "hr-travel",
+        "sec-export",
+        "hr-remote"
+      ],
+      "retrieved_scores": [
+        0.7266,
+        0.5774,
+        0.5264,
+        0.5053,
+        0.4925
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.99
+    },
+    {
+      "category": "single_document",
+      "question": "常规生产变更窗口是什么时间？",
+      "expected_docs": [
+        "it-change"
+      ],
+      "answer": "每周三二十点至二十二点",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "it-change",
+        "it-change",
+        "hr-travel",
+        "it-access",
+        "fin-budget"
+      ],
+      "retrieved_scores": [
+        0.6966,
+        0.6038,
+        0.5098,
+        0.4829,
+        0.4686
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.44
+    },
+    {
+      "category": "single_document",
+      "question": "变更申请单必须包含什么？",
+      "expected_docs": [
+        "it-change"
+      ],
+      "answer": "回滚方案与验证人",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-travel",
+        "it-change",
+        "it-change",
+        "proc-contract",
+        "fin-payment"
+      ],
+      "retrieved_scores": [
+        0.5992,
+        0.5811,
+        0.5335,
+        0.5124,
+        0.5008
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 0.5,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.08
+    },
+    {
+      "category": "single_document",
+      "question": "紧急变更多久补交复盘记录？",
+      "expected_docs": [
+        "it-change"
+      ],
+      "answer": "二十四小时内",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "it-change",
+        "proc-emergency",
+        "it-incident",
+        "fin-invoice",
+        "hr-travel"
+      ],
+      "retrieved_scores": [
+        0.7554,
+        0.5564,
+        0.5558,
+        0.5494,
+        0.5178
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.91
+    },
+    {
+      "category": "single_document",
+      "question": "核心业务不可用属于什么级别？",
+      "expected_docs": [
+        "it-incident"
+      ],
+      "answer": "P1",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "it-incident",
+        "sec-classification",
+        "fin-petty",
+        "proc-supplier",
+        "hr-training"
+      ],
+      "retrieved_scores": [
+        0.6166,
+        0.5386,
+        0.4925,
+        0.4924,
+        0.4785
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 16.81
+    },
+    {
+      "category": "single_document",
+      "question": "P1 故障多久通知应急负责人？",
+      "expected_docs": [
+        "it-incident"
+      ],
+      "answer": "十五分钟内",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "it-incident",
+        "it-incident",
+        "proc-emergency",
+        "it-access",
+        "it-vpn"
+      ],
+      "retrieved_scores": [
+        0.7251,
+        0.6741,
+        0.5417,
+        0.5329,
+        0.5198
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.72
+    },
+    {
+      "category": "single_document",
+      "question": "P1 故障多久更新一次进展？",
+      "expected_docs": [
+        "it-incident"
+      ],
+      "answer": "每三十分钟",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "it-incident",
+        "it-incident",
+        "fin-invoice",
+        "it-change",
+        "hr-onboarding"
+      ],
+      "retrieved_scores": [
+        0.7098,
+        0.5765,
+        0.5039,
+        0.4922,
+        0.4907
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.09
+    },
+    {
+      "category": "single_document",
+      "question": "企业数据分为哪四级？",
+      "expected_docs": [
+        "sec-classification"
+      ],
+      "answer": "公开、内部、机密、受限",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "sec-classification",
+        "sec-classification",
+        "it-incident",
+        "proc-contract",
+        "sec-password"
+      ],
+      "retrieved_scores": [
+        0.7345,
+        0.6036,
+        0.4852,
+        0.482,
+        0.4539
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 12.79
+    },
+    {
+      "category": "single_document",
+      "question": "受限数据能上传公共云盘吗？",
+      "expected_docs": [
+        "sec-classification"
+      ],
+      "answer": "不能",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "sec-classification",
+        "sec-export",
+        "sec-export",
+        "sec-classification",
+        "hr-remote"
+      ],
+      "retrieved_scores": [
+        0.6973,
+        0.5928,
+        0.5833,
+        0.4585,
+        0.4562
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 13.67
+    },
+    {
+      "category": "single_document",
+      "question": "跨部门访问受限数据由谁批准？",
+      "expected_docs": [
+        "sec-classification"
+      ],
+      "answer": "数据所有者和安全岗",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "sec-classification",
+        "sec-export",
+        "sec-export",
+        "sec-classification",
+        "fin-petty"
+      ],
+      "retrieved_scores": [
+        0.7128,
+        0.6798,
+        0.5607,
+        0.5115,
+        0.5105
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.59
+    },
+    {
+      "category": "single_document",
+      "question": "工作账号口令至少多少字符？",
+      "expected_docs": [
+        "sec-password"
+      ],
+      "answer": "十四个字符",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "sec-password",
+        "sec-password",
+        "it-access",
+        "it-change",
+        "proc-supplier"
+      ],
+      "retrieved_scores": [
+        0.7071,
+        0.4775,
+        0.4447,
+        0.4443,
+        0.4343
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.13
+    },
+    {
+      "category": "single_document",
+      "question": "口令能通过聊天工具明文发送吗？",
+      "expected_docs": [
+        "sec-password"
+      ],
+      "answer": "不能",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "sec-password",
+        "sec-export",
+        "sec-export",
+        "fin-invoice",
+        "sec-classification"
+      ],
+      "retrieved_scores": [
+        0.6619,
+        0.4941,
+        0.4587,
+        0.4435,
+        0.4195
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.3
+    },
+    {
+      "category": "single_document",
+      "question": "管理员账号必须启用什么？",
+      "expected_docs": [
+        "sec-password"
+      ],
+      "answer": "多因素认证",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "sec-password",
+        "sec-password",
+        "it-access",
+        "it-vpn",
+        "hr-onboarding"
+      ],
+      "retrieved_scores": [
+        0.5906,
+        0.5497,
+        0.5209,
+        0.4935,
+        0.4929
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.03
+    },
+    {
+      "category": "single_document",
+      "question": "离职人员人事记录保留多久？",
+      "expected_docs": [
+        "sec-retention"
+      ],
+      "answer": "三年",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "sec-retention",
+        "sec-retention",
+        "hr-onboarding",
+        "it-access",
+        "hr-leave"
+      ],
+      "retrieved_scores": [
+        0.782,
+        0.6043,
+        0.5817,
+        0.5585,
+        0.5545
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.94
+    },
+    {
+      "category": "single_document",
+      "question": "已签署合同保留多久？",
+      "expected_docs": [
+        "sec-retention"
+      ],
+      "answer": "七年",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "sec-retention",
+        "proc-contract",
+        "sec-retention",
+        "sec-visitor",
+        "fin-petty"
+      ],
+      "retrieved_scores": [
+        0.6364,
+        0.5436,
+        0.5181,
+        0.5089,
+        0.5039
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.77
+    },
+    {
+      "category": "single_document",
+      "question": "系统访问日志至少保留多久？",
+      "expected_docs": [
+        "sec-retention"
+      ],
+      "answer": "一百八十天",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "sec-retention",
+        "sec-visitor",
+        "sec-export",
+        "it-incident",
+        "it-access"
+      ],
+      "retrieved_scores": [
+        0.713,
+        0.5728,
+        0.5563,
+        0.5524,
+        0.5335
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.8
+    },
+    {
+      "category": "single_document",
+      "question": "访客进入办公区域需要做什么？",
+      "expected_docs": [
+        "sec-visitor"
+      ],
+      "answer": "出示证件、登记被访人并佩戴访客证",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "sec-visitor",
+        "sec-visitor",
+        "hr-remote",
+        "it-vpn",
+        "hr-travel"
+      ],
+      "retrieved_scores": [
+        0.6458,
+        0.5302,
+        0.4686,
+        0.462,
+        0.4427
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 16.46
+    },
+    {
+      "category": "single_document",
+      "question": "访客由谁全程陪同？",
+      "expected_docs": [
+        "sec-visitor"
+      ],
+      "answer": "被访人",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "sec-visitor",
+        "sec-visitor",
+        "it-vpn",
+        "it-vpn",
+        "proc-contract"
+      ],
+      "retrieved_scores": [
+        0.5558,
+        0.5239,
+        0.4291,
+        0.3908,
+        0.3689
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.87
+    },
+    {
+      "category": "single_document",
+      "question": "十八点后接待访客要谁批准？",
+      "expected_docs": [
+        "sec-visitor"
+      ],
+      "answer": "行政负责人",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "sec-visitor",
+        "proc-emergency",
+        "hr-travel",
+        "hr-travel",
+        "proc-acceptance"
+      ],
+      "retrieved_scores": [
+        0.6954,
+        0.5012,
+        0.4977,
+        0.4919,
+        0.4903
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.0
+    },
+    {
+      "category": "single_document",
+      "question": "受限数据对外传输由谁批准？",
+      "expected_docs": [
+        "sec-export"
+      ],
+      "answer": "数据所有者、法务和信息安全岗",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "sec-export",
+        "sec-export",
+        "sec-classification",
+        "it-vpn",
+        "it-vpn"
+      ],
+      "retrieved_scores": [
+        0.765,
+        0.639,
+        0.6159,
+        0.4756,
+        0.4642
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.07
+    },
+    {
+      "category": "single_document",
+      "question": "对外传输链接最长有效期多久？",
+      "expected_docs": [
+        "sec-export"
+      ],
+      "answer": "七天",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "sec-export",
+        "sec-export",
+        "it-vpn",
+        "sec-retention",
+        "it-vpn"
+      ],
+      "retrieved_scores": [
+        0.6889,
+        0.5635,
+        0.5324,
+        0.4731,
+        0.4616
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.9
+    },
+    {
+      "category": "single_document",
+      "question": "可以用个人邮箱发送受限数据吗？",
+      "expected_docs": [
+        "sec-export"
+      ],
+      "answer": "不可以",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "sec-classification",
+        "sec-export",
+        "sec-export",
+        "sec-password",
+        "fin-petty"
+      ],
+      "retrieved_scores": [
+        0.6707,
+        0.6445,
+        0.6145,
+        0.4886,
+        0.4731
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 0.5,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.15
+    },
+    {
+      "category": "cross_document",
+      "question": "国内出差申请和出差费用报销分别有什么时限？",
+      "expected_docs": [
+        "hr-travel",
+        "fin-expense"
+      ],
+      "answer": "出发前三个工作日申请；费用发生后三十个自然日内报销。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-travel",
+        "hr-travel",
+        "fin-expense",
+        "proc-acceptance",
+        "it-vpn"
+      ],
+      "retrieved_scores": [
+        0.7168,
+        0.6375,
+        0.5778,
+        0.5625,
+        0.5189
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.77
+    },
+    {
+      "category": "cross_document",
+      "question": "采购到货后申请供应商付款，需要怎样验收并附哪些材料？",
+      "expected_docs": [
+        "proc-acceptance",
+        "fin-payment"
+      ],
+      "answer": "需求部门和采购部双人验收；付款附合同、验收记录及发票。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "proc-acceptance",
+        "fin-payment",
+        "proc-acceptance",
+        "proc-supplier",
+        "proc-emergency"
+      ],
+      "retrieved_scores": [
+        0.7221,
+        0.6947,
+        0.6799,
+        0.6799,
+        0.6416
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 16.36
+    },
+    {
+      "category": "cross_document",
+      "question": "远程办公时如何安全接入公司网络？",
+      "expected_docs": [
+        "hr-remote",
+        "it-vpn"
+      ],
+      "answer": "使用公司 VPN 和多因素认证，不在公共设备下载资料，也不共享 VPN 账号。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "it-vpn",
+        "it-vpn",
+        "hr-remote",
+        "hr-remote",
+        "it-device"
+      ],
+      "retrieved_scores": [
+        0.6569,
+        0.6478,
+        0.6303,
+        0.5336,
+        0.5065
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.58
+    },
+    {
+      "category": "cross_document",
+      "question": "受限数据跨部门访问和对外传输分别由谁批准？",
+      "expected_docs": [
+        "sec-classification",
+        "sec-export"
+      ],
+      "answer": "跨部门访问由数据所有者和安全岗批准；对外传输由数据所有者、法务和信息安全岗联合批准。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "sec-export",
+        "sec-classification",
+        "sec-export",
+        "sec-classification",
+        "it-vpn"
+      ],
+      "retrieved_scores": [
+        0.7394,
+        0.6865,
+        0.6176,
+        0.536,
+        0.5257
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.37
+    },
+    {
+      "category": "cross_document",
+      "question": "紧急生产变更引发 P1 故障，变更与事故各要多久补记录？",
+      "expected_docs": [
+        "it-change",
+        "it-incident"
+      ],
+      "answer": "紧急变更实施后二十四小时内补复盘记录；P1 恢复后两个工作日内完成事故复盘。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "it-change",
+        "it-incident",
+        "it-change",
+        "proc-emergency",
+        "fin-invoice"
+      ],
+      "retrieved_scores": [
+        0.7489,
+        0.6358,
+        0.5913,
+        0.5618,
+        0.5563
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "blocked_doc_exposed": null,
+      "latency_ms": 16.43
+    },
+    {
+      "category": "no_answer",
+      "question": "公司食堂周末早餐几点开始营业？",
+      "expected_docs": [],
+      "answer": "语料中没有食堂营业时间。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-remote",
+        "it-change",
+        "hr-onboarding",
+        "sec-visitor",
+        "hr-training"
+      ],
+      "retrieved_scores": [
+        0.4816,
+        0.4566,
+        0.4352,
+        0.4291,
+        0.4194
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.0
+    },
+    {
+      "category": "no_answer",
+      "question": "2027 年公司股票期权授予价格是多少？",
+      "expected_docs": [],
+      "answer": "语料中没有股票期权授予价格。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "it-access",
+        "proc-quote",
+        "fin-expense",
+        "sec-export",
+        "fin-invoice"
+      ],
+      "retrieved_scores": [
+        0.4225,
+        0.4217,
+        0.4038,
+        0.3983,
+        0.3973
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.86
+    },
+    {
+      "category": "no_answer",
+      "question": "总部停车场每月收费多少元？",
+      "expected_docs": [],
+      "answer": "语料中没有停车费标准。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "fin-expense",
+        "hr-training",
+        "proc-quote",
+        "hr-training",
+        "proc-emergency"
+      ],
+      "retrieved_scores": [
+        0.4283,
+        0.425,
+        0.4104,
+        0.3942,
+        0.3846
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.95
+    },
+    {
+      "category": "no_answer",
+      "question": "员工子女入学补贴是多少？",
+      "expected_docs": [],
+      "answer": "语料中没有子女入学补贴。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-training",
+        "hr-training",
+        "hr-onboarding",
+        "hr-onboarding",
+        "fin-petty"
+      ],
+      "retrieved_scores": [
+        0.5405,
+        0.4914,
+        0.4693,
+        0.4386,
+        0.4272
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 16.55
+    },
+    {
+      "category": "no_answer",
+      "question": "去火星出差的机票由谁审批？",
+      "expected_docs": [],
+      "answer": "语料中没有该类出差规定。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-travel",
+        "hr-travel",
+        "fin-invoice",
+        "fin-payment",
+        "fin-payment"
+      ],
+      "retrieved_scores": [
+        0.5864,
+        0.5404,
+        0.4777,
+        0.4487,
+        0.435
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 13.8
+    },
+    {
+      "category": "no_answer",
+      "question": "年休假可以分几次申请？",
+      "expected_docs": [],
+      "answer": "年休假制度没有规定分次申请次数。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-leave",
+        "hr-leave",
+        "hr-remote",
+        "fin-expense",
+        "sec-visitor"
+      ],
+      "retrieved_scores": [
+        0.6964,
+        0.6416,
+        0.5112,
+        0.5047,
+        0.501
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.09
+    },
+    {
+      "category": "no_answer",
+      "question": "远程办公能否申请周三作为例外？",
+      "expected_docs": [],
+      "answer": "远程办公制度没有规定周三例外申请。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-remote",
+        "hr-remote",
+        "it-vpn",
+        "hr-travel",
+        "it-vpn"
+      ],
+      "retrieved_scores": [
+        0.7224,
+        0.6094,
+        0.5828,
+        0.5624,
+        0.5316
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.73
+    },
+    {
+      "category": "no_answer",
+      "question": "国内出差的每日住宿费上限是多少？",
+      "expected_docs": [],
+      "answer": "国内出差制度没有规定住宿费上限。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-travel",
+        "hr-travel",
+        "fin-expense",
+        "hr-training",
+        "proc-quote"
+      ],
+      "retrieved_scores": [
+        0.5613,
+        0.4579,
+        0.4573,
+        0.4343,
+        0.4271
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.78
+    },
+    {
+      "category": "no_answer",
+      "question": "员工餐费报销每天最多多少元？",
+      "expected_docs": [],
+      "answer": "费用报销制度没有规定每日餐费上限。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-training",
+        "hr-training",
+        "fin-expense",
+        "proc-quote",
+        "proc-supplier"
+      ],
+      "retrieved_scores": [
+        0.6354,
+        0.6166,
+        0.5904,
+        0.4922,
+        0.4422
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 18.13
+    },
+    {
+      "category": "no_answer",
+      "question": "电子发票退回后第二次补正的期限是多久？",
+      "expected_docs": [],
+      "answer": "电子发票制度没有规定第二次补正期限。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "fin-invoice",
+        "fin-invoice",
+        "fin-petty",
+        "proc-emergency",
+        "it-change"
+      ],
+      "retrieved_scores": [
+        0.7559,
+        0.5622,
+        0.5512,
+        0.5446,
+        0.5436
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.98
+    },
+    {
+      "category": "no_answer",
+      "question": "采购比价比较表应保存几年？",
+      "expected_docs": [],
+      "answer": "采购比价制度没有规定比较表保存期限。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "proc-quote",
+        "proc-acceptance",
+        "proc-supplier",
+        "proc-quote",
+        "proc-supplier"
+      ],
+      "retrieved_scores": [
+        0.6664,
+        0.5673,
+        0.5223,
+        0.5199,
+        0.5155
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.82
+    },
+    {
+      "category": "no_answer",
+      "question": "采购合同是否允许使用电子签章？",
+      "expected_docs": [],
+      "answer": "采购合同制度没有规定电子签章。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "proc-contract",
+        "proc-contract",
+        "proc-quote",
+        "proc-quote",
+        "proc-supplier"
+      ],
+      "retrieved_scores": [
+        0.6558,
+        0.6157,
+        0.5978,
+        0.5785,
+        0.5608
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.6
+    },
+    {
+      "category": "no_answer",
+      "question": "紧急采购超过五千元由谁先行批准？",
+      "expected_docs": [],
+      "answer": "紧急采购制度没有规定超过五千元的先行审批人。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "proc-emergency",
+        "proc-quote",
+        "proc-contract",
+        "proc-emergency",
+        "proc-quote"
+      ],
+      "retrieved_scores": [
+        0.7369,
+        0.6066,
+        0.5883,
+        0.5763,
+        0.5691
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.57
+    },
+    {
+      "category": "no_answer",
+      "question": "供应商风险复核到期后能否自动续期？",
+      "expected_docs": [],
+      "answer": "供应商准入制度没有规定自动续期。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "proc-supplier",
+        "it-incident",
+        "sec-retention",
+        "proc-emergency",
+        "fin-expense"
+      ],
+      "retrieved_scores": [
+        0.6559,
+        0.5632,
+        0.5547,
+        0.5319,
+        0.5143
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.49
+    },
+    {
+      "category": "no_answer",
+      "question": "备用金遗失后员工需要赔偿多少？",
+      "expected_docs": [],
+      "answer": "备用金制度没有规定遗失赔偿金额。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "fin-petty",
+        "fin-petty",
+        "fin-expense",
+        "it-device",
+        "sec-retention"
+      ],
+      "retrieved_scores": [
+        0.6208,
+        0.5888,
+        0.5563,
+        0.5419,
+        0.5311
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.68
+    },
+    {
+      "category": "no_answer",
+      "question": "VPN 账号密码每隔多久必须更换？",
+      "expected_docs": [],
+      "answer": "远程接入制度没有规定 VPN 密码轮换周期。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "it-access",
+        "it-vpn",
+        "it-vpn",
+        "sec-export",
+        "sec-password"
+      ],
+      "retrieved_scores": [
+        0.6389,
+        0.6386,
+        0.5944,
+        0.5739,
+        0.5511
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.61
+    },
+    {
+      "category": "no_answer",
+      "question": "P2 故障应在多久内通知应急负责人？",
+      "expected_docs": [],
+      "answer": "故障响应制度没有规定 P2 通知时限。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "it-incident",
+        "it-incident",
+        "it-access",
+        "proc-emergency",
+        "it-vpn"
+      ],
+      "retrieved_scores": [
+        0.7284,
+        0.671,
+        0.5461,
+        0.5376,
+        0.5354
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.5
+    },
+    {
+      "category": "no_answer",
+      "question": "办公设备丢失后由谁承担赔偿？",
+      "expected_docs": [],
+      "answer": "设备使用制度没有规定遗失赔偿责任。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "it-device",
+        "fin-petty",
+        "fin-invoice",
+        "proc-contract",
+        "sec-retention"
+      ],
+      "retrieved_scores": [
+        0.6445,
+        0.5358,
+        0.4866,
+        0.4723,
+        0.4704
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.04
+    },
+    {
+      "category": "no_answer",
+      "question": "访客证遗失的罚款标准是多少？",
+      "expected_docs": [],
+      "answer": "访客登记制度没有规定遗失罚款标准。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "sec-visitor",
+        "sec-retention",
+        "fin-expense",
+        "fin-invoice",
+        "sec-visitor"
+      ],
+      "retrieved_scores": [
+        0.5387,
+        0.5135,
+        0.5126,
+        0.5104,
+        0.5095
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 15.33
+    },
+    {
+      "category": "no_answer",
+      "question": "试用期的最长期限是几个月？",
+      "expected_docs": [],
+      "answer": "新员工入职制度没有规定试用期期限。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-onboarding",
+        "it-access",
+        "sec-export",
+        "hr-leave",
+        "sec-retention"
+      ],
+      "retrieved_scores": [
+        0.5273,
+        0.508,
+        0.4725,
+        0.4691,
+        0.4561
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.7
+    },
+    {
+      "category": "no_answer",
+      "question": "培训报销未用额度可以结转到下一年吗？",
+      "expected_docs": [],
+      "answer": "培训费用制度没有规定额度结转。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "hr-training",
+        "hr-training",
+        "fin-expense",
+        "hr-onboarding",
+        "fin-petty"
+      ],
+      "retrieved_scores": [
+        0.6603,
+        0.6202,
+        0.5495,
+        0.5311,
+        0.5055
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.87
+    },
+    {
+      "category": "no_answer",
+      "question": "超预算幅度不超过百分之十时由谁审批？",
+      "expected_docs": [],
+      "answer": "季度预算制度没有规定该情形的审批人。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "fin-budget",
+        "fin-expense",
+        "proc-quote",
+        "fin-budget",
+        "proc-quote"
+      ],
+      "retrieved_scores": [
+        0.646,
+        0.5683,
+        0.5417,
+        0.5315,
+        0.529
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.39
+    },
+    {
+      "category": "no_answer",
+      "question": "受限数据加密链接的密码至少多少位？",
+      "expected_docs": [],
+      "answer": "对外传输制度没有规定加密链接密码长度。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "sec-export",
+        "sec-export",
+        "sec-classification",
+        "it-vpn",
+        "sec-classification"
+      ],
+      "retrieved_scores": [
+        0.627,
+        0.5881,
+        0.5165,
+        0.4884,
+        0.4611
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 13.82
+    },
+    {
+      "category": "no_answer",
+      "question": "访客非工作时间入园最迟要提前多久申请？",
+      "expected_docs": [],
+      "answer": "访客制度要求提前批准，但没有规定具体提前时限。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "sec-visitor",
+        "it-vpn",
+        "hr-remote",
+        "sec-visitor",
+        "hr-travel"
+      ],
+      "retrieved_scores": [
+        0.6881,
+        0.5998,
+        0.5985,
+        0.5809,
+        0.5676
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 16.33
+    },
+    {
+      "category": "no_answer",
+      "question": "系统访问日志具体保存在哪台服务器？",
+      "expected_docs": [],
+      "answer": "记录保存制度没有规定具体存储服务器。",
+      "username": "admin",
+      "blocked_doc": null,
+      "retrieved_docs": [
+        "sec-retention",
+        "it-device",
+        "sec-visitor",
+        "sec-retention",
+        "sec-classification"
+      ],
+      "retrieved_scores": [
+        0.5656,
+        0.5323,
+        0.4754,
+        0.4665,
+        0.4631
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": null,
+      "latency_ms": 14.91
+    },
+    {
+      "category": "unauthorized",
+      "question": "两万元采购要找几家供应商报价？",
+      "expected_docs": [],
+      "answer": null,
+      "username": "employee",
+      "blocked_doc": "proc-quote",
+      "retrieved_docs": [
+        "fin-payment",
+        "fin-payment",
+        "fin-expense",
+        "hr-training",
+        "hr-training"
+      ],
+      "retrieved_scores": [
+        0.5375,
+        0.5057,
+        0.482,
+        0.457,
+        0.4444
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": false,
+      "latency_ms": 14.48
+    },
+    {
+      "category": "unauthorized",
+      "question": "新供应商至少提供几个客户案例？",
+      "expected_docs": [],
+      "answer": null,
+      "username": "employee",
+      "blocked_doc": "proc-supplier",
+      "retrieved_docs": [
+        "fin-payment",
+        "fin-payment",
+        "sec-password",
+        "hr-onboarding",
+        "fin-expense"
+      ],
+      "retrieved_scores": [
+        0.4901,
+        0.4594,
+        0.4303,
+        0.4297,
+        0.4191
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": false,
+      "latency_ms": 15.17
+    },
+    {
+      "category": "unauthorized",
+      "question": "常规生产变更安排在周几几点？",
+      "expected_docs": [],
+      "answer": null,
+      "username": "employee",
+      "blocked_doc": "it-change",
+      "retrieved_docs": [
+        "hr-onboarding",
+        "fin-budget",
+        "hr-leave",
+        "it-access",
+        "sec-visitor"
+      ],
+      "retrieved_scores": [
+        0.5151,
+        0.5049,
+        0.4976,
+        0.4829,
+        0.4823
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": false,
+      "latency_ms": 16.08
+    },
+    {
+      "category": "unauthorized",
+      "question": "P1 故障应多久通知负责人？",
+      "expected_docs": [],
+      "answer": null,
+      "username": "employee",
+      "blocked_doc": "it-incident",
+      "retrieved_docs": [
+        "it-access",
+        "fin-invoice",
+        "hr-onboarding",
+        "sec-visitor",
+        "it-vpn"
+      ],
+      "retrieved_scores": [
+        0.5538,
+        0.546,
+        0.5055,
+        0.504,
+        0.5018
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": false,
+      "latency_ms": 14.86
+    },
+    {
+      "category": "unauthorized",
+      "question": "受限数据对外传输链接有效期最多多久？",
+      "expected_docs": [],
+      "answer": null,
+      "username": "employee",
+      "blocked_doc": "sec-export",
+      "retrieved_docs": [
+        "it-vpn",
+        "sec-classification",
+        "it-access",
+        "sec-retention",
+        "it-vpn"
+      ],
+      "retrieved_scores": [
+        0.5381,
+        0.5178,
+        0.5114,
+        0.5047,
+        0.4887
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "blocked_doc_exposed": false,
+      "latency_ms": 14.63
+    }
+  ]
+}
