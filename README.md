@@ -1,5 +1,9 @@
 # 星桥科技企业 RAG 知识库助手
 
+[![CI](https://github.com/zcl-crypto/enterprise-rag-assistant/actions/workflows/ci.yml/badge.svg)](https://github.com/zcl-crypto/enterprise-rag-assistant/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB.svg)](pyproject.toml)
+
 一个可本地一键启动、面向生产流程设计的企业知识库作品集项目。系统覆盖多格式解析、混合检索、权限过滤、引用溯源、版本生命周期、真实模型生成和离线评测。场景、企业和制度语料均为虚构；不要上传真实企业机密。
 
 [快速启动](#docker-启动) · [评测结果](#实测结果) · [详细方案](docs/project-plan-zh.md) · [实施记录](docs/progress.md) · [评测报告索引](reports/README.md)
