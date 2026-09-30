@@ -1,4 +1,4 @@
-# 星桥科技企业 RAG 知识库助手
+# 企业 RAG 知识库助手
 
 [![CI](https://github.com/zcl-crypto/enterprise-rag-assistant/actions/workflows/ci.yml/badge.svg)](https://github.com/zcl-crypto/enterprise-rag-assistant/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
